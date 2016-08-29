@@ -1,0 +1,5 @@
+{{ content | markdownify }}
+<br>
+{% for post in paginator.posts %}
+			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+{% endfor %}
