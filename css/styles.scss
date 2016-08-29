@@ -2,6 +2,17 @@
 styles: true
 ---
 
+@import "type";
+
 body {
   background: #f4f4f4;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 70%;
 }

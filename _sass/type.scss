@@ -1,0 +1,68 @@
+// Typography
+
+$color--text: #222222;
+$color--links: blue;
+$font--primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font--secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+html {
+  color: $color--text;
+  font-family: $font--primary;
+  font-size: 4.4vw;
+  line-height: 1.6;
+  @media (min-width: 20em) {
+    font-size: 3.4vw;
+  }
+  @media (min-width: 40em) {
+    font-size: 2.4vw;
+  }
+  @media (min-width: 60em) {
+    font-size: 1.8vw;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font--secondary;
+}
+
+h1 { font-size: 1.602rem; margin-top: 0; }
+h2 { font-size: 1.424rem; }
+h3 { font-size: 1.266rem; margin-bottom: 0; + p { margin-top:0.5rem; } }
+h4 { font-size: 1.125rem; margin-bottom: 0; + p { margin-top:0.5rem; } }
+
+p {
+  + h2,
+  + h3 {
+    margin-top: 1.25rem;
+  }
+
+  + ul {
+    margin-top: -1rem;
+  }
+}
+
+blockquote {
+  border-left: solid 0.25rem lighten($color--text, 10%);
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+a {
+  color: $color--links;
+  text-decoration: none;
+}
+
+em {
+  margin-right: 0.1rem;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
