@@ -1,8 +1,31 @@
 ---
 layout: default
 ---
-{{ content | markdownify }}
-<br>
-{% for post in paginator.posts %}
-			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-{% endfor %}
+
+{% include header.html %}
+
+<div class="container">
+
+  <main class="main">
+		{{ content | markdownify }}
+
+		<ul class="posts">
+			{% for post in paginator.posts %}
+				<li class="post-item">
+
+					<article class="article">
+						<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+						<p>{{ post.excerpt }}</p>
+					</article>
+
+				</li>
+			{% endfor %}
+		</ul>
+
+  </main>
+
+  {% include aside.html %}
+
+</div>
+
+{% include footer.html %}

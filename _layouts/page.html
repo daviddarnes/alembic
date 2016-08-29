@@ -2,10 +2,16 @@
 layout: default
 ---
 
+{% include header.html %}
+
 <div class="container">
 
-  <main>
+  <main class="main">
     {{ content }}
   </main>
-  
+
+  {% include aside.html %}
+
 </div>
+
+{% include footer.html %}

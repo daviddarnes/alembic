@@ -2,6 +2,7 @@
 styles: true
 ---
 
+@import "normalize";
 @import "type";
 
 body {
@@ -9,10 +10,21 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
+  display: flex;
 }
 
-main {
-  max-width: 70%;
+.main {
+  width: 100%;
+  @media (min-width: 40em) {
+    width: 70%;
+  }
+}
+
+.aside {
+  max-width: 100%;
+  @media (min-width: 40em) {
+    max-width: 30%;
+  }
 }
