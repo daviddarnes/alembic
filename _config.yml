@@ -1,0 +1,80 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- CNAME
+
+# 2. Installed Gems
+gems:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jemoji
+
+# 3. Gem settings
+paginate: 8 # jekyll-paginate > items per page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: Username # jekyll-seo-tag > Owners twitter username
+author: AuthorName # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: Author Name # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/Username
+    - https://www.facebook.com/Username
+    - https://www.linkedin.com/in/Username
+    - https://plus.google.com/+Username
+    - https://github.com/Username
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: Posts # Needed for Siteleaf
+    output: true
+  uploads:
+    title: Uploads # Needed for Siteleaf
+    output: true
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      is_page: true # For defining pages from posts
+      layout: page # Default layout
+      image: "/images/logo-social.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true # For defining posts from pages
+      layout: post # Default layout
+      image: "/images/logo-social.png" # Default image for sharing
+
+# 7. Site settings
+title: "Site title" # Site name or title, also used in jekyll-seo-tag
+logo: "/images/logo.png" # Site logo, also used in jekyll-seo-tag
+description: "Site description" # Site description and default description, also used in jekyll-seo-tag
+url: "https://website.com" # Site url, also used in jekyll-seo-tag
+repo: "https://github.com/davidarnes/repo"
