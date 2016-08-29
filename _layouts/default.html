@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<!-- General meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% if page.indexing == false %}
+			<meta name="robots" content="noindex">
+		{% endif %}
+
+		{% seo %}
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+		{% include favicons.html %}
+	</head>
+	<body>
+		{% include icons.svg %}
+
+		{{ content }}
+
+	</body>
+</html>
