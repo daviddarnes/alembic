@@ -77,5 +77,5 @@ defaults:
 title: "Site title" # Site name or title, also used in jekyll-seo-tag
 logo: "/images/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Site description" # Site description and default description, also used in jekyll-seo-tag
-url: "https://website.com" # Site url, also used in jekyll-seo-tag
+url: "https://daviddarnes.github.io/alembic" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/davidarnes/repo"
