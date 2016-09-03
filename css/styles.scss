@@ -2,29 +2,57 @@
 styles: true
 ---
 
+// Frameworks
 @import "normalize";
-@import "type";
+@import "sassline-base";
 
+// Variables
+$color--main: #ffffff;
+$color--site: #f4f4f4;
+
+// Structural elements
 body {
-  background: #f4f4f4;
+  background: $color--site;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .main {
+    flex: 1 0 auto;
+  }
 }
 
 .container {
   width: 90%;
+  padding: 0 5%;
   margin: 0 auto;
-  display: flex;
+  background: $color--main;
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(break-1) {
+    flex-direction: row;
+  }
+}
+
+.content {
   width: 100%;
-  @media (min-width: 40em) {
-    width: 70%;
+  @include breakpoint(break-1) {
+    width: 62%;
+    margin-right: 3%;
   }
 }
 
 .aside {
   max-width: 100%;
-  @media (min-width: 40em) {
-    max-width: 30%;
+  @include breakpoint(break-1) {
+    max-width: 35%;
+  }
+}
+
+.list {
+  &--posts {
+    list-style: none;
   }
 }

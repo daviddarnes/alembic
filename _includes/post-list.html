@@ -1,0 +1,10 @@
+<ul class="list  list--posts">
+	{% for post in paginator.posts %}
+		<li class="item  item--post">
+			<article class="article  article--post  typeset">
+				<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+				<p>{{ post.excerpt }}</p>
+			</article>
+		</li>
+	{% endfor %}
+</ul>

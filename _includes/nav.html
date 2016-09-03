@@ -1,5 +1,7 @@
 <nav class="nav">
   {% for page in site.pages %}
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    {% unless page.styles == true %}
+      | <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endunless %}
   {% endfor %}
 </nav>

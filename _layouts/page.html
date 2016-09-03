@@ -4,14 +4,18 @@ layout: default
 
 {% include header.html %}
 
-<div class="container">
+<main class="main  container">
 
-  <main class="main">
+	<article class="article  article--page  content  typeset">
+
+    <h1>{{ page.title }}</h1>
+
     {{ content }}
-  </main>
+
+  </article>
 
   {% include aside.html %}
 
-</div>
+</main>
 
 {% include footer.html %}

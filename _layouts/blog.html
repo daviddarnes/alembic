@@ -4,28 +4,24 @@ layout: default
 
 {% include header.html %}
 
-<div class="container">
+<main class="main  container">
 
-  <main class="main">
-		{{ content | markdownify }}
+	<div class="content">
 
-		<ul class="posts">
-			{% for post in paginator.posts %}
-				<li class="post-item">
+    <article class="article  article--page  typeset">
 
-					<article class="article">
-						<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-						<p>{{ post.excerpt }}</p>
-					</article>
+			<h1>{{ page.title }}</h1>
 
-				</li>
-			{% endfor %}
-		</ul>
+      {{ content | markdownify }}
 
-  </main>
+    </article>
+
+    {% include post-list.html %}
+
+  </div>
 
   {% include aside.html %}
 
-</div>
+</main>
 
 {% include footer.html %}
