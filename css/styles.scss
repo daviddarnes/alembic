@@ -2,32 +2,76 @@
 styles: true
 ---
 
+
 // Frameworks
 @import "normalize";
 @import "sassline-base";
 
+
 // Variables
-$color--main: #ffffff;
 $color--site: #f4f4f4;
+$color--main: #ffffff;
+$color--feature: #dedede;
+
 
 // Structural elements
 body {
   background: $color--site;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
   .main {
     flex: 1 0 auto;
+  }
+  .header,
+  .footer {
+    flex: 0 0 auto;
+  }
+  .header,
+  .main,
+  .footer {
+    background: $color--main;
   }
 }
 
 .container {
   width: 90%;
-  padding: 0 5%;
+  padding: 1rem;
   margin: 0 auto;
-  background: $color--main;
 }
 
+
+// Header and footer
+.header,
+.footer {
+  @include breakpoint(break-1) {
+    display: flex;
+  }
+  align-items: center;
+  padding: 1rem;
+  .nav {
+    flex: 1 0 auto;
+    text-align: right;
+  }
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+// Feature section
+.feature {
+  min-height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $color--feature;
+}
+
+// Main content
 .main {
   display: flex;
   flex-direction: column;
@@ -51,8 +95,27 @@ body {
   }
 }
 
+
+// Lists
 .list {
   &--posts {
     list-style: none;
   }
+  &--nav {
+    list-style: none;
+  }
+}
+
+.item {
+  &--nav {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+}
+
+
+// Icons
+svg {
+  width: 100%;
+  height: 100%;
 }

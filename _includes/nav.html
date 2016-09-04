@@ -1,7 +1,11 @@
 <nav class="nav">
-  {% for page in site.pages %}
-    {% unless page.styles == true %}
-      | <a href="{{ page.url }}">{{ page.title }}</a>
-    {% endunless %}
-  {% endfor %}
+  <ul class="list list--nav">
+    {% for page in site.pages %}
+      {% unless page.styles == true %}
+        <li class="item  item--nav">
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
 </nav>

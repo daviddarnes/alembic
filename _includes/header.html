@@ -1,4 +1,13 @@
 <header class="header  container  typeset">
-  <a href="{{ site.url }}">{{ site.title }}</a>
+
+  <a class="logo" href="{{ site.url }}" title="{{ site.title }}">
+    {% include icon.html id="logo" title=site.title %}
+  </a>
+
   {% include nav.html %}
+
 </header>
+
+{% if page.feature_text %}
+	{% include feature.html feature_text=page.feature_text %}
+{% endif %}
