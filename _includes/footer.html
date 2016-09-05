@@ -1,4 +1,9 @@
-<footer class="footer  container  typeset">
-  <h4><a href="{{ site.url }}" title="{{ site.title }}">{{ site.title }}</a></h4>
-  {% include nav.html %}
+<footer class="footer">
+  <div class="container">
+    {% include nav.html %}
+
+    <div class="copyright">
+      <small class="small">&copy; {{ site.title }} {{ site.time | date: '%Y' }}</small>
+    </div>
+  </div>
 </footer>

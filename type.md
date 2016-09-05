@@ -1,5 +1,10 @@
 ---
 title: Type
+feature_text: |
+  ## Welcome to the type page
+image: "https://unsplash.it/1200/400?image=123"
+---
+
 ---
 
 <h1>Heading 1</h1>

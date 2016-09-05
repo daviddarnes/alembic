@@ -1,4 +1,4 @@
-<section class="feature">
+<section class="feature"{% if page.image %}style="background-image: url({{ page.image }})"{% endif %}>
   <div class="container  typeset">
     {{ include.feature_text | markdownify }}
   </div>
