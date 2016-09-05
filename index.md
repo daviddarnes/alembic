@@ -14,7 +14,7 @@ This is the homepage.
 
 {% include figure.html image="https://unsplash.it/1000/300?image=333" caption="We're at the beach!" %}
 
-{% include figure.html image="https://unsplash.it/2000/300?image=333" caption="We're at the beach!" full_width=true %}
+{% include figure.html image="https://unsplash.it/2000/700?image=333" caption="We're at the beach!" full_width=true %}
 
 Just some normal text.
 

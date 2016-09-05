@@ -6,6 +6,7 @@
 # 5. Collections
 # 6. Jekyll collections settings
 # 7. Site settings
+# 8. Site navigation
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -23,7 +24,7 @@ gems:
 - jemoji
 
 # 3. Gem settings
-paginate: 8 # jekyll-paginate > items per page
+paginate: 1 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
@@ -79,3 +80,13 @@ logo: "/images/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Site description" # Site description and default description, also used in jekyll-seo-tag
 url: "http://localhost:4000" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/org/repo"
+
+# 8. Site navigation
+navigation_header:
+  Home: /
+  Blog: /blog
+  About: /about
+
+navigation_footer:
+  Home: /
+  About: /about

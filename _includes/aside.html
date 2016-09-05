@@ -1,4 +1,11 @@
 <aside class="aside  typeset">
-  <h3>Sidebar</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.</p>
+  <h2>About this site</h2>
+  <p>{{ site.description }}</p>
+  {% if page.is_page %}
+    {% unless paginator.posts %}
+      {% include post-list.html %}
+    {% endunless %}
+  {% else %}
+    {% include post-related.html %}
+  {% endif %}
 </aside>

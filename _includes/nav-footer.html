@@ -1,0 +1,13 @@
+{% if site.navigation_footer %}
+<nav class="nav  nav--footer">
+  <ul class="list list--nav">
+    {% for page in site.navigation_footer %}
+      <li class="item  item--nav">
+        <a href="{{ page[1] }}">{{ page[0] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% else %}
+  {% include nav-default.html %}
+{% endif %}

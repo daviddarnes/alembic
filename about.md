@@ -1,5 +1,5 @@
 ---
-title: Type
+title: About us
 feature_text: |
   ## Welcome to the type page
 image: "https://unsplash.it/1200/400?image=123"

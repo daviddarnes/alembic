@@ -26,15 +26,6 @@ body {
   flex-direction: column;
 }
 
-.main {
-  flex: 1 0 auto;
-}
-.header,
-.feature,
-.footer {
-  flex: 0 0 auto;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -64,7 +55,9 @@ body {
 }
 
 .small {
+  padding-top: .4rem;
   color: $color__site--captions;
+  display: inherit;
 }
 
 .footer {
@@ -90,6 +83,14 @@ body {
   }
 }
 
+.nav {
+  &--paginator {
+    display: flex;
+    justify-content: space-between;
+    color: $color__site--captions;
+  }
+}
+
 .copyright {
   @include breakpoint(break-1) {
     order: -1;
@@ -101,12 +102,12 @@ body {
 .feature {
   min-height: 35vh;
   padding-bottom: .4rem;
-  margin-bottom: .8rem;
+  margin-bottom: 1.6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: $color__feature--background;
+  background: $color__site--accent;
   background-size: cover;
   background-position: center;
   text-shadow: 0 0 10px fade-out($color__site--background, 0.5);
@@ -116,23 +117,33 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
     flex-direction: row;
   }
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.header,
+.feature,
+.footer {
+  flex: 0 0 auto;
 }
 
 .content {
   width: 100%;
   @include breakpoint(break-1) {
     width: 62%;
-    margin-right: 3%;
+    margin-right: 2%;
   }
 }
 
 .aside {
   max-width: 100%;
   @include breakpoint(break-1) {
-    max-width: 35%;
+    max-width: 36%;
   }
 }
 
@@ -154,6 +165,9 @@ body {
     &:first-of-type {
       margin-left: 0;
     }
+  }
+  &--post {
+    padding-bottom: 1.8rem;
   }
 }
 

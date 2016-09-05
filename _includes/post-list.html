@@ -1,13 +1,34 @@
-<ul class="list  list--posts">
-	{% for page in paginator.posts %}
-		<li class="item  item--post">
-			<article class="article  article--post  typeset">
+{% if paginator.posts %}
 
-				<h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
-				{% include post-meta.html %}
-				{{ page.excerpt }}
+	<ul class="list  list--posts">
+		{% for page in paginator.posts %}
+			<li class="item  item--post">
+				<article class="article  article--post  typeset">
 
-			</article>
-		</li>
-	{% endfor %}
-</ul>
+					<h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					{% include post-meta.html %}
+					{{ page.excerpt | markdownify | truncatewords: 60 }}
+
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+	{% include post-pagination.html %}
+
+{% else %}
+	<h2>Latest blog posts</h2>
+	<ul class="list  list--posts">
+		{% for page in site.posts limit: 4 %}
+			<li class="item  item--post">
+				<article class="article  article--post  typeset">
+
+					<h5><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h5>
+					{{ page.excerpt | markdownify | truncatewords: 60 }}
+					{% include post-meta.html %}
+
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+
+{% endif %}
