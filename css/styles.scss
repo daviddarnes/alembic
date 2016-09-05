@@ -55,16 +55,13 @@ body {
 }
 
 .small {
-  padding-top: .4rem;
+  padding-top: .6rem;
   color: $color__site--captions;
   display: inherit;
 }
 
 .footer {
   background: lighten(invert($color__site--background), 15%);
-  small {
-    font-size: 1rem;
-  }
   a {
     color: invert($color__site--heading);
     &:hover {
@@ -72,6 +69,7 @@ body {
     }
   }
 }
+
 
 // Nav and copyright
 .nav,
@@ -88,6 +86,7 @@ body {
     display: flex;
     justify-content: space-between;
     color: $color__site--captions;
+    text-align: center;
   }
 }
 
@@ -113,6 +112,7 @@ body {
   text-shadow: 0 0 10px fade-out($color__site--background, 0.5);
 }
 
+
 // Main content
 .main {
   display: flex;
@@ -136,14 +136,14 @@ body {
   width: 100%;
   @include breakpoint(break-1) {
     width: 62%;
-    margin-right: 2%;
+    margin-right: 4%;
   }
 }
 
 .aside {
   max-width: 100%;
   @include breakpoint(break-1) {
-    max-width: 36%;
+    max-width: 34%;
   }
 }
 
@@ -165,9 +165,6 @@ body {
     &:first-of-type {
       margin-left: 0;
     }
-  }
-  &--post {
-    padding-bottom: 1.8rem;
   }
 }
 
@@ -200,6 +197,23 @@ img {
   }
 }
 
+
+// Video embeds
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+// Buttons
 .typeset {
   a.button,
   button.button,

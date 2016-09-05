@@ -8,4 +8,7 @@
   {% else %}
     {% include post-related.html %}
   {% endif %}
+  {% if page.is_post or paginator.posts %}
+    <a class="button" href="/feed.xml" title="RSS feed">Subscribe to posts</a>
+  {% endif %}
 </aside>
