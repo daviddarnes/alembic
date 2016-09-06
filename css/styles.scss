@@ -28,6 +28,7 @@ body {
 
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -137,6 +138,13 @@ body {
   @include breakpoint(break-1) {
     width: 62%;
     margin-right: 4%;
+    &--full {
+      width: 100%;
+      margin-right: 0%;
+      .figure--full {
+        margin-left: -50vw;
+      }
+    }
   }
 }
 
@@ -195,6 +203,14 @@ img {
       padding-right: .8rem;
     }
   }
+  &--left {
+    float: left;
+    padding-right: .8rem;
+  }
+  &--right {
+    float: right;
+    padding-left: .8rem;
+  }
 }
 
 
@@ -213,10 +229,9 @@ img {
 }
 
 
-// Buttons
+// Buttons and rules
 .typeset {
-  a.button,
-  button.button,
+  .button,
   button {
     display: inline-block;
     cursor: pointer;
@@ -232,5 +247,8 @@ img {
       border: none;
       background: lighten($color__site--accent, 10%);
     }
+  }
+  hr {
+    width: 100%;
   }
 }
