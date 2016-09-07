@@ -2,20 +2,21 @@
 styles: true
 ---
 
+// Variables
+$color__site--background: #fff;
+$color__site--heading: #333;
+$color__site--body: darken($color__site--heading, 10%);
+$color__feature--background: darken($color__site--background, 5%);
+$color__site--captions: lighten($color__site--heading, 50%);
+$color__site--link: teal;
+$color__site--link--hover: darken($color__site--link, 10%);
+$color__site--accent: teal;
+
 
 // Frameworks
 @import "normalize";
 @import "sassline-base";
 @import "syntax";
-
-
-// Variables
-$color__site--background: $backgroundColour;
-$color__site--heading: $headingColour;
-$color__site--body: $bodyColour;
-$color__feature--background: darken($backgroundColour, 5%);
-$color__site--captions: $captionColour;
-$color__site--accent: teal;
 
 
 // Structural elements
@@ -142,7 +143,15 @@ body {
       width: 100%;
       margin-right: 0%;
       .figure--full {
-        margin-left: -50vw;
+        left: 50%;
+      }
+    }
+    &--aside-left {
+      margin-right: 0;
+      margin-left: 4%;
+      order: 2;
+      .figure--full {
+        left: 19.4%;
       }
     }
   }
@@ -163,6 +172,9 @@ body {
   }
   &--nav {
     list-style: none;
+  }
+  .item--post {
+    margin-left: 0;
   }
 }
 
@@ -195,24 +207,25 @@ img {
     position: relative;
     left: 50%;
     margin-left: -50vw;
-    @include breakpoint(break-1) {
-      margin-left: -32.9vw;
-    }
     .caption {
       padding-left: .8rem;
       padding-right: .8rem;
     }
   }
-  &--left {
-    float: left;
-    padding-right: .8rem;
-  }
-  &--right {
-    float: right;
-    padding-left: .8rem;
+  @include breakpoint(break-1) {
+    &--full {
+      left: 80.6%;
+    }
+    &--left {
+      float: left;
+      padding-right: .8rem;
+    }
+    &--right {
+      float: right;
+      padding-left: .8rem;
+    }
   }
 }
-
 
 // Video embeds
 .video {
@@ -229,23 +242,80 @@ img {
 }
 
 
-// Buttons and rules
+// Form elements and buttons
+button,
+.button,
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: .6rem 1.2rem;
+  transition: color .1s, background-color .1s;
+  line-height: inherit;
+  border: none;
+  &:focus {
+    outline: solid .2rem invert($color__site--accent);
+  }
+}
+
+button,
+.button {
+  cursor: pointer;
+  display: inline-block;
+  background: $color__site--accent;
+  &:hover {
+    background: darken($color__site--accent, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken($color__site--accent, 15%);
+  }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid $color__site--captions;
+  resize: vertical;
+  &:hover {
+    border-color: darken($color__site--captions, 20%);
+  }
+}
+
+label {
+  @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+.required {
+  color: red;
+}
+
+::-webkit-input-placeholder {
+  color: darken($color__site--captions, 30%);
+}
+::-moz-placeholder {
+  color: darken($color__site--captions, 30%);
+}
+:-ms-input-placeholder {
+  color: darken($color__site--captions, 30%);
+}
+:-moz-placeholder {
+  color: darken($color__site--captions, 30%);
+}
+
+// Sassline overrides
 .typeset {
   .button,
   button {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    color: lighten(invert($color__site--body), 15%);
-    background: $color__site--accent;
-    padding: .6rem 1.2rem;
+    background-image: none;
     text-shadow: none;
-    line-height: inherit;
+    color: lighten(invert($color__site--body), 15%);
     &:hover,
     &:active,
     &:focus {
-      border: none;
-      background: lighten($color__site--accent, 10%);
+      background-image: none;
+      color: lighten(invert($color__site--body), 15%);
     }
   }
   hr {

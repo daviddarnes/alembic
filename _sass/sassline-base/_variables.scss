@@ -84,13 +84,25 @@ $monospacetype: (
 // Proxima Nova: 0.57, Museo Slab: 0.66, JAF Facit: 0.7, Brandon Grotesque: 0.65, Clavo: 0.7, Adelle: 0.66, FF Tisa Pro: 0.82, Jubilat: 0.66, Futura PT: 0.66, Chaparral Pro: 0.5, Minion Pro: 0.66, Myriad Pro: 0.66, Adobe Caslon Pro: 0.36
 
 // Text colours. British English.
-$headingColour: #333 !default;
-$bodyColour: darken($headingColour, 10%) !default;
-$linkColour: teal !default;
-$hoverColour: darken($linkColour, 10%) !default;
-$captionColour: lighten($headingColour, 50%) !default;
-$white: #fff !default;
+$headingColour: #2E2E2E !default;
+$bodyColour: #494949 !default;
+$linkColour: #0E58F5 !default;
+$hoverColour: #0B348B !default;
+$captionColour: #BDC8CC !default;
+$white: #FFFFFF !default;
 
 // Background colours.
-$backgroundColour: #fff !default;
-$codeBackgroundColour: darken($backgroundColour, 5%) !default;
+$backgroundColour: #FCFCFC !default;
+$codeBackgroundColour: #F5F4F2 !default;
+
+
+// Alembic reassigned variables
+$headingColour: $color__site--heading;
+$bodyColour: $color__site--body;
+$linkColour: $color__site--link;
+$hoverColour: $color__site--link--hover;
+$captionColour: $color__site--captions;
+$white: #fff;
+
+$backgroundColour: $color__site--background;
+$codeBackgroundColour: darken($color__site--background, 5%);

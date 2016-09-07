@@ -81,6 +81,7 @@ logo: "/images/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Site description" # Site description and default description, also used in jekyll-seo-tag
 url: "http://localhost:4000" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/org/repo"
+email: "email@website.com"
 
 # 8. Site navigation
 navigation_header:

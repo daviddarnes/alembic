@@ -7,6 +7,8 @@ image: "https://unsplash.it/1200/400?image=121"
 layout: page-full
 ---
 
+{% include form-contact.html %}
+
 {% include figure.html image="https://unsplash.it/400/300?image=333" position="right" %}
 
 ## Something on the left
