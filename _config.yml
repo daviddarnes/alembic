@@ -87,13 +87,14 @@ disqus: "daviddarnes"
 # 8. Site navigation
 navigation_header:
   Home: /
-  Blog: /blog
-  About: /about
+  Elements: /elements/
+  Blog: /blog/
+  Contact: /contact/
   Download: https://github.com/daviddarnes/alembic
 
 navigation_footer:
   Home: /
-  About: /about
+  Download: https://github.com/daviddarnes/alembic
 
 social_links:
   Twitter: https://twitter.com/DavidDarnes
