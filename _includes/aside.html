@@ -1,6 +1,7 @@
 <aside class="aside  typeset">
   <h2>About this site</h2>
   <p>{{ site.description }}</p>
+
   {% if page.is_page %}
     {% unless paginator.posts %}
       {% include post-list.html %}
@@ -8,10 +9,11 @@
   {% else %}
     {% include post-related.html %}
   {% endif %}
+
   {% if page.is_post or paginator.posts %}
-    <a class="button" href="/feed.xml" title="RSS feed">Subscribe to posts</a>
+    {% include button.html text="Subscribe to posts &nbsp;" icon="rss" link="/feed.xml" %}
   {% endif %}
 
-  <h3>Get in touch</h3>
-  {% include form-contact.html %}
+  {% include nav-social.html %}
+
 </aside>

@@ -8,9 +8,9 @@ $color__site--heading: #333;
 $color__site--body: darken($color__site--heading, 10%);
 $color__feature--background: darken($color__site--background, 5%);
 $color__site--captions: lighten($color__site--heading, 50%);
-$color__site--link: teal;
+$color__site--link: #05bf85;
 $color__site--link--hover: darken($color__site--link, 10%);
-$color__site--accent: teal;
+$color__site--accent: #05bf85;
 
 
 // Frameworks
@@ -51,9 +51,11 @@ body {
 
 .logo {
   display: block;
-  width: 4rem;
-  height: 4rem;
   margin: 0 auto;
+  .icon {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .small {
@@ -89,6 +91,9 @@ body {
     justify-content: space-between;
     color: $color__site--captions;
     text-align: center;
+  }
+  &--social {
+    text-align: left;
   }
 }
 
@@ -189,7 +194,29 @@ body {
 }
 
 
-// Icons, images and graphics
+// Links, icons and images
+.link {
+  display: inline-block;
+  margin: .2rem;
+  .icon {
+    display: inline-block;
+    transition: fill .1s;
+    &:hover {
+      fill: darken($color__site--link, 10%);
+    }
+  }
+}
+
+.icon {
+  vertical-align: middle;
+  min-width: 1.3rem;
+  min-height: 1.3rem;
+  width: 1em;
+  height: 1em;
+  padding: .05em;
+  fill: CurrentColor;
+}
+
 svg {
   width: 100%;
   height: 100%;
@@ -254,6 +281,9 @@ textarea {
   border: none;
   &:focus {
     outline: solid .2rem invert($color__site--accent);
+  }
+  .icon {
+    margin: 0 0 .1rem;
   }
 }
 
