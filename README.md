@@ -2,14 +2,14 @@
 ⚗ A theme designed to be a starting point for any Jekyll website.
 
 ## Contents
-- [About](#About)
-- [Installation](#Installation)
-- [Getting started](#Getting-started)
-- [Using includes](#Using-includes)
-- [Site settings](#Site-settings)
-- [Navigation](#Navigation)
-- [Page settings](#Page-settings)
-- [Post settings](#Post-settings)
+- [About](#about)
+- [Installation](#installation)
+- [Getting started](#getting-started)
+- [Using includes](#using-includes)
+- [Site settings](#site-settings)
+- [Navigation](#navigation)
+- [Page settings](#page-settings)
+- [Post settings](#post-settings)
 
 
 ## About
