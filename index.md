@@ -1,10 +1,10 @@
 ---
-title: Homepage
+title: Alembic
 feature_text: |
   ## Alembic
-  A boilerplate theme for Jekyll
+  A theme designed to be a starting point for any Jekyll website
 image: "https://unsplash.it/1200/400?image=121"
 layout: page-full
 ---
 
-Explanation of this theme, TBC
+A theme designed to be a starting point for any Jekyll website ⚗

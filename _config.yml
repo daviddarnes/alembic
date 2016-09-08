@@ -78,7 +78,7 @@ defaults:
 # 7. Site settings
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
 logo: "/uploads/logo.png" # Site logo, also used in jekyll-seo-tag
-description: "A boilerplate theme for Jekyll" # Site description and default description, also used in jekyll-seo-tag
+description: "A theme designed to be a starting point for any Jekyll website" # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/daviddarnes/alembic"
 email: "me@daviddarnes.com"
