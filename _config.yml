@@ -29,16 +29,16 @@ paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
-  username: Username # jekyll-seo-tag > Owners twitter username
-author: AuthorName # jekyll-seo-tag > default author
+  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+author: DavidDarnes # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: Author Name # jekyll-seo-tag > real name
+  name: David Darnes # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/Username
-    - https://www.facebook.com/Username
-    - https://www.linkedin.com/in/Username
-    - https://plus.google.com/+Username
-    - https://github.com/Username
+    - https://twitter.com/DavidDarnes
+    - https://www.facebook.com/daviddarnes
+    - https://www.linkedin.com/in/daviddarnes
+    - https://plus.google.com/+DavidDarnes
+    - https://github.com/daviddarnes
 
 # 4. Jekyll settings
 sass:
@@ -65,7 +65,7 @@ defaults:
     values:
       is_page: true # For defining pages from posts
       layout: page # Default layout
-      image: "/images/logo-social.png" # Default image for sharing
+      image: "/uploads/logo-social.png" # Default image for sharing
   -
     scope:
       path: ""
@@ -73,31 +73,31 @@ defaults:
     values:
       is_post: true # For defining posts from pages
       layout: post # Default layout
-      image: "/images/logo-social.png" # Default image for sharing
+      image: "/uploads/logo-social.png" # Default image for sharing
 
 # 7. Site settings
-title: "Site title" # Site name or title, also used in jekyll-seo-tag
-logo: "/images/logo.png" # Site logo, also used in jekyll-seo-tag
-description: "Site description" # Site description and default description, also used in jekyll-seo-tag
-url: "http://localhost:4000" # Site url, also used in jekyll-seo-tag
-repo: "https://github.com/org/repo"
-email: "email@website.com"
-disqus: "username"
+title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+logo: "/uploads/logo.png" # Site logo, also used in jekyll-seo-tag
+description: "A boilerplate theme for Jekyll" # Site description and default description, also used in jekyll-seo-tag
+url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+repo: "https://github.com/daviddarnes/alembic"
+email: "me@daviddarnes.com"
+disqus: "daviddarnes"
 
 # 8. Site navigation
 navigation_header:
   Home: /
   Blog: /blog
   About: /about
+  Download: https://github.com/daviddarnes/alembic
 
 navigation_footer:
   Home: /
   About: /about
 
 social_links:
-  Twitter: https://twitter.com/Username
-  Facebook: https://www.facebook.com/Username
-  LinkedIn: https://www.linkedin.com/in/Username
-  GooglePlus: https://plus.google.com/+Username
-  GitHub: https://github.com/Username
+  Twitter: https://twitter.com/DavidDarnes
+  LinkedIn: https://www.linkedin.com/in/daviddarnes
+  GooglePlus: https://plus.google.com/+DavidDarnes
+  GitHub: https://github.com/daviddarnes
   link: https://darn.es

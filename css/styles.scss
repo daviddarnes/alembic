@@ -37,20 +37,24 @@ body {
 // Header and footer
 .header,
 .footer {
+  padding: 1rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @include breakpoint(break-1) {
     .container {
-      display: flex;
+      flex-direction: row;
     }
   }
-  align-items: center;
-  padding: 1rem 0;
   .nav {
     flex: 1 0 auto;
   }
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   .icon {
     width: 4rem;
@@ -201,6 +205,8 @@ body {
   .icon {
     display: inline-block;
     transition: fill .1s;
+    min-width: 24px;
+    min-height: 24px;
     &:hover {
       fill: darken($color__site--link, 10%);
     }
@@ -209,8 +215,6 @@ body {
 
 .icon {
   vertical-align: middle;
-  min-width: 1.3rem;
-  min-height: 1.3rem;
   width: 1em;
   height: 1em;
   padding: .05em;
@@ -274,11 +278,14 @@ button,
 .button,
 input[type="text"],
 input[type="email"],
+input[type="submit"],
 textarea {
   padding: .6rem 1.2rem;
   transition: color .1s, background-color .1s;
   line-height: inherit;
   border: none;
+  box-shadow: none;
+  border-radius: 0;
   &:focus {
     outline: solid .2rem invert($color__site--accent);
   }
@@ -287,6 +294,7 @@ textarea {
   }
 }
 
+input[type="submit"],
 button,
 .button {
   cursor: pointer;
