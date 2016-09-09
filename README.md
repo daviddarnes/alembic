@@ -4,13 +4,13 @@
 ## Contents
 - [About](#about)
 - [Installation](#installation)
-- [Getting started](#getting-started)
-- [Using includes](#using-includes)
-- [Site settings](#site-settings)
-- [Navigation](#navigation)
-- [Page settings](#page-settings)
-- [Post settings](#post-settings)
-
+- [Configuration](#configuration)
+- [Gem settings](#gem-settings)
+- [Site setting](#site-setting)
+- [Site navigation](#site-navigation)
+- [Using includes](using-includes)
+- [Page layouts](page-layouts)
+- [Page and Post options](page-and-post-options)
 
 ## About
 
