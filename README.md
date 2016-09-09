@@ -14,7 +14,7 @@
 
 ## About
 
-Alembic is partly a passion project, partly an effort to bundle everything I tend to build when creating a site. The plan is to make this easily forkable and setup with your system of choice. For me that will be [Siteleaf](http://www.siteleaf.com/), so some of the configuration has been created with that platform in mind.
+Alembic is partly a passion project, partly an effort to bundle everything I tend to build when creating a site. The plan is to make this easily forkable and set up with your system of choice. For me, that will be [Siteleaf](http://www.siteleaf.com/), so some of the configuration has been created with that platform in mind.
 
 ## Installation
 
@@ -30,17 +30,17 @@ Alembic is partly a passion project, partly an effort to bundle everything I ten
 There's a number of settings you'll need to change before you can start hacking away at files. Here's a run down of what you'll need to change:
 
 ### Gem settings
-`twitter`, `author` and `social` values will need to be changed to the projects social information or removed, look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag), follow the link to find out more.
+`twitter`, `author` and `social` values will need to be changed to the projects' social information or removed. Look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) - follow the link to find out more.
 
 ### Site settings
-You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/_uploads/logo.png` with the project logo. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value should be changed to your project username on [Disqus](https://disqus.com) Look for the `Site settings` comment within the `/_config.yml` file.
+You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/_uploads/logo.png` with the project logo. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value should be changed to your project username on [Disqus](https://disqus.com). Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
 ### Site navigation
-There are 3 different navigation types; one for the header, one for the footer and one for a set of social links shown in the aside (or sidebar). If the header or footer navigation are removed they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or simply `link`, This is so an icon can be set for the link. Look for the `Site navigation` comment within the `/_config.yml` file.
+There are 3 different navigation types: one for the header, one for the footer and one for a set of social links shown in the aside (or sidebar). If the header or footer navigation are removed, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or simply `link`, This is so an icon can be set for the link. Look for the `Site navigation` comment within the `/_config.yml` file.
 
 ## Using includes
 
-There are 2 main types of includes, ones designed for the site and ones that are designed as shortcodes. Here are a list if the shortcode includes:
+There are 2 main types of includes: ones designed for the site and ones that are designed as shortcodes. Here are a list of the shortcode includes:
 
 ### `button.html`
 A button that can link to a page of any kind.
@@ -85,14 +85,14 @@ Adds a contact form to the page.
 
 Example usage: `{% include site-form.html %}`
 
-This include has no options, use the `email` option in the `/_config.yml` to change to the desired email.
+This include has no options. Use the `email` option in the `/_config.yml` to change to the desired email.
 
 ## Page layouts
 
-As well as `page`, `post`, `blog` there are a few alternative layouts that can be used on pages:
+As well as `page`, `post`, `blog`, there are a few alternative layouts that can be used on pages:
 
 - `page-aside-left`: Places the aside (sidebar) to the left of the content
-- `page-full`: Removes the aside entirely leaving the full width for the main content
+- `page-full`: Removes the aside entirely, leaving the full width for the main content
 
 ## Page and Post options
 
@@ -100,4 +100,4 @@ There are some more specific options you can apply when creating a page or a pos
 
 - `comments: false`: Turns off comments for that post
 - `feature_image: "/uploads/feature-image.jpg"`: Adds a full width feature image at the top of the page
-- `feature_text: "Example text"`: Adds text to the top of the page as a full width feature with solid colour, supports markdown. This can be used in conjunction with the `feature_image` option to create a feature image with text over it
+- `feature_text: "Example text"`: Adds text to the top of the page as a full width feature with solid colour; supports markdown. This can be used in conjunction with the `feature_image` option to create a feature image with text over it
