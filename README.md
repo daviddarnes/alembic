@@ -55,7 +55,7 @@ Available options:
 ### `figure.html`
 An image with optional caption.
 
-Example usage: `{% include figure.html image="https://unsplash.it/400/400?image=123" caption="Check out my photo" %}`
+Example usage: `{% include figure.html image="/uploads/feature-image.jpg" caption="Check out my photo" %}`
 
 Available options:
 - `image`: The image shown _required_
