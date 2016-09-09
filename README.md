@@ -6,11 +6,11 @@
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Gem settings](#gem-settings)
-- [Site setting](#site-setting)
+- [Site settings](#site-settings)
 - [Site navigation](#site-navigation)
-- [Using includes](using-includes)
-- [Page layouts](page-layouts)
-- [Page and Post options](page-and-post-options)
+- [Using includes](#using-includes)
+- [Page layouts](#page-layouts)
+- [Page and Post options](#page-and-post-options)
 
 ## About
 
