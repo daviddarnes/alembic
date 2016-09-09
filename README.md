@@ -14,7 +14,7 @@
 
 ## About
 
-Alembic is partly a passion project, partly an effort to bundle everything I tend to build when creating a site. The plan is to make this easily forkable and setup with your system of choice. For me that will be Siteleaf, so some of the configuration has been created with that platform in mind.
+Alembic is partly a passion project, partly an effort to bundle everything I tend to build when creating a site. The plan is to make this easily forkable and setup with your system of choice. For me that will be [Siteleaf](http://www.siteleaf.com/), so some of the configuration has been created with that platform in mind.
 
 ## Installation
 
@@ -45,7 +45,7 @@ There are 2 main types of includes, ones designed for the site and ones that are
 ### `button.html`
 A button that can link to a page of any kind.
 
-Example usage: {% include button.html text="I'm a button" link="https://daviddarnes.com" %}
+Example usage: `{% include button.html text="I'm a button" link="https://daviddarnes.com" %}`
 
 Available options:
 - `text`: The text of the button _required_
@@ -55,7 +55,7 @@ Available options:
 ### `figure.html`
 An image with optional caption.
 
-Example usage: {% include figure.html image="https://unsplash.it/400/400?image=123" caption="Check out my photo" %}
+Example usage: `{% include figure.html image="https://unsplash.it/400/400?image=123" caption="Check out my photo" %}`
 
 Available options:
 - `image`: The image shown _required_
@@ -65,7 +65,7 @@ Available options:
 ### `icon.html`
 An icon.
 
-Example usage: {% include icon.html id="twitter" %}
+Example usage: `{% include icon.html id="twitter" %}`
 
 Available options:
 - `id`: The reference for the icon _required_
@@ -75,7 +75,7 @@ Available options:
 ### `video.html`
 An icon.
 
-Example usage: {% include video.html id="zrkcGL5H3MU" %}
+Example usage: `{% include video.html id="zrkcGL5H3MU" %}`
 
 Available options:
 - `id`: The YouTube id for the video _required_
@@ -83,7 +83,7 @@ Available options:
 ### `site-form.html`
 Adds a contact form to the page.
 
-Example usage: {% include site-form.html %}
+Example usage: `{% include site-form.html %}`
 
 This include has no options, use the `email` option in the `/_config.yml` to change to the desired email.
 
