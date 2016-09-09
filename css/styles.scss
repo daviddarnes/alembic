@@ -217,7 +217,6 @@ body {
   vertical-align: middle;
   width: 1em;
   height: 1em;
-  padding: .05em;
   fill: CurrentColor;
 }
 
@@ -286,6 +285,7 @@ textarea {
   border: none;
   box-shadow: none;
   border-radius: 0;
+  -webkit-appearance: none;
   &:focus {
     outline: solid .2rem invert($color__site--accent);
   }
