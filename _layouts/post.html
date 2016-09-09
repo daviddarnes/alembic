@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include header.html %}
+{% include site-header.html %}
 
 <main class="main  container">
 
@@ -12,12 +12,12 @@ layout: default
 		{% include post-meta.html %}
     {{ content }}
 
-		{% include comments.html %}
+		{% include post-comments.html %}
 
   </article>
 
-  {% include aside.html %}
+  {% include site-aside.html %}
 
 </main>
 
-{% include footer.html %}
+{% include site-footer.html %}
