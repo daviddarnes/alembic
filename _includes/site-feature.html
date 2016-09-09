@@ -1,5 +1,9 @@
-<section class="feature"{% if page.image %}style="background-image: url({{ page.image }})"{% endif %}>
-  <div class="container  typeset">
-    {{ include.feature_text | markdownify }}
-  </div>
-</section>
+{% if page.feature_text or page.feature_image %}
+  <section class="feature"{% if page.feature_image %}style="background-image: url({{ page.feature_image }})"{% endif %}>
+    {% if page.feature_text %}
+      <div class="container  typeset">
+        {{ page.feature_text | markdownify }}
+      </div>
+    {% endif %}
+  </section>
+{% endif %}
