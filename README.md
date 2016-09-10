@@ -51,6 +51,7 @@ Available options:
 - `text`: The text of the button _required_
 - `link`: The link that the button goes to _required_
 - `icon`: The icon that is added to the end of the button text
+- `color`: The color of the button
 
 ### `figure.html`
 An image with optional caption.
