@@ -17,6 +17,7 @@ $color__site--accent: #05bf85;
 @import "normalize";
 @import "sassline-base";
 @import "syntax";
+@import "flex";
 
 
 // Structural elements
@@ -24,7 +25,7 @@ body {
   background: $color__site--background;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  @include flex-direction(column);
 }
 
 .container {
@@ -39,15 +40,15 @@ body {
 .footer {
   padding: 1rem 0;
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
     text-align: center;
   }
   @include breakpoint(break-1) {
     .container {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex-direction(row);
+      @include justify-content(space-between);
       text-align: inherit;
     }
   }
@@ -81,8 +82,8 @@ body {
 // Nav and copyright
 .nav {
   &--paginator {
-    display: flex;
-    justify-content: space-between;
+    @include flexbox;
+    @include justify-content(space-between);
     color: $color__site--captions;
     text-align: center;
   }
@@ -97,7 +98,7 @@ body {
 
 .copyright {
   @include breakpoint(break-1) {
-    order: -1;
+    @include order(-1);
   }
 }
 
@@ -108,9 +109,9 @@ body {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(center);
   background: $color__site--accent;
   background-size: cover;
   background-position: center;
@@ -119,21 +120,22 @@ body {
 
 // Main content
 .main {
-  display: flex;
-  flex-direction: column;
+  @include flexbox;
+  @include flex-direction(column);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
-    flex-direction: row;
+    @include flex-direction(row);
   }
 }
 
 .main {
-  flex: 1 0 auto;
+  @include flex(1, 0, auto);
 }
+
 .header,
 .feature,
 .footer {
-  flex: 0 0 auto;
+  @include flex(0, 0, auto);
 }
 
 .content {
@@ -151,7 +153,7 @@ body {
     &--aside-left {
       margin-right: 0;
       margin-left: 4%;
-      order: 2;
+      @include order(2);
       .figure--full {
         left: 19.4%;
       }
