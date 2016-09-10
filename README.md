@@ -73,12 +73,20 @@ Available options:
 - `color`: The desired colour of the icon
 
 ### `video.html`
-An icon.
+A YouTube video.
 
 Example usage: `{% include video.html id="zrkcGL5H3MU" %}`
 
 Available options:
-- `id`: The YouTube id for the video _required_
+- `id`: The YouTube ID for the video _required_
+
+### `map.html`
+A Google map. _See Google [My Maps](https://www.google.com/mymaps)_
+
+Example usage: `{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}`
+
+Available options:
+- `id`: The map ID for the video _required_
 
 ### `site-form.html`
 Adds a contact form to the page.
@@ -101,3 +109,4 @@ There are some more specific options you can apply when creating a page or a pos
 - `comments: false`: Turns off comments for that post
 - `feature_image: "/uploads/feature-image.jpg"`: Adds a full width feature image at the top of the page
 - `feature_text: "Example text"`: Adds text to the top of the page as a full width feature with solid colour; supports markdown. This can be used in conjunction with the `feature_image` option to create a feature image with text over it
+- `indexing: false`: Adds a `noindex` meta element to the `<head>` to stop crawler bots from indexing the page, used on the 404 page

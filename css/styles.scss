@@ -42,20 +42,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   @include breakpoint(break-1) {
     .container {
       flex-direction: row;
+      justify-content: space-between;
+      text-align: inherit;
     }
-  }
-  .nav {
-    flex: 1 0 auto;
   }
 }
 
 .logo {
   display: inline-block;
-  margin: 0 auto;
   .icon {
     width: 4rem;
     height: 4rem;
@@ -80,15 +79,6 @@ body {
 
 
 // Nav and copyright
-.nav,
-.copyright {
-  text-align: center;
-  padding: 1rem 0;
-  @include breakpoint(break-1) {
-    text-align: right;
-  }
-}
-
 .nav {
   &--paginator {
     display: flex;
@@ -99,6 +89,10 @@ body {
   &--social {
     text-align: left;
   }
+}
+
+.pagination {
+  min-width: 20%;
 }
 
 .copyright {
@@ -229,6 +223,11 @@ img {
   height: auto;
 }
 
+audio,
+video {
+  width: 100%;
+}
+
 .figure {
   line-height: 0;
   &--full {
@@ -256,8 +255,9 @@ img {
   }
 }
 
-// Video embeds
-.video {
+// Video and map embeds
+.video,
+.map {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
@@ -270,6 +270,10 @@ img {
   }
 }
 
+.map {
+  padding-bottom: 70%; /* 4:3 */
+}
+
 
 // Form elements and buttons
 button,
@@ -279,7 +283,7 @@ input[type="email"],
 input[type="submit"],
 textarea {
   padding: .6rem 1.2rem;
-  transition: color .1s, background-color .1s;
+  transition: color .1s, background-color .1s, border .1s;
   line-height: inherit;
   border: none;
   box-shadow: none;
