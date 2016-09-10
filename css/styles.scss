@@ -223,11 +223,6 @@ img {
   height: auto;
 }
 
-audio,
-video {
-  width: 100%;
-}
-
 .figure {
   line-height: 0;
   &--full {
@@ -259,7 +254,7 @@ video {
 .video,
 .map {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
   iframe {
     position: absolute;
@@ -271,7 +266,18 @@ video {
 }
 
 .map {
-  padding-bottom: 70%; /* 4:3 */
+  padding-bottom: 70%;
+}
+
+.figure,
+.video,
+.map {
+  margin-bottom: .8rem;
+}
+
+audio,
+video {
+  width: 100%;
 }
 
 

@@ -1,6 +1,5 @@
 ---
 title: Elements
-layout: page-aside-left
 ---
 
 # Heading 1
