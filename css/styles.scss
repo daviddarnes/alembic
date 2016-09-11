@@ -23,6 +23,7 @@ $color__site--accent: #05bf85;
 // Structural elements
 body {
   background: $color__site--background;
+  color: $color__site--body;
   height: 100%;
   display: flex;
   @include flex-direction(column);
@@ -35,11 +36,11 @@ body {
 }
 
 
-// Header and footer
+// Header, feature and footer
 .header,
 .footer {
-  padding: 1rem 0;
   .container {
+    padding: 1rem 0;
     @include flexbox;
     @include flex-direction(column);
     @include align-items(center);
@@ -51,6 +52,20 @@ body {
       @include justify-content(space-between);
       text-align: inherit;
     }
+  }
+}
+
+.feature {
+  padding-bottom: .4rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  background: $color__site--accent;
+  background-size: cover;
+  background-position: center;
+  .container {
+    min-height: 35vh;
+    @include flex-direction(column);
+    @include justify-content(center);
   }
 }
 
@@ -100,21 +115,6 @@ body {
   @include breakpoint(break-1) {
     @include order(-1);
   }
-}
-
-
-// Feature section
-.feature {
-  min-height: 35vh;
-  padding-bottom: .4rem;
-  margin-bottom: 1.6rem;
-  text-align: center;
-  @include flexbox;
-  @include flex-direction(column);
-  @include justify-content(center);
-  background: $color__site--accent;
-  background-size: cover;
-  background-position: center;
 }
 
 

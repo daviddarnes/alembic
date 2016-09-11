@@ -1,9 +1,9 @@
 {% if page.feature_text or page.feature_image %}
-  <section class="feature"{% if page.feature_image %}style="background-image: url({{ page.feature_image }})"{% endif %}>
+  <div class="feature"{% if page.feature_image %}style="background-image: url({{ page.feature_image }})"{% endif %}>
     {% if page.feature_text %}
       <div class="container  typeset">
         {{ page.feature_text | markdownify }}
       </div>
     {% endif %}
-  </section>
+  </div>
 {% endif %}
