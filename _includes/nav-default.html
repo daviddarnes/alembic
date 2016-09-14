@@ -1,9 +1,9 @@
 <nav class="nav">
   <ul class="list list--nav">
-    {% for page in site.pages %}
-      {% unless page.styles == true %}
-        <li class="item  item--nav">
-          <a href="{{ page.url }}">{{ page.title }}</a>
+    {% for item in site.pages %}
+      {% unless item.styles == true %}
+        <li class="item  item--nav{% if item[1] == page.url %}  item--active{% endif %}">
+          <a href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endunless %}
     {% endfor %}
