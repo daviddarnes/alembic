@@ -2,7 +2,7 @@
   <ul class="list list--nav">
     {% for item in site.pages %}
       {% unless item.styles == true %}
-        <li class="item  item--nav{% if item[1] == page.url %}  item--active{% endif %}">
+        <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">
           <a href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endunless %}
