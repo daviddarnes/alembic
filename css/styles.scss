@@ -10,6 +10,7 @@ $color__feature--background: darken($color__site--background, 5%);
 $color__site--captions: lighten($color__site--heading, 50%);
 $color__site--link: #05bf85;
 $color__site--link--hover: darken($color__site--link, 10%);
+$color__site--link--active: darken($color__site--link, 10%);
 $color__site--accent: #05bf85;
 
 
@@ -188,6 +189,11 @@ body {
     margin-left: 1rem;
     &:first-of-type {
       margin-left: 0;
+    }
+  }
+  &--active {
+    a {
+      color: $color__site--link--active;
     }
   }
 }
