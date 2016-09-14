@@ -1,9 +1,9 @@
 {% if site.navigation_header %}
 <nav class="nav  nav--header">
   <ul class="list list--nav">
-    {% for page in site.navigation_header %}
-      <li class="item  item--nav">
-        <a href="{{ page[1] }}">{{ page[0] }}</a>
+    {% for item in site.navigation_header %}
+      <li class="item  item--nav{% if item[1] == page.url %}  item--active{% endif %}">
+        <a href="{{ item[1] }}">{{ item[0] }}</a>
       </li>
     {% endfor %}
   </ul>
