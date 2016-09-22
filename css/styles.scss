@@ -63,6 +63,7 @@ body {
   background: $color__site--accent;
   background-size: cover;
   background-position: center;
+  @include flexbox;
   .container {
     min-height: 35vh;
     @include flex-direction(column);
