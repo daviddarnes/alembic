@@ -28,6 +28,7 @@ body {
   height: 100%;
   display: flex;
   @include flex-direction(column);
+  overflow-x: hidden;
 }
 
 .container {
