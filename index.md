@@ -2,16 +2,16 @@
 title: About Alembic
 feature_text: |
   ## Alembic
-  A theme designed to be a starting point for any Jekyll website
+  A Jekyll boilerplate designed to be a starting point for any Jekyll website
 feature_image: "https://unsplash.it/1200/400?image=121"
 image: "https://unsplash.it/600/400?image=121"
 ---
 
-**⚗ A theme designed to be a starting point for any Jekyll website**
+**⚗ A Jekyll boilerplate designed to be a starting point for any Jekyll website**
 
 ## About
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this theme is designed to get the ball rolling immediately. Fork it, configure it, tweak it, push it.
+Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Fork it, configure it, tweak it, push it.
 
 ## Features
 

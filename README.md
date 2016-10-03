@@ -1,5 +1,5 @@
 # [Alembic](https://alembic.darn.es/)
-⚗ A theme designed to be a starting point for any Jekyll website.
+⚗ A Jekyll boilerplate designed to be a starting point for any Jekyll website.
 
 ## Contents
 - [About](#about)
@@ -12,10 +12,11 @@
 - [Using includes](#using-includes)
 - [Page layouts](#page-layouts)
 - [Page and Post options](#page-and-post-options)
+- [Credits](#credits)
 
 ## About
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this theme is designed to get the ball rolling immediately. Fork it, configure it, tweak it, push it.
+Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Fork it, configure it, tweak it, push it.
 
 ## Features
 
@@ -126,3 +127,11 @@ There are some more specific options you can apply when creating a page or a pos
 - `feature_image: "/uploads/feature-image.jpg"`: Adds a full width feature image at the top of the page
 - `feature_text: "Example text"`: Adds text to the top of the page as a full width feature with solid colour; supports markdown. This can be used in conjunction with the `feature_image` option to create a feature image with text over it
 - `indexing: false`: Adds a `noindex` meta element to the `<head>` to stop crawler bots from indexing the page, used on the 404 page
+
+## Credits
+
+- Thanks to [Simple Icons](https://simpleicons.org/) for providing the brand icons, by [Dan Leech](https://twitter.com/bathtype)
+- Thanks to [Sassline](https://sassline.com/) for the typographic basis, by [Jake Giltsoff](https://twitter.com/jakegiltsoff)
+- Thanks to [Flexbox mixin](https://github.com/mastastealth/sass-flex-mixin) by [Brian Franco](https://twitter.com/brianfranco)
+- Thanks to [Normalize](https://necolas.github.io/normalize.css/) by [Nicolas Gallagher](https://twitter.com/necolas) and [Jonathan Neal](https://twitter.com/jon_neal).
+- Thanks to [pygments-css](http://richleland.github.io/pygments-css/) for the autumn syntax highlighting, by [Rich Leland](https://twitter.com/richleland)
