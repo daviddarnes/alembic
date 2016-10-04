@@ -338,10 +338,13 @@ input[type="email"],
 textarea {
   width: 100%;
   border: 1px solid $color__site--captions;
-  resize: vertical;
   &:hover {
     border-color: darken($color__site--captions, 20%);
   }
+}
+
+textarea {
+    resize: vertical;
 }
 
 label {
