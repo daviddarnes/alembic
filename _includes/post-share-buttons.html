@@ -5,6 +5,8 @@ https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}{% endcaptu
 {% capture share_google %}
 https://plus.google.com/share?url={{ site.url }}{{ page.url }}{% endcapture %}
 
-{% include button.html text="Tweet" icon="twitter" link=share_twitter color="#1DA1F2" %}
-{% include button.html text="Share on Facebook" icon="facebook" link=share_facebook color="#3B5998" %}
-{% include button.html text="Share on Google+" icon="googleplus" link=share_google color="#DC4E41" %}
+<div class="share">
+  {% include button.html text="Tweet" icon="twitter" link=share_twitter color="#1DA1F2" %}
+  {% include button.html text="Share on Facebook" icon="facebook" link=share_facebook color="#3B5998" %}
+  {% include button.html text="Share on Google+" icon="googleplus" link=share_google color="#DC4E41" %}
+</div>
