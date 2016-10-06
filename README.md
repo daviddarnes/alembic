@@ -128,6 +128,8 @@ There are some more specific options you can apply when creating a page or a pos
 - `feature_text: "Example text"`: Adds text to the top of the page as a full width feature with solid colour; supports markdown. This can be used in conjunction with the `feature_image` option to create a feature image with text over it
 - `indexing: false`: Adds a `noindex` meta element to the `<head>` to stop crawler bots from indexing the page, used on the 404 page
 
+> **Note:** The Post List Page options are actually in the collection data within the `_config.yml` file.
+
 ## Credits
 
 - Thanks to [Simple Icons](https://simpleicons.org/) for providing the brand icons, by [Dan Leech](https://twitter.com/bathtype)
