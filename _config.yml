@@ -52,6 +52,7 @@ collections:
   posts:
     title: Posts # Needed for Siteleaf
     output: true
+    description: "My thoughts and ideas" # The post list page content
   uploads:
     title: Uploads # Needed for Siteleaf
     output: true

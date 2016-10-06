@@ -8,7 +8,14 @@
 			<meta name="robots" content="noindex">
 		{% endif %}
 
-		{% seo %}
+		{% if page.collection %}
+			{% seo title=false %}
+
+			{% assign collectiondata = site.collections | where: "label", page.collection | first %}
+			<title>{{ collectiondata.title }} - {{ site.title }}</title>
+		{% else %}
+			{% seo %}
+		{% endif %}
 
     <link rel="stylesheet" href="/css/styles.css">
 
