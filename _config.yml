@@ -53,6 +53,9 @@ collections:
     title: Posts # Needed for Siteleaf
     output: true
     description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      ## Welcome to the blog
+    feature_image: "https://unsplash.it/1200/400?image=123"
   uploads:
     title: Uploads # Needed for Siteleaf
     output: true
