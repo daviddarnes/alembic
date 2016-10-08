@@ -1,6 +1,8 @@
 # [Alembic](https://alembic.darn.es/)
 ⚗ A Jekyll boilerplate designed to be a starting point for any Jekyll website.
 
+![Screenshot](https://raw.githubusercontent.com/daviddarnes/alembic/master/screenshot.png)
+
 ## Contents
 - [About](#about)
 - [Features](#features)
