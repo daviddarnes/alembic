@@ -11,6 +11,7 @@
 # 1. Files excluded from Jekyll builds
 exclude:
 - README.md
+- screenshot.png
 - LICENSE
 - CNAME
 
@@ -56,9 +57,6 @@ collections:
     feature_text: |
       ## Welcome to the blog
     feature_image: "https://unsplash.it/1200/400?image=123"
-  uploads:
-    title: Uploads # Needed for Siteleaf
-    output: true
 
 # 6. Jekyll collections settings
 defaults:
@@ -69,7 +67,7 @@ defaults:
     values:
       is_page: true # For defining pages from posts
       layout: page # Default layout
-      image: "/uploads/logo-social.png" # Default image for sharing
+      image: "/assets/placeholder-social.png" # Default image for sharing
   -
     scope:
       path: ""
@@ -77,12 +75,12 @@ defaults:
     values:
       is_post: true # For defining posts from pages
       layout: post # Default layout
-      image: "/uploads/logo-social.png" # Default image for sharing
+      image: "/assets/placeholder-social.png" # Default image for sharing
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
-logo: "/uploads/logo.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/placeholder-logo.png" # Site logo, also used in jekyll-seo-tag
 description: "A Jekyll boilerplate designed to be a starting point for any Jekyll website" # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/daviddarnes/alembic"
