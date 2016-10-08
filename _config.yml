@@ -15,6 +15,7 @@ exclude:
 - LICENSE
 - CNAME
 - demo/*
+- alembic-jekyll-theme.gemspec
 
 # 2. Installed Gems
 gems:

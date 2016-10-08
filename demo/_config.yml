@@ -15,7 +15,6 @@ exclude:
 - LICENSE
 - CNAME
 
-
 # 2. Installed Gems
 gems:
 - jekyll-sitemap
