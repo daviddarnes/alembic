@@ -12,8 +12,10 @@
 exclude:
 - README.md
 - screenshot.png
+- alembic-jekyll-theme.gemspec
 - LICENSE
 - CNAME
+
 
 # 2. Installed Gems
 gems:
