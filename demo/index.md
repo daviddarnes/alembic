@@ -3,8 +3,8 @@ title: About Alembic
 feature_text: |
   ## Alembic
   A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
-feature_image: "https://unsplash.it/1200/400?image=121"
-image: "https://unsplash.it/600/400?image=121"
+feature_image: "https://unsplash.it/1200/400?image=971"
+image: "https://unsplash.it/600/400?image=971"
 ---
 
 **⚗ A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.**
