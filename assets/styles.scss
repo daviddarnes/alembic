@@ -76,7 +76,8 @@ body {
 
 .logo {
   display: inline-block;
-  .icon {
+  line-height: 0;
+  img {
     width: 4rem;
     height: 4rem;
   }
