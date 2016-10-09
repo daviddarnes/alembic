@@ -52,9 +52,10 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 
 1. Install the gem with `$ gem install alembic-jekyll-theme`
 2. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
-3. Customise said demo content to your needs
-4. Run Jekyll from inside the the root of the repo using `$ jekyll serve --watch`
-5. Begin hacking for your project
+3. Customise demo content to your project content
+4. Open the `/_config.yml` file and change details to your own project details
+5. Run Jekyll from inside the the root of the repo using `$ jekyll serve --watch`
+6. Begin hacking for your project
 
 ### Boilerplate & Theme differences
 
