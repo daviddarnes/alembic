@@ -31,7 +31,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Easily interchangeable sidebar
 - Contact form built in using [Formspree](https://formspree.io/)
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
-- Built with [Jekyll](https://jekyllrb.com/) 3.2
+- Built with [Jekyll](https://jekyllrb.com/) 3.3
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
 - Has documentation
 
