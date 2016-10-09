@@ -160,6 +160,11 @@ body {
   max-width: 100%;
   @include breakpoint(break-1) {
     max-width: 34%;
+    opacity: 0.5;
+    transition: opacity .1s;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
