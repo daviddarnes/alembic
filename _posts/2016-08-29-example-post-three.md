@@ -2,6 +2,10 @@
 title: Example post three
 category: General
 excerpt: "Duis aute *irure dolor* in [a link]('a link') reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur <span>span element</span> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+feature_text: |
+  ## Example post three
+  Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+feature_image: "https://unsplash.it/1200/400?image=1045"
 ---
 
 # Heading 1
