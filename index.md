@@ -13,6 +13,8 @@ image: "https://unsplash.it/600/400?image=971"
 
 Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it.
 
+{% include button.html text="Fork on GitHub" icon="github" link="https://github.com/daviddarnes/alembic" %} {% include button.html text="Installation instructions" link="https://github.com/daviddarnes/alembic#installation" %}
+
 ## Features
 
 - Available as a starter kit or as [Jekyll 3.3 theme gem](http://jekyllrb.com/docs/themes/)
