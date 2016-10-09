@@ -1,5 +1,5 @@
 # [Alembic](https://alembic.darn.es/)
-⚗ A Jekyll boilerplate designed to be a starting point for any Jekyll website.
+⚗ A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.
 
 ![Screenshot](https://raw.githubusercontent.com/daviddarnes/alembic/master/screenshot.png)
 
@@ -8,7 +8,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Gem settings](#gem-settings)
+- [Gem dependency settings](#gem-dependency-settings)
 - [Site settings](#site-settings)
 - [Site navigation](#site-navigation)
 - [Using includes](#using-includes)
@@ -18,10 +18,11 @@
 
 ## About
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Fork it, configure it, tweak it, push it.
+Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it.
 
 ## Features
 
+- Available as a starter kit or as [Jekyll 3.3 theme gem](http://jekyllrb.com/docs/themes/)
 - Tested in all major browsers, that includes IE as well as Edge
 - Extensive set of shortcodes to include various elements; such as buttons, icons, figure images and more
 - Solid typographic framework from [Sassline](https://sassline.com/)
@@ -36,18 +37,36 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 
 ## Installation
 
+### As a boilerplate kit
+
 1. Fork the repo
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-3. Open the `/_config.yml` file and change details to your own project details
-4. Install GitHub Pages locally with `$ gem install github-pages`
-5. Run Jekyll from inside the the root of the repo using `$ jekyll serve --watch`
-6. Begin hacking for your project
+3. Delete the `demo/` folder, `alembic-jekyll-theme.gemspec` and `screenshot.png` files
+4. Open the `/_config.yml` file and change details to your own project details
+5. Change the `CNAME` record to your projects' record
+6. Install GitHub Pages locally with `$ gem install github-pages`
+7. Run Jekyll from inside the the root of the repo using `$ jekyll serve --watch`
+8. Begin hacking for your project
+
+### As a Jekyll 3.3 theme gem
+
+1. Install the gem with `$ gem install alembic-jekyll-theme`
+2. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
+3. Customise said demo content to your needs
+4. Run Jekyll from inside the the root of the repo using `$ jekyll serve --watch`
+5. Begin hacking for your project
+
+### Boilerplate & Theme differences
+
+The boilerplate kit is better for more drastic hacking and changes, a project that's quite different to any other and needs a lot of custom work done. Additionally, you'll only be able to use this method if you want to host it on GitHub Pages, as themes can't be submitted so [this one hasn't been approved](https://pages.github.com/themes/)... yet.
+
+Using the theme will allow you to receive updates made and will be more programmatic. To make your own changes you'll need to overwrite the files with your own. For example: If I want to change the colours of my site I'll need to copy the [`_colors.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_colors.scss) file and create my own in `_sass/colors.scss` with my own changes. This is the same for all files within the theme, which means your own project will be more lean than if you were to use the boilerplate.
 
 ## Configuration
 
 There's a number of settings you'll need to change before you can start hacking away at files. Here's a run down of what you'll need to change:
 
-### Gem settings
+### Gem dependency settings
 `twitter`, `author` and `social` values will need to be changed to the projects' social information or removed. Look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) - follow the link to find out more.
 
 ### Site settings
