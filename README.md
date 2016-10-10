@@ -139,7 +139,7 @@ This include has no options. Use the `email` option in the `/_config.yml` to cha
 As well as `page`, `post`, `blog`, there are a few alternative layouts that can be used on pages:
 
 - `page-aside-left`: Places the aside (sidebar) to the left of the content
-- `page-full`: Removes the aside entirely, leaving the full width for the main content
+- `home`: Removes the aside entirely, leaving the full width for the main content (typically used for home page designs)
 
 ## Page and Post options
 
