@@ -2,15 +2,15 @@
   <h2>About this site</h2>
   <p>{{ site.description }}</p>
 
-  {% if page.is_page %}
-    {% unless paginator.posts %}
+  {% unless paginator.posts %}
+    {% if page.collection == "posts" %}
+      {% include post-related.html %}
+    {% else %}
       {% include post-list.html %}
-    {% endunless %}
-  {% else %}
-    {% include post-related.html %}
-  {% endif %}
+    {% endif %}
+  {% endunless %}
 
-  {% if page.is_post or paginator.posts %}
+  {% if page.collection == "posts" or paginator.posts %}
     {% include button.html text="Subscribe to posts &nbsp;" icon="rss" link="/feed.xml" %}
   {% endif %}
 

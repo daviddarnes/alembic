@@ -67,7 +67,6 @@ defaults:
       path: ""
       type: pages
     values:
-      is_page: true # For defining pages from posts
       layout: page # Default layout
       image: "/assets/placeholder-social.png" # Default image for sharing
   -
@@ -75,7 +74,6 @@ defaults:
       path: ""
       type: posts
     values:
-      is_post: true # For defining posts from pages
       layout: post # Default layout
       image: "/assets/placeholder-social.png" # Default image for sharing
 
