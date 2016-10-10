@@ -58,6 +58,7 @@ body {
   @include flexbox;
   .container {
     min-height: 35vh;
+    max-width: 60%;
     @include flex-direction(column);
     @include justify-content(center);
   }
