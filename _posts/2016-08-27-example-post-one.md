@@ -1,6 +1,7 @@
 ---
 title: Example post one
 category: General
+feature_image: "https://unsplash.it/1200/400?image=200"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
