@@ -1,5 +1,8 @@
 ---
 title: Elements
+feature_text: |
+  A demo of Markdown and HTML includes
+feature_image: "https://unsplash.it/1300/400?image=1061"
 ---
 
 # Heading 1
@@ -20,21 +23,19 @@ title: Elements
 
 Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
 
-Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur <span>span element</span> sint occaecat cupidatat non proident, sunt _italicised text_ in culpa qui officia deserunt mollit anim id `some code` est laborum.
+Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur span element sint occaecat cupidatat non proident, sunt _italicised text_ in culpa qui officia deserunt mollit anim id `some code` est laborum.
 
-*   An item
-*   An item
-*   An item
-*   An item
-*   An item
+* An item
+* An item
+* An item
+* An item
+* An item
 
-1.  Item one
-2.  Item two
-3.  Item three
-4.  Item four
-5.  Item five
-
-**Bold text** _Italicised element_ <u>Underline element</u>
+1. Item one
+2. Item two
+3. Item three
+4. Item four
+5. Item five
 
 > A simple blockquote
 
@@ -46,7 +47,11 @@ Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit e
 
 `Single line of code`
 
-<span>Span element</span>
+## HTML Includes
+
+### Contact form
+
+{% include site-form.html %}
 
 ### Demo map embed
 

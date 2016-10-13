@@ -59,8 +59,8 @@ collections:
     output: true
     description: "My thoughts and ideas" # The post list page content
     feature_text: |
-      ## Welcome to the blog
-    feature_image: "https://unsplash.it/1200/400?image=971"
+      Welcome to the blog
+    feature_image: "https://unsplash.it/1300/400?image=1067"
 
 # 6. Jekyll collections settings
 defaults:
@@ -83,30 +83,26 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 title: "Alembic" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "A Jekyll boilerplate designed to be a starting point for any Jekyll website" # Site description and default description, also used in jekyll-seo-tag
+description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/daviddarnes/alembic"
 email: "me@daviddarnes.com"
 disqus: "daviddarnes"
 avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
-
 # 8. Site navigation
 navigation_header:
   Home: /
   Elements: /elements/
   Blog: /blog/
-  Contact: /contact/
-  Download: https://github.com/daviddarnes/alembic
+  Fork Alembic: https://github.com/daviddarnes/alembic
 
 navigation_footer:
-  Download: https://github.com/daviddarnes/alembic
-  David Darnes: https://darn.es
+  Created by David Darnes: https://darn.es
 
 social_links:
   Twitter: https://twitter.com/DavidDarnes
   LinkedIn: https://www.linkedin.com/in/daviddarnes
   GooglePlus: https://plus.google.com/+DavidDarnes
   GitHub: https://github.com/daviddarnes
-  Email: /contact/
   link: https://darn.es

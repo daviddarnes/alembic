@@ -1,16 +1,13 @@
 ---
-title: Example post one
+title: Description of an Alembic
 category: General
+feature_image: "https://unsplash.it/1200/400?image=200"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
+The complete distilling apparatus consists of three parts: the "cucurbit" (Arabic ḳarʿa, Greek βίκος), the still pot containing the liquid to be distilled, which is heated by a flame; the "head" or "cap" (Arabic anbiḳ, Greek ἄμβιξ) which fits over the mouth of the cucurbit to receive the vapors, with an attached downward-sloping "tube" (Greek σωλήν), leading to the "receiver" (Arabic ḳābila, Greek ἄγγος or φιάλη) container.
 
 <!-- more -->
 
-{% include button.html link="https://google.com" text="This is a button" %}
+Retorts have the "cap" and the "cucurbit" made into one. The anbik is also called the raʾs (head) of the cucurbit. The liquid in the cucurbit is heated or boiled; the vapour rises into the anbik, where it cools by contact with the walls and condenses, running down the spout into the receiver. A modern descendant of the alembic is the pot still, used to produce distilled beverages.
 
-{% include video.html id="zrkcGL5H3MU" %}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut underline element labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco italicised element laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in a link reprehenderit in voluptate velit esse cillum bold text dolore eu fugiat nulla pariatur. Excepteur span element sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+_Originally from [Alembic - Wikipedia](https://en.wikipedia.org/wiki/Alembic)_
