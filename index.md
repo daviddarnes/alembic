@@ -11,7 +11,6 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 
 {% include button.html text="Fork on GitHub" icon="github" link="https://github.com/daviddarnes/alembic" %} {% include button.html text="Install Alembic" link="https://github.com/daviddarnes/alembic#installation" %} {% include button.html text="Tip me $5" link="https://www.paypal.me/daviddarnes/5usd" color="#111" %}
 
-
 ## Features
 
 - Available as a starter kit or as [Jekyll 3.3 theme gem](http://jekyllrb.com/docs/themes/)
