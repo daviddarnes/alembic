@@ -87,7 +87,7 @@ description: "Alembic is a starting point for Jekyll projects. Rather than start
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/daviddarnes/alembic"
 email: "me@daviddarnes.com"
-disqus: "daviddarnes"
+disqus: "daviddarnes-1"
 avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
