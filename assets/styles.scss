@@ -390,3 +390,9 @@ label {
     width: 100%;
   }
 }
+
+//social media share css
+//fix up fb share button alignment
+.fb_iframe_widget span {
+  vertical-align: baseline !important;
+}
