@@ -1,12 +1,31 @@
-{% capture share_twitter %}
-https://twitter.com/intent/tweet/?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}{% endcapture %}
-{% capture share_facebook %}
-https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}{% endcapture %}
-{% capture share_google %}
-https://plus.google.com/share?url={{ site.url }}{{ page.url }}{% endcapture %}
+<!--Google+ javascript sdk-->
+<script async src="https://apis.google.com/js/platform.js"></script>
+<!--Twitter javascript sdk-->
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--facebook javascript sdk-->
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+
+<!--Following buttons can be easily configured to show the shared count of 
+each post, check official docs for adding relevant parameters to share
+buttons-->
 <div class="share">
-  {% include button.html text="Tweet" icon="twitter" link=share_twitter color="#1DA1F2" %}
-  {% include button.html text="Share on Facebook" icon="facebook" link=share_facebook color="#3B5998" %}
-  {% include button.html text="Share on Google+" icon="googleplus" link=share_google color="#DC4E41" %}
+    <!--Twitter share button-->
+    <a href="https://twitter.com/share"
+        class="twitter-share-button"
+        data-show-count="false"
+        data-size="large">
+    Tweet</a>
+    
+    <!--facebook share button-->
+    <div class="fb-share-button" data-href="{{page.url}}" data-layout="button" data-size="large"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}&amp;src=sdkpreparse">Share</a></div>
+
+    <!--Google+ share button-->
+    <div class="g-plus" href="{{page.url}}" data-action="share" data-annotation="none" data-height="30"></div>
 </div>
