@@ -10,7 +10,7 @@ layout: default
 
     <article class="article  article--page  typeset">
 
-			{% assign collectiondata = site.collections | where: "label", page.collection | first %}
+			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
 			<h1>{{ collectiondata.title }}</h1>
 
 			{{ collectiondata.description | markdownify }}
