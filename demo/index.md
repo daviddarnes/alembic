@@ -11,7 +11,6 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 
 {% include button.html text="Fork on GitHub" icon="github" link="https://github.com/daviddarnes/alembic" %} {% include button.html text="Install Alembic" link="https://github.com/daviddarnes/alembic#installation" %} {% include button.html text="Tip me $5" link="https://www.paypal.me/daviddarnes/5usd" color="#333333" %}
 
-
 ## Features
 
 - Available as a starter kit or as [Jekyll 3.3 theme gem](http://jekyllrb.com/docs/themes/)
@@ -27,6 +26,14 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
 - Has documentation
 
+## Examples
+
+Here are a few examples of Alembic out in the wild being used in a variety of ways:
+
+- [katiesimonemusic.com](http://katiesimonemusic.com/)
+- [bawejakunal.github.io](https://bawejakunal.github.io/)
+- [case2111.github.io](http://case2111.github.io/)
+- [www.10people.co.uk](http://www.10people.co.uk/)
 
 ## Installation
 
@@ -48,7 +55,6 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 3. Install gems with `$ bundle install`
 4. Run Jekyll with `$ bundle exec jekyll serve --watch`
 5. Begin hacking for your project
-
 
 ### Boilerplate & Theme differences
 

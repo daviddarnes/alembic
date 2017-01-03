@@ -8,6 +8,7 @@
 ## Contents
 - [About](#about)
 - [Features](#features)
+- [Examples](#examples)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Gem dependency settings](#gem-dependency-settings)
@@ -36,6 +37,15 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
 - Has documentation
+
+## Examples
+
+Here are a few examples of Alembic out in the wild being used in a variety of ways:
+
+- [katiesimonemusic.com](http://katiesimonemusic.com/)
+- [bawejakunal.github.io](https://bawejakunal.github.io/)
+- [case2111.github.io](http://case2111.github.io/)
+- [www.10people.co.uk](http://www.10people.co.uk/)
 
 ## Installation
 
