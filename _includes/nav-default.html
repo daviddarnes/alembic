@@ -1,9 +1,14 @@
 <nav class="nav">
   <ul class="list list--nav">
     {% for item in site.pages %}
-      {% unless item.styles == true %}
-        <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">
-          <a href="{{ item.url }}">{{ item.title }}</a>
+      {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" or item.url contains "/feed." %}
+        <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+          {% if item.collectionpage %}
+      			{% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
+      			<a href="{{ item.url }}">{{ collectiondata.title }}</a>
+      		{% else %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+      		{% endif %}
         </li>
       {% endunless %}
     {% endfor %}
