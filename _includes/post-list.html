@@ -5,7 +5,7 @@
 			<li class="item  item--post">
 				<article class="article  article--post  typeset">
 
-					<h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					<h2><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h2>
 					{% include post-meta.html %}
 					{{ page.excerpt | markdownify | truncatewords: 60 }}
 
@@ -16,13 +16,13 @@
 	{% include post-pagination.html %}
 
 {% else %}
-	<h2>Latest blog posts</h2>
+	<h3>Latest blog posts</h3>
 	<ul class="list  list--posts">
 		{% for page in site.posts limit: 4 %}
 			<li class="item  item--post">
 				<article class="article  article--post  typeset">
 
-					<h5><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h5>
+					<h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
 					{% include post-meta.html %}
 					{{ page.excerpt | markdownify | truncatewords: 60 }}
 

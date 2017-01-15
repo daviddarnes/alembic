@@ -5,9 +5,9 @@
         <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
           {% if item.collectionpage %}
       			{% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
-      			<a href="{{ item.url }}">{{ collectiondata.title }}</a>
+      			<a href="{{ item.url }}" title="Page - {{ collectiondata.title }}">{{ collectiondata.title }}</a>
       		{% else %}
-            <a href="{{ item.url }}">{{ item.title }}</a>
+            <a href="{{ item.url }}" title="Page - {{ item.title }}">{{ item.title }}</a>
       		{% endif %}
         </li>
       {% endunless %}

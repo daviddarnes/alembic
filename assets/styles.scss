@@ -203,6 +203,7 @@ body {
 .link {
   display: inline-block;
   margin: .2rem;
+  line-height: 1;
   .icon {
     display: inline-block;
     transition: fill .1s;
@@ -305,9 +306,6 @@ textarea {
   box-shadow: none;
   border-radius: 0;
   -webkit-appearance: none;
-  &:focus {
-    outline: solid .2rem invert($color__site--accent);
-  }
   .icon {
     margin: 0 0 .35rem;
   }
@@ -332,6 +330,21 @@ button,
   }
 }
 
+a,
+button,
+.button,
+input,
+textarea {
+  &:focus,
+  &:hover:focus {
+    outline: solid .12rem invert($color__site--accent);
+  }
+}
+
+a:hover:focus {
+  outline: none;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -348,6 +361,14 @@ textarea {
 
 label {
   @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+code {
+  padding: .12rem .2rem;
+}
+
+pre code {
+  padding: 0;
 }
 
 .required {
@@ -372,7 +393,6 @@ label {
   color: $color__site--background;
   text-shadow: none;
 }
-
 
 // Sassline overrides
 .typeset {
