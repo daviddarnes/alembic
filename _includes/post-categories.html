@@ -1,40 +1,18 @@
-{% assign rawcategories = "" %}
-{% for post in site.posts %}
-	{% assign totalcategories = post.categories | join:'|' | append:'|' %}
-	{% assign rawcategories = rawcategories | append: totalcategories %}
-{% endfor %}
-{% assign rawcategories = rawcategories | split:'|' | sort %}
-
-{% assign categories = "" %}
-{% for category in rawcategories %}
-	{% if category != "" %}
-		{% if categories == "" %}
-			{% assign categories = category | split:'|' %}
-		{% endif %}
-		{% unless categories contains category %}
-			{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
-
-{% for category in categories %}
-	<a href="#{{ category | slugify }}"> {{ category }} </a>
-{% endfor %}
-
-{% for category in categories %}
-	<h2 id="{{ category | slugify }}">{{ category }}</h2>
-	<ul class="list  list--posts">
-	 {% for post in site.posts %}
-		 {% if post.categories contains category %}
-		 <li class="item  item--post">
-			 <article class="article  article--post  typeset">
-
-				 <h3><a href="{{ post.url }}" title="Post - {{ post.title }}">{{ post.title }}</a></h3>
-				 {{ post.excerpt | markdownify | truncatewords: 60 }}
-
-			 </article>
-		 </li>
-		 {% endif %}
-	 {% endfor %}
-	</ul>
+{% for category in site.categories %}
+	{% assign category_name = category | first %}
+	<section class="section  typeset">
+		<h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
+		<ul class="list  list--posts">
+			{% for page in site.categories[category_name] %}
+				<li class="item  item--post">
+				 	<article class="article  article--post  typeset">
+					 	<h3><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h3>
+						{% include post-meta.html %}
+						{{ page.excerpt | markdownify | truncatewords: 60 }}
+				 	</article>
+			 </li>
+		 {% endfor %}
+		</ul>
+		{% unless forloop.last %}<hr/>{% endunless %}
+	</section>
 {% endfor %}
