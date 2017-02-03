@@ -1,8 +1,14 @@
 <aside class="aside  typeset">
-  <h3>About this site</h3>
-  <p>{{ site.description }}</p>
 
-  {% unless paginator.posts %}
+  {% if page.layout != "categories" %}
+    <h3>About this site</h3>
+    <p>{{ site.description }}</p>
+  {% else %}
+    <h3>Index</h3>
+    {% include nav-categories.html %}
+  {% endif %}
+
+  {% unless paginator.posts or page.layout == "categories" %}
     {% if page.collection == "posts" %}
       {% include post-related.html %}
     {% else %}
@@ -14,6 +20,8 @@
     {% include button.html text="Subscribe to posts &nbsp;" icon="rss" link="/feed.xml" %}
   {% endif %}
 
-  {% include nav-social.html %}
+  {% unless page.layout == "categories" %}
+    {% include nav-social.html %}
+  {% endunless %}
 
 </aside>
