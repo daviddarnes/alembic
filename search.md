@@ -1,5 +1,4 @@
 ---
 title: Search
+layout: search
 ---
-
-{% include site-search.html %}
