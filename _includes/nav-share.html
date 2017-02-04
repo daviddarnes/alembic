@@ -1,0 +1,34 @@
+{% assign url = site.url | append: page.url %}
+{% capture share_twitter %}
+https://twitter.com/intent/tweet/?text={{ page.title | uri_escape }}&amp;url={{ url }}{% endcapture %}
+{% capture share_facebook %}
+https://facebook.com/sharer/sharer.php?u={{ url }}{% endcapture %}
+{% capture share_googleplus %}
+https://plus.google.com/share?url={{ url }}{% endcapture %}
+{% capture share_pinterest %}
+https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title }}&media={{ page.image }}{% endcapture %}
+{% capture share_linkedin %}
+https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title }}&source={{ site.title }}&summary={{ page.excerpt }}&mini=true{% endcapture %}
+{% capture share_tumblr %}
+https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags={{ page.category }}&caption={{ page.title }}{% endcapture %}
+{% capture share_reddit %}
+https://reddit.com/submit?url={{ url }}&title={{ page.title }}&resubmit=true{% endcapture %}
+{% capture share_hackernews %}
+https://news.ycombinator.com/submitlink?u={{ url }}&t={{ page.title }}{% endcapture %}
+{% capture share_designernews %}
+https://www.designernews.co/submit?url={{ url }}&title={{ page.title }}{% endcapture %}
+{% capture share_email %}
+mailto:?subject={{ page.title }}&body={{ url | prepend: "Hey, check out this: "}}{% endcapture %}
+
+<div class="share">
+  {% include button.html text="test" icon="twitter" link=share_twitter %}
+  {% include button.html text="test" icon="facebook" link=share_facebook %}
+  {% include button.html text="test" icon="googleplus" link=share_googleplus %}
+  {% include button.html text="test" icon="pinterest" link=share_pinterest %}
+  {% include button.html text="test" icon="linkedin" link=share_linkedin %}
+  {% include button.html text="test" icon="tumblr" link=share_tumblr %}
+  {% include button.html text="test" icon="reddit" link=share_reddit %}
+  {% include button.html text="test" icon="hackernews" link=share_hackernews %}
+  {% include button.html text="test" icon="designernews" link=share_designernews %}
+  {% include button.html text="test" icon="email" link=share_email %}
+</div>
