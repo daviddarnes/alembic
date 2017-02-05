@@ -106,3 +106,15 @@ social_links:
   GooglePlus: https://plus.google.com/+DavidDarnes
   GitHub: https://github.com/daviddarnes
   link: https://darn.es
+
+sharing_links:
+  Twitter: "#1DA1F2"
+  facebook: "#3B5998"
+  Google+: "#DC4E41"
+  Pinterest: "#BD081C"
+  LinkedIn: "#0077B5"
+  tumblr: "#36465D"
+  Reddit: "#FF4500"
+  Hacker News: "#ff6600"
+  Designer News: "#2D72D9"
+  Email: ""
