@@ -5,7 +5,7 @@
     <p>{{ site.description }}</p>
   {% endunless %}
 
-  {% unless page.layout == "categories" page.collection == "posts" or paginator.posts %}
+  {% unless page.layout == "categories" or page.layout == "search" or page.collection == "posts" or paginator.posts %}
     {% include post-list.html %}
   {% endunless %}
 
