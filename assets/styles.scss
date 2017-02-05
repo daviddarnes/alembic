@@ -161,6 +161,12 @@ body {
   }
 }
 
+.share {
+  .button {
+    margin-right: .3rem;
+  }
+}
+
 .aside {
   max-width: 100%;
   @include breakpoint(break-1) {
