@@ -1,34 +1,23 @@
-{% assign url = site.url | append: page.url %}
-{% capture share_twitter %}
-https://twitter.com/intent/tweet/?text={{ page.title | uri_escape }}&amp;url={{ url }}{% endcapture %}
-{% capture share_facebook %}
-https://facebook.com/sharer/sharer.php?u={{ url }}{% endcapture %}
-{% capture share_googleplus %}
-https://plus.google.com/share?url={{ url }}{% endcapture %}
-{% capture share_pinterest %}
-https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title }}&media={{ page.image }}{% endcapture %}
-{% capture share_linkedin %}
-https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title }}&source={{ site.title }}&summary={{ page.excerpt }}&mini=true{% endcapture %}
-{% capture share_tumblr %}
-https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags={{ page.category }}&caption={{ page.title }}{% endcapture %}
-{% capture share_reddit %}
-https://reddit.com/submit?url={{ url }}&title={{ page.title }}&resubmit=true{% endcapture %}
-{% capture share_hackernews %}
-https://news.ycombinator.com/submitlink?u={{ url }}&t={{ page.title }}{% endcapture %}
-{% capture share_designernews %}
-https://www.designernews.co/submit?url={{ url }}&title={{ page.title }}{% endcapture %}
-{% capture share_email %}
-mailto:?subject={{ page.title }}&body={{ url | prepend: "Hey, check out this: "}}{% endcapture %}
-
 <div class="share">
-  {% include button.html text="test" icon="twitter" link=share_twitter %}
-  {% include button.html text="test" icon="facebook" link=share_facebook %}
-  {% include button.html text="test" icon="googleplus" link=share_googleplus %}
-  {% include button.html text="test" icon="pinterest" link=share_pinterest %}
-  {% include button.html text="test" icon="linkedin" link=share_linkedin %}
-  {% include button.html text="test" icon="tumblr" link=share_tumblr %}
-  {% include button.html text="test" icon="reddit" link=share_reddit %}
-  {% include button.html text="test" icon="hackernews" link=share_hackernews %}
-  {% include button.html text="test" icon="designernews" link=share_designernews %}
-  {% include button.html text="test" icon="email" link=share_email %}
+  {% for network in site.sharing_links %}
+    {% assign name = network[0] %}
+    {% assign id = network[0] | downcase | remove: " " %}
+    {% assign url = site.url | append: page.url %}
+    {% assign color = network[1] %}
+
+    {% capture share_link %}
+      {% if id contains "twitter" %}https://twitter.com/intent/tweet/?url={{ url }}&text={{ page.title | uri_escape }}{% if site.twitter.username %}&via={{ site.twitter.username}}{% endif %}{% endif %}
+      {% if id contains "facebook" %}https://facebook.com/sharer/sharer.php?u={{ url }}{% endif %}
+      {% if id contains "google+" %}https://plus.google.com/share?url={{ url }}{% endif %}
+      {% if id contains "pinterest" %}https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title }}&media={{ page.image }}{% endif %}
+      {% if id contains "linkedin" %}https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title }}&source={{ site.title }}&summary={{ page.excerpt }}&mini=true{% endif %}
+      {% if id contains "tumblr" %}https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags={{ page.category }}&caption={{ page.title }}{% endif %}
+      {% if id contains "reddit" %}https://reddit.com/submit?url={{ url }}&title={{ page.title }}&resubmit=true{% endif %}
+      {% if id contains "hackernews" %}https://news.ycombinator.com/submitlink?u={{ url }}&t={{ page.title }}{% endif %}
+      {% if id contains "designernews" %}https://www.designernews.co/submit?url={{ url }}&title={{ page.title }}{% endif %}
+      {% if id contains "email" %}mailto:?subject={{ page.title }}&body={{ url | prepend: "Hey, check out this: "}}{% endif %}
+    {% endcapture %}
+
+    {% include button.html text=name icon=id link=share_link color=color %}
+  {% endfor %}
 </div>
