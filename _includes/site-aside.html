@@ -1,22 +1,22 @@
 <aside class="aside  typeset">
 
-  {% unless paginator.posts or page.layout == "search" %}
-    {% if page.layout != "categories" %}
-      <h3>About this site</h3>
-      <p>{{ site.description }}</p>
-    {% else %}
-      <h3>Index</h3>
-      {% include nav-categories.html %}
-    {% endif %}
+  {% unless page.layout == "categories" or page.collection == "posts" %}
+    <h3>About this site</h3>
+    <p>{{ site.description }}</p>
   {% endunless %}
 
-  {% unless paginator.posts or page.layout == "categories" %}
-    {% if page.collection == "posts" %}
-      {% include post-related.html %}
-    {% else %}
-      {% include post-list.html %}
-    {% endif %}
+  {% unless page.layout == "categories" page.collection == "posts" or paginator.posts %}
+    {% include post-list.html %}
   {% endunless %}
+
+  {% if page.layout == "categories" %}
+    <h3>Index</h3>
+    {% include nav-categories.html %}
+  {% endif %}
+
+  {% if page.collection == "posts" %}
+    {% include post-related.html %}
+  {% endif %}
 
   {% if page.collection == "posts" or paginator.posts %}
     {% include button.html text="Subscribe to posts &nbsp;" icon="rss" link="/feed.xml" %}
