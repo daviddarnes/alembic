@@ -32,6 +32,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Configurable navigation via a single file
 - Modular Jekyll components
 - Easily interchangeable sidebar
+- Post category support in the form of a single post index page grouped by category
 - Contact form built in using [Formspree](https://formspree.io/)
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
@@ -175,6 +176,7 @@ As well as `page`, `post`, `blog`, there are a few alternative layouts that can 
 
 - `page-aside-left`: Places the aside (sidebar) to the left of the content
 - `home`: Removes the aside entirely, leaving the full width for the main content (typically used for home page designs)
+- `categories`: Shows all posts grouped by category, with an index of categories in a left hand sidebar
 
 ## Page and Post options
 
