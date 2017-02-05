@@ -188,6 +188,9 @@ body {
 // Lists
 .list {
   &--posts,
+  &--results {
+    list-style: none;
+  }
   &--nav,
   &--categories {
     list-style: none;
@@ -315,6 +318,7 @@ button,
 .button,
 input[type="text"],
 input[type="email"],
+input[type="search"],
 input[type="submit"],
 textarea {
   padding: .6rem 1.2rem;
@@ -366,6 +370,7 @@ a:hover:focus {
 
 input[type="text"],
 input[type="email"],
+input[type="search"],
 textarea {
   width: 100%;
   border: 1px solid $color__site--captions;
