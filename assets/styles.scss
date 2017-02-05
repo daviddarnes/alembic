@@ -74,7 +74,7 @@ body {
 }
 
 .small {
-  padding-top: .6rem;
+  padding-top: .8rem;
   color: $color__site--captions;
   display: inline-block;
 }
@@ -100,6 +100,10 @@ body {
   }
   &--social {
     text-align: left;
+  }
+  &--categories {
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -167,6 +171,7 @@ body {
   max-width: 100%;
   @include breakpoint(break-1) {
     max-width: 34%;
+    @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
     &:hover {
@@ -175,17 +180,25 @@ body {
   }
 }
 
+.section {
+  margin: 0;
+}
+
 
 // Lists
 .list {
-  &--posts {
-    list-style: none;
-  }
-  &--nav {
+  &--posts,
+  &--nav,
+  &--categories {
     list-style: none;
   }
   .item--post {
     margin-left: 0;
+  }
+  &--categories {
+    .item {
+      margin-left: 0;
+    }
   }
 }
 
