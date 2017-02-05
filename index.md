@@ -20,10 +20,13 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Configurable navigation via a single file
 - Modular Jekyll components
 - Easily interchangeable sidebar
+- Post category support in the form of a single post index page grouped by category
+- Built in live search using JavaScript
 - Contact form built in using [Formspree](https://formspree.io/)
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
+- Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
 
 ## Examples
