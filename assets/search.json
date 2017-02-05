@@ -21,7 +21,7 @@ sitemap: false
   {% for page in pages %}
   {
     "title": {{ page.title | jsonify }},
-    "excerpt": {{ doc.excerpt | markdownify | strip_html | jsonify }},
+    "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
     "content": {{ page.content | markdownify | strip_html | jsonify | replace:'\n',' ' | replace:'   ',' ' | replace:'  ',' ' }},
     "url": {{ page.url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
