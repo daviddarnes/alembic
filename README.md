@@ -32,10 +32,12 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Configurable navigation via a single file
 - Modular Jekyll components
 - Easily interchangeable sidebar
+- Post category support in the form of a single post index page grouped by category
 - Contact form built in using [Formspree](https://formspree.io/)
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
+- Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
 
 ## Examples
@@ -124,6 +126,27 @@ Available options:
 - `title`: The accessible label for the icon
 - `color`: The desired colour of the icon
 
+### `nav-share.html`
+A set of buttons that share the current page to various social networks, which is controlled within the `_config.yml` file under the `sharing_links` keyword.
+
+Example usage: `{% include nav-share.html %}`
+
+Available options:
+``` yml
+Twitter: "#1DA1F2"
+facebook: "#3B5998"
+Google+: "#DC4E41"
+Pinterest: "#BD081C"
+LinkedIn: "#0077B5"
+tumblr: "#36465D"
+Reddit: "#FF4500"
+Hacker News: "#ff6600"
+Designer News: "#2D72D9"
+Email: ""
+```
+
+_The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
+
 ### `video.html`
 A YouTube video.
 
@@ -153,6 +176,7 @@ As well as `page`, `post`, `blog`, there are a few alternative layouts that can 
 
 - `page-aside-left`: Places the aside (sidebar) to the left of the content
 - `home`: Removes the aside entirely, leaving the full width for the main content (typically used for home page designs)
+- `categories`: Shows all posts grouped by category, with an index of categories in a left hand sidebar
 
 ## Page and Post options
 

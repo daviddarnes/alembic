@@ -1,0 +1,18 @@
+{% for category in site.categories %}
+	{% assign category_name = category | first %}
+	<section class="section  typeset">
+		<h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
+		<ul class="list  list--posts">
+			{% for page in site.categories[category_name] %}
+				<li class="item  item--post">
+				 	<article class="article  article--post  typeset">
+					 	<h3><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h3>
+						{% include post-meta.html %}
+						{{ page.excerpt | markdownify | truncatewords: 60 }}
+				 	</article>
+			 </li>
+		 {% endfor %}
+		</ul>
+		{% unless forloop.last %}<hr/>{% endunless %}
+	</section>
+{% endfor %}
