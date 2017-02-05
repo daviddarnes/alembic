@@ -170,6 +170,13 @@ Example usage: `{% include site-form.html %}`
 
 This include has no options. Use the `email` option in the `/_config.yml` to change to the desired email.
 
+### `site-search.html`
+Adds a search form to the page.
+
+Example usage: `{% include site-search.html %}`
+
+This include has no options. **You'll need to use the search.json file to generate the data required for the search field to work. [Copy the search.json](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/search.json) file into your project at the root level.**
+
 ## Page layouts
 
 As well as `page`, `post`, `blog`, there are a few alternative layouts that can be used on pages:
@@ -177,6 +184,7 @@ As well as `page`, `post`, `blog`, there are a few alternative layouts that can 
 - `page-aside-left`: Places the aside (sidebar) to the left of the content
 - `home`: Removes the aside entirely, leaving the full width for the main content (typically used for home page designs)
 - `categories`: Shows all posts grouped by category, with an index of categories in a left hand sidebar
+- `search`: Adds a search field to the page as well as a simplified version of the sidebar to allow more focus on the search results
 
 ## Page and Post options
 
