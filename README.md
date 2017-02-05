@@ -144,6 +144,8 @@ Designer News: "#2D72D9"
 Email: ""
 ```
 
+_The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
+
 ### `video.html`
 A YouTube video.
 
