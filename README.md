@@ -33,6 +33,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Modular Jekyll components
 - Easily interchangeable sidebar
 - Post category support in the form of a single post index page grouped by category
+- Built in live search using JavaScript
 - Contact form built in using [Formspree](https://formspree.io/)
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
@@ -175,7 +176,7 @@ Adds a search form to the page.
 
 Example usage: `{% include site-search.html %}`
 
-This include has no options. **You'll need to use the search.json file to generate the data required for the search field to work. [Copy the search.json](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/search.json) file into your project at the root level.**
+This include has no options. This include will add a block of javascript to the page and javascript reference in order for the search field to work correctly.
 
 ## Page layouts
 
