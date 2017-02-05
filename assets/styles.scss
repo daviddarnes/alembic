@@ -101,10 +101,6 @@ body {
   &--social {
     text-align: left;
   }
-  &--categories {
-    position: sticky;
-    top: 0;
-  }
 }
 
 .pagination {
@@ -182,6 +178,10 @@ body {
 
 .section {
   margin: 0;
+  &--category-index {
+    position: sticky;
+    top: 0;
+  }
 }
 
 

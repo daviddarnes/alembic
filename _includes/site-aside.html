@@ -10,8 +10,10 @@
   {% endunless %}
 
   {% if page.layout == "categories" %}
-    <h3>Index</h3>
-    {% include nav-categories.html %}
+    <section class="section  section--category-index">
+      <h3>Index</h3>
+      {% include nav-categories.html %}
+    </section>
   {% endif %}
 
   {% if page.collection == "posts" %}
