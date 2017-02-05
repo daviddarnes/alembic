@@ -36,6 +36,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Works on [GitHub Pages](https://pages.github.com/) out of the box
 - Built with [Jekyll](https://jekyllrb.com/) 3.3
 - Designed with [Siteleaf](http://www.siteleaf.com/) in mind
+- Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
 
 ## Examples
@@ -123,6 +124,26 @@ Available options:
 - `id`: The reference for the icon _required_
 - `title`: The accessible label for the icon
 - `color`: The desired colour of the icon
+
+### `nav-share.html`
+A set of buttons that share the current page to various social networks, which is controlled within the `_config.yml` file under the `sharing_links` keyword.
+
+Example usage: `{% include nav-share.html %}`
+
+Available options:
+``` yml
+Twitter: "#1DA1F2"
+facebook: "#3B5998"
+Google+: "#DC4E41"
+Pinterest: "#BD081C"
+LinkedIn: "#0077B5"
+tumblr: "#36465D"
+Reddit: "#FF4500"
+Hacker News: "#ff6600"
+Designer News: "#2D72D9"
+Email: ""
+```
+
 
 ### `video.html`
 A YouTube video.
