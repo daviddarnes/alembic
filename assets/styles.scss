@@ -229,8 +229,6 @@ body {
   .icon {
     display: inline-block;
     transition: fill .1s;
-    min-width: 24px;
-    min-height: 24px;
     &:hover {
       fill: darken($color__site--link, 10%);
     }
@@ -239,8 +237,8 @@ body {
 
 .icon {
   vertical-align: middle;
-  width: 1em;
-  height: 1em;
+  width: 1.1em;
+  height: 1.1em;
   fill: CurrentColor;
 }
 
