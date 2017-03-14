@@ -1,11 +1,10 @@
 ---
-title: About Alembic
+title: KG4IR workshop in SIGIR 2017
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  ## KG4IR
+  The first workshop for Knowledge Graph and Semantics for Text Analysis and Retrieval.
 feature_image: "https://unsplash.it/1300/400?image=971"
 image: "https://unsplash.it/600/400?image=971"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
 
 Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it.

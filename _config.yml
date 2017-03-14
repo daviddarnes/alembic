@@ -33,34 +33,28 @@ gems:
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
+author: Chenyan Xiong # jekyll-seo-tag > real name
 social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
+  name: Chenyan Xiong # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/DavidDarnes
-    - https://www.facebook.com/daviddarnes
-    - https://www.linkedin.com/in/daviddarnes
-    - https://plus.google.com/+DavidDarnes
-    - https://github.com/daviddarnes
+    - https://www.cs.cmu.edu/~cx
 
 # 4. Jekyll settings
 sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+timezone: USA/ESR # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
-  posts:
-    title: Posts # Needed for Siteleaf
+  news:
+    title: news # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: "Latest News" # The post list page content
     feature_text: |
-      Welcome to the blog
-    feature_image: "https://unsplash.it/1300/400?image=1067"
+      Latest News
+#    feature_image: "https://unsplash.it/1300/400?image=1067"
 
 # 6. Jekyll collections settings
 defaults:
@@ -69,7 +63,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: page # Default layout
+      layout: home # Default layout
       image: "/assets/placeholder-social.png" # Default image for sharing
   -
     scope:
@@ -81,42 +75,41 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+title: "KG4IR" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
-disqus: "alembic-1"
-avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+description: "The first workshop of Knowledge Graph and Semantics for Text Analysis and Retrieval." # Site description and default description, also used in jekyll-seo-tag
+url: "kg4ir.github.io" # Site url, also used in jekyll-seo-tag
+# repo: "https://github.com/daviddarnes/alembic"
+email: "cx@cs.cmu.edu"
+# disqus: "alembic-1"
+# avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
 navigation_header:
   Home: /
-  Elements: /elements/
-  Blog: /blog/
-  Categories: /categories/
-  Search: /search/
-  Fork Alembic: https://github.com/daviddarnes/alembic
+  Call for Participation: /cfp/
+  Submit: /submit/
+  Important Dates: /dates/
+  Organization: /organization/
 
 navigation_footer:
-  Created by David Darnes: https://darn.es
+  Created by Chenyan Xiong: http://www.cs.cmu.edu/~cx/
 
 social_links:
-  Twitter: https://twitter.com/DavidDarnes
-  LinkedIn: https://www.linkedin.com/in/daviddarnes
-  Google+: https://plus.google.com/+DavidDarnes
-  GitHub: https://github.com/daviddarnes
-  link: https://darn.es
+#  Twitter: https://twitter.com/DavidDarnes
+#  LinkedIn: https://www.linkedin.com/in/daviddarnes
+#  Google+: https://plus.google.com/+DavidDarnes
+#  GitHub: https://github.com/daviddarnes
+#  link: https://darn.es
 
-sharing_links:
-  Twitter: "#1DA1F2"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  Pinterest: "#BD081C"
-  LinkedIn: "#0077B5"
-  tumblr: "#36465D"
-  Reddit: "#FF4500"
-  Hacker News: "#ff6600"
-  Designer News: "#2D72D9"
-  Email: ""
+# sharing_links:
+#  Twitter: "#1DA1F2"
+#  facebook: "#3B5998"
+#  Google+: "#DC4E41"
+#  Pinterest: "#BD081C"
+#  LinkedIn: "#0077B5"
+#  tumblr: "#36465D"
+#  Reddit: "#FF4500"
+#  Hacker News: "#ff6600"
+#  Designer News: "#2D72D9"
+#  Email: ""
