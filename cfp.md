@@ -45,7 +45,7 @@ This workshop features keynotes, a discussion panel, as well as poster and oral 
 * Oral presentations will feature presentations from accepted papers with the option of also presenting them as posters; those with highest potential to spark discussions will be favored in the selection process.
 
 
-[Paper Submission](submission)
+[Paper Submission](/submission)
 
-[Important Dates](dates)
+[Important Dates](/dates)
 

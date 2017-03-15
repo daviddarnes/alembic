@@ -87,7 +87,7 @@ email: "cx@cs.cmu.edu"
 # 8. Site navigation
 navigation_header:
   Home: /
-  Call for Participation: /cfp/
+#  Call for Participation: /cfp/
   Submit: /submit/
   Important Dates: /dates/
   Organization: /organization/
