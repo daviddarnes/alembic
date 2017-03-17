@@ -1,0 +1,191 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{onecolceurws}
+
+\title{The One Column Style for CEUR-WS}
+
+\author{
+Mary Y. Writter \\ Publishing Dept.\\
+                Paper City, PUB 11011 \\ mqw@pubdept.eu
+\and
+John X. Ceur \\ Science Dept.\\
+                Online City, CEUR 99099 \\ jqq@ceur-ws.org
+\and
+Yvonne Onderzoeker \\ Research Dept.\\
+                Science City, Sci 88088 \\ yvo@science.rdept.net
+}
+
+\institution{}
+
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Abstract paragraph should be indented $1.25$ inch on both
+the left and right-hand margins. Abstract must be centered, bold, and
+in point size 12. Two line spaces precede the Abstract. The Abstract
+must be limited to one paragraph.
+\end{abstract}
+\vskip 32pt
+
+
+\section{General Formatting Instructions}
+
+The format is in one column. The left margin is .9 inches (5.5 picas). Use 10 point type,
+with a vertical spacing of 11 points. Times Roman is the preferred
+typeface throughout.
+
+Paper title is 16 point, Caps/lowercase, bold, centered. Subsequent
+pages should start at 1 inch (6 picas) from the top of the page.
+
+Authors names are centered, initial caps; co-authors names, if used, are
+flush left and flush right.
+
+Paragraphs are indented by 1 pica with no space between paragraphs.
+
+\section{First Level Heading}
+
+First level headings are all flush left, initial caps, bold and in point
+size 12. One line space before the first level heading and $1/2$ line
+space after the first level heading.
+
+\subsection{Second Level Heading}
+
+Second level headings must be flush left, initial caps, bold and in point
+size 10. One line space before the second level heading and $1/2$ line
+space after the second level heading.
+
+\subsubsection{Third Level Heading}
+
+Third level headings must be flush left, initial caps and bold.
+One line space before the third level heading and $1/2$ line
+space after the third level heading.
+
+\paragraph{Fourth Level Heading}
+
+Fourth level headings must be flush left, initial caps and roman type.
+One line space before the fourth level heading and $1/2$ line
+space after the fourth level heading.
+
+\subsection{Citations In Text}
+
+Citations within the text should indicate the author's last name and
+year\cite{Knuth-vol3}. Reference style\cite{Comer-btree}
+should follow the style that you are used to using, as long as the
+citation style is consistent.
+
+\subsubsection{Footnotes}
+
+Indicate footnotes with a number\footnote{This is a sample footnote} in
+the text. Place the footnotes at the bottom of the page they appear on.
+Precede the footnote with a vertical rule of 2 inches (12 picas).
+
+\subsubsection{Figures}
+
+All artwork must be centered, neat, clean and legible. Do not use pencil
+or hand-drawn artwork. Figure number and caption always appear after the
+the figure. Place one line space before the figure, one line space
+before the figure caption and one line space after the figure caption.
+The figure caption is initial caps and each figure is numbered
+consecutively.
+
+Make sure that the figure caption does not get separated from the
+figure. Leave extra white space at the bottom of the page to avoid
+splitting the figure and figure caption.
+
+Figure \ref{fig1} shows how to include a figure as encapsulated postscript.
+The source of the figure is in file {\tt fig1.eps}.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[height=4cm]{fig1}
+\caption{Sample EPS figure }
+\label{fig1}
+\end{center}
+\end{figure}
+
+Below is another figure using LaTeX commands.
+
+
+\begin{figure}[ht]
+\begin{center}
+\setlength{\unitlength}{1pt}
+\footnotesize
+\begin{picture}(160,80)
+        \put(0,0){\framebox(160,80)[]{}}
+        \put(10,35){\framebox(80,40){}}
+        \put(100,20){\framebox(40,20){}}
+        \put(70,10){\framebox(20,10){}}
+        \put(20,5){\framebox(10,5){}}
+\end{picture}
+\caption{Sample Figure Caption}
+\end{center}
+\end{figure}
+
+
+
+\subsubsection{Tables}
+
+All tables must be centered, neat, clean and legible. Do not use pencil
+or hand-drawn tables. Table number and title always appear before the
+table.
+
+One line space before the table title, one line space after the table
+title and one line space after the table. The table title must be
+initial caps and each table numbered consecutively.
+
+\begin{table}[ht]
+\begin{center}
+\caption{Sample Table}
+
+\bigskip
+
+\begin{tabular}{|l|l|r|}
+\hline
+A & B & 1\\ \hline
+C & D & 2\\
+E & F & 3\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\subsubsection{Handling References}
+
+Use a first level heading for the references. References follow the
+acknowledgements.
+
+
+\subsubsection{Acknowledgements}
+
+Use a third level heading for the acknowledgements. All acknowledgements
+go at the end of the paper.
+
+
+
+
+%\bibliographystyle{alpha} 
+%\bibliography{samplebib}
+%inline the .bbl file directly for mailing to authors.
+
+\begin{thebibliography}{Com79}
+
+\bibitem[Com79]{Comer-btree}
+D.~Comer.
+\newblock The ubiquitous b-tree.
+\newblock {\em Computing Surveys}, 11(2):121--137, June 1979.
+
+\bibitem[Knu73]{Knuth-vol3}
+D.~E. Knuth.
+\newblock {\em The Art of Computer Programming -- Volume 3 / Sorting and
+  Searching}.
+\newblock Addison-Wesley, 1973.
+
+\end{thebibliography}
+
+\end{document}
+
+

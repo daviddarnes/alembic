@@ -19,27 +19,20 @@ where he also obtained his Ph.D. He has published 60+ peer-reviewed papers at to
 
 * Dyaa Albakour, Signal Media 
 * Avishek Anand, L3S Research Center 
-* Jeff Dalton, Google 
-* Bhavana Dalvi, Allen Institute of AI 
-* Chris Develder, Ghent University,iMinds 
-* Hui Fang, University of Delaware 
+* Michael Schuhmacher, University of Mannheim
 * Djoerd Hiemstra, University of Twente 
+* Ingo Frommholz, University of Bedfordshire
 * Johannes Hoffart, Max Planck 
 * Ioana Hulpus, Mannheim University	
-* Alexander Kotov, Wayne State University 
 * Christina Lioma, University of Copenhagen 
 * Zhiyuan Liu, Tsinghua University 
-* Achim Rettinger, Karlsruhe Institute of Technology  
 * Vinay Setti, Aalborg University 
 * Jun Xu, Chinese Academic of Science 
 * Tongfei Chen, Johns Hopkins University 
-* Mostafa Deghani, University of Amsterdam 
 * John Foley, University of Massachusetts,Amherst 
 * Faegheh Hasibi, Norwegian University of Science and Technology  
 * Lifu Huang, Rensselaer Polytechnic Institute 
 * Federico Nanni, Mannheim University 
-* Pushpendre Rastogi, Johns Hopkins University 
 * Hadas Raviv, Technion,Haifa,Israel  
-* Ridho Reinada, University of Amsterdam 
-* Lydia Weiland, University of Mannheim 
 * Nikos Voskarides, University of Amsterdam 
+* Hamed Zamani, University of Massachusetts Amherst

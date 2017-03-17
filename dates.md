@@ -14,3 +14,16 @@ In order to accommodate time for visas and travel arrangements while also provid
 
 - Camera-ready version: TBD
 - Workshop day:         August 11, 2017
+- SIGIR Main Conference: August 7 - August 11, 2017
+
+
+### Latex Template for Submission
+
+To ensure the copyright stays with the authors, please use this template for submission and camera-ready version.
+
+- [Latex template](/template/onecolceurws.sty) (please submit as DIN A4)
+- [Example Latex](/template/paper1.tex)
+- [Example PDF](/template/paper1.pdf)
+- [Example bib](/template/samplebib.bib)
+
+
