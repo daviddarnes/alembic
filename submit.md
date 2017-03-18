@@ -8,7 +8,7 @@ We solicit short papers describing innovative ongoing research, position papers,
 Papers have to be:
 - limited to 4 pages,   
 - double-blind,
-- formatted in the [CEUR-WS compatible format](http://ceur-ws.org/Vol-XXX/samplestyles/)
+- formatted in the [CEUR-WS compatible format](/template/onecolceurws.sty)
 - and submitted as PDF through the [EasyChair Conference Submission System](https://easychair.org/conferences/?conf=kg4ir).
 
 Note that at least one author of each accepted paper must register for the Workshop.
