@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-	<head>
-		<!-- General meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-		{% if page.indexing == false %}
-			<meta name="robots" content="noindex">
-		{% endif %}
+{% include head.html %}
 
-		{% if page.collectionpage %}
-			{% seo title=false %}
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-			<meta property="og:title" content="{{ collectiondata.title }}">
-			<meta name="description" content="{{ collectiondata.description }}">
-			<meta property="og:description" content="{{ collectiondata.description }}">
-		{% else %}
-			{% seo %}
-		{% endif %}
+    {% include nav.html %}
 
-    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+    {{ content }}
 
-		{% include site-favicons.html %}
-	</head>
-	<body class="layout-{{ page.layout }}  {{ page.title | slugify }}">
-		{% include site-icons.svg %}
+    {% include footer.html %}
 
-		{{ content }}
 
-	</body>
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
 </html>

@@ -1,4 +1,0 @@
----
-layout: blog
-collectionpage: posts
----

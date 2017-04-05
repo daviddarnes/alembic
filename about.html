@@ -1,0 +1,72 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is Liu Songxiang."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+    <!--copied from markdown -->
+    <blockquote><p>世界那么大，不去看看怎么知道。<br>
+    人生不长不短，文章不短不长。</p></blockquote>
+
+    <p>Hey，我是<strong>刘颂湘</strong>，本科毕业于浙江大学，现在正在读PhD。 我平时非常喜欢运动，篮球和健身交替进行，我是NBA骑士队的忠实粉丝。</p>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote><p>Changes make life better. <br>
+    Don't stay still.</p></blockquote>
+
+    <p>Hi, I am <strong>Liu Songxiang, in Chinese 刘颂湘</strong>，you can call me <strong>Shaun</strong>. I am now a PhD candidate and I graduated from ZheJiang University in 2016. I love sports very much. I go to the gym several times a week and I also play basketball. I am a big fan of the NBA team Cleveland Cavaliers.</p>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>

@@ -1,118 +1,102 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
+# Site settings
+title: Liu Songxiang's Blog
+SEOTitle: LiuSongxiang's Blog | 刘颂湘的博客
+header-img: img/home-bg-o.jpg
+email: sliuax@connect.ust.hk
+description: "This is a box of amazing things"
+keyword: "刘颂湘, Shaun, Liu Songxiang, 刘颂湘的博客, Liu Songxiang's Blog, 博客, 个人网站, Deep learning"
+url: "https://liusongxiang.com"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- demo/*
-- alembic-jekyll-theme.gemspec
 
-# 2. Installed Gems
-gems:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-feed
-- jemoji
 
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
-social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
-  links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/DavidDarnes
-    - https://www.facebook.com/daviddarnes
-    - https://www.linkedin.com/in/daviddarnes
-    - https://plus.google.com/+DavidDarnes
-    - https://github.com/daviddarnes
+# SNS settings
+RSS: false
+weibo_username:     5910009434
+zhihu_username:     liu-song-xiang-48
+github_username:    liusongxiang
+#twitter_username:
+facebook_username:  shaun.liu.31
+# linkedin_username:  firstname-lastname-idxxxx
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
 
-# 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "My thoughts and ideas" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://unsplash.it/1300/400?image=1067"
 
-# 6. Jekyll collections settings
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: page # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
-      image: "/assets/placeholder.png" # Default image for sharing
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "Joephy" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/placeholder.svg" # Site logo, also used in jekyll-seo-tag
-sidebar-about-description: "Hello" # Site description and default description, also used in jekyll-seo-tag
-url: "http://joephysworld.com/" # Site url, also used in jekyll-seo-tag
-disqus: "alembic-1"
-avatarurl: "" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
-# 8. Site navigation
-navigation_header:
-  Home: /
-  Elements: /elements/
-  Categories: /categories/
-  #Fork Alembic: https://github.com/daviddarnes/alembic
 
-navigation_footer:
-  ReCreated by Joephy: http://joephysworld.com/
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
 
-social_links:
-  Twitter: https://twitter.com/DavidDarnes
-  LinkedIn: https://www.linkedin.com/in/daviddarnes
-  Google+: https://plus.google.com/+DavidDarnes
-  GitHub: https://github.com/daviddarnes
-  link: https://darn.es
 
-sharing_links:
-  Twitter: "#1DA1F2"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  Pinterest: "#BD081C"
-  LinkedIn: "#0077B5"
-  tumblr: "#36465D"
-  Reddit: "#FF4500"
-  Hacker News: "#ff6600"
-  Designer News: "#2D72D9"
-  Email: ""
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: liusongxiang
+
+# Duoshuo settings
+#duoshuo_username: false
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-96237913-1'            # Format: UA-xxxxxx-xx
+ga_domain: liusongxiang.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Enjoy writing，enjoy life! <br> 记录生活, 享受生活."
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "colah",
+        href: "http://colah.github.io/"
+    },{
+        title: "R2RT",
+        href: "http://r2rt.com/"
+    },{
+        title: "Richad",
+        href: "http://www.socher.org/"
+    }
+]

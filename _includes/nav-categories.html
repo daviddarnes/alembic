@@ -1,9 +1,0 @@
-<nav class="nav  nav--categories">
-  <ul class="list  list--categories">
-    {% for item in site.categories %}
-      <li class="item">
-          <a href="#{{ item | first | slugify }}" title="Category - {{ item | first }}">{{ item | first }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
