@@ -8,7 +8,6 @@ catalog: true
 tag:
 - TensorFlow 
 - Machine Learining
-- Deep Learning
 comments: true
 ---
 In this tutorial, I will first talk about some basic concepts in TensorFlow, and then I will elaborate the mechanics of TensorFlow using an example from TensorFlow, I will also digress to some machine learning notions like SGD, backpropagation and etc.
