@@ -40,6 +40,8 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 - [bawejakunal.github.io](https://bawejakunal.github.io/)
 - [case2111.github.io](http://case2111.github.io/)
 - [www.10people.co.uk](http://www.10people.co.uk/)
+- [hrkeni.me](http://hrkeni.me/)
+- [venuthatikonda.github.io](https://venuthatikonda.github.io/)
 
 ## Installation
 
