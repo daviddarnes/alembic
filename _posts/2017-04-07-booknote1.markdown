@@ -3,7 +3,7 @@ layout: post
 title:  "Book Note"
 date:   2017-04-07
 author: "Joephy"
-header-img: "img/tag-bg.jpg"
+header-img: "img/tag-bg-bookreview.jpg"
 catalog: true
 tag:
 - 读书笔记 
