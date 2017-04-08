@@ -3,7 +3,7 @@ layout: post
 title:  "An Test"
 date:   2017-04-05
 author: "Joephy"
-header-img: "img/post-bg-os-metro.jpg"
+header-img: "img/tag-bg.jpg"
 catalog: true
 tag:
 - Test 
