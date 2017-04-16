@@ -118,14 +118,11 @@ body {
 .main {
   @include flexbox;
   @include flex-direction(column);
+  @include flex(1, 0, auto);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
     @include flex-direction(row);
   }
-}
-
-.main {
-  @include flex(1, 0, auto);
 }
 
 .header,
@@ -432,5 +429,12 @@ pre code {
   }
   hr {
     width: 100%;
+  }
+  li {
+    margin-bottom: .3em;
+    > p {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
