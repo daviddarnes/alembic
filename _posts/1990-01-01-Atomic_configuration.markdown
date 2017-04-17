@@ -16,7 +16,7 @@ Propose a question. There are two possible structures of Cu-Au-Zn alloy, but one
 1. Using the technic of Energy Dispersive X-Ray;
 2. Using XRD, including structure factor, Lorenz factor, temperature factor and multiplicity;
 3. Transformation stress is smaller in one of the structures of Cu-Au-Zn alloy;
-4. Find a critical point to disdinguish [111] and [019];
+4. Find a critical point to distinguish [111] and [019];
 5. Order and disorder magnitude;
 6. Disorder is responsible for stabilization of Martensite;
 7. Different aging has different results (configurations), and it is responsible for the order-disorder and the stability.
