@@ -1,24 +1,22 @@
 ---
 layout: post
-title:  "Atomic Configuration Studied by ALCHEMI & XRD"
-date:   1990-01-01
-author: "Shimizu"
+title:  "Martensite phase transition and shape memory material"
+date:   2000-01-02
+author: "James and K.F. Hane"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
 - Martensite Phase Transformation/马氏体相变
 comments: true
 ---
-Two possible structures of Cu-Au-Zn and technics
+Review several important conceptions of Martensite phase transition
 -----------
-Propose a question. There are two possible structures of Cu-Au-Zn alloy, but one of them is more stable and the energy is lower than the other one.
 
-1. Using the technic of Energy Dispersive X-Ray;
-2. Using XRD, including structure factor, Lorenz factor, temperature factor and multiplicity;
-3. Transformation stress is smaller in one of the structures of Cu-Au-Zn alloy;
-4. Find a critical point to distinguish [111] and [019];
-5. Order and disorder magnitude;
-6. Disorder is responsible for stabilization of Martensite;
-7. Different aging has different results (configurations), and it is responsible for the order-disorder and the stability.
-
+1. Point group of Martensite is a subgroup of Austenite;
+2. Free energy function is a function of lattice and temperature;
+3. Number of variants is relevant to the point group;
+4. Compatible is important especially for interface;
+5. Interface involve the material does not the energy minima;
+6. X ray pictures did not give deromation;
+7. In wedge, Martensite regions are single variantes.
 
