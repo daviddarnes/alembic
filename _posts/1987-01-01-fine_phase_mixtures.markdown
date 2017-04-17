@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fine Phase Mixtures as Minimizers of Energy"
-date:   1987
+date:   1987-01-01
 author: "Ball & James"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
