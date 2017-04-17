@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Atomic Configuration Studied by ALCHEMI & XRD"
-date:   1990
+date:   1990-01-01
 author: "Shimizu"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
