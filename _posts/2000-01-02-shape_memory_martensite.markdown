@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "2000, James and K.F. Hane, Martensite phase transformation, shape memory material"
-date:   2000-01-02
-author: "James and K.F. Hane"
+date:   2017-04-17
+author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:

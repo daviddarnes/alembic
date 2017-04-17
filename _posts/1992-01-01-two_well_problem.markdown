@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "1992, Ball and James, Proposed experimental tests of a theory of fine microstructure and the two-welL problem"
-date:   1992-01-01
-author: "Ball & James"
+date:   2017-04-17
+author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "2001, James and Zhang, Muti-ferroic Materials"
-date:   2001-01-01
-author: "James and Zhang"
+date:   2017-04-17
+author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:

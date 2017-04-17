@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "1998, Pitteri, Generic and Non-generic Cubic to Monoclinic"
-date:   1998-01-01
-author: "Pitteri"
+date:   2017-04-17
+author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:

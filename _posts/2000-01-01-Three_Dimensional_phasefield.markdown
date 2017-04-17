@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "2000, A.G. Khachaturyan, Three Dimensional phase field model"
-date:   2000-01-01
-author: "A.G. Khachaturyan"
+date:   2017-04-17
+author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
