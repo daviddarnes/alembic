@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2000-01-02, James and K.F. Hane, Martensite phase transition and shape memory material"
+title:  "1990, Shimizu, Atomic configuration studied by ALCHEMI and XRD"
 date:   2017-04-17
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
@@ -9,14 +9,15 @@ tag:
 - Martensite Phase Transformation/马氏体相变
 comments: true
 ---
-Review several important conceptions of Martensite phase transition
+Technics and configurations of Cu-Au-Zu
 -----------
 
-1. Point group of Martensite is a subgroup of Austenite;
-2. Free energy function is a function of lattice and temperature;
-3. Number of variants is relevant to the point group;
-4. Compatible is important especially for interface;
-5. Interface involve the material does not the energy minima;
-6. X ray pictures did not give deromation;
-7. In wedge, Martensite regions are single variantes.
+1. Propose a question. There are two possible structures of Cu-Au-Zn alloy. But one of them is more reasonable;
+2. Using the technic of energy dispersive X-Ray;
+3. Using XRD, includes structure factor, Lorenz factor, temperature factor and multiplicity;
+4. Transformation stress is smaller;
+5. Find a critical point to distinguish [111] and [019];
+6. Order and disorder magnitude;
+7. disorder is responsible for stabilization of Martensite;
+8. Different aging has different results(configurations), and it is responsible for stability.
 
