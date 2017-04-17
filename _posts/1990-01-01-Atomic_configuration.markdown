@@ -9,8 +9,9 @@ tag:
 - Martensite Phase Transformation/马氏体相变
 comments: true
 ---
-Propose a question. There are two possible structures of Cu-Au-Zn alloy, but one of them is more stable and the energy is lower than the other one.
+Two possible structures of Cu-Au-Zn and technics
 -----------
+Propose a question. There are two possible structures of Cu-Au-Zn alloy, but one of them is more stable and the energy is lower than the other one.
 
 1. Using the technic of Energy Dispersive X-Ray;
 2. Using XRD, including structure factor, Lorenz factor, temperature factor and multiplicity;

@@ -9,8 +9,9 @@ tag:
 - Martensite Phase Transformation/马氏体相变
 comments: true
 ---
-This is one of the most important papers for the Martensite phase transformation. It use the energy well and the energy minimization to approach the microstructure of the first order phase transformation.
+Open a new world
 -----------
+This is one of the most important papers for the Martensite phase transformation. It use the energy well and the energy minimization to approach the microstructure of the first order phase transformation.
 
 1. This article says that, it just approach the fine mixture, the twins, not equal to minimizer;
 2. Linear geometry theory plays an important part, also it leaves space for the nonlinear part;
