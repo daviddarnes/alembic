@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Muti-ferroic Materials"
+title:  "2001, James and Zhang, Muti-ferroic Materials"
 date:   2001-01-01
 author: "James and Zhang"
 header-img: "img/post-bg-os-metro.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Twin and Habit Plane in Tetragonal to Mnoclinic"
+title:  "1997, Simha, Twin and Habit Plane in Tetragonal to Mnoclinic"
 date:   1997-01-02
 author: "Simha"
 header-img: "img/post-bg-os-metro.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prediction of Microstructure in Monoclinic"
+title:  "1997, Li Jian & James, Prediction of Microstructure in Monoclinic"
 date:   1997-01-01
 author: "Li Jian & James"
 header-img: "img/post-bg-os-metro.jpg"

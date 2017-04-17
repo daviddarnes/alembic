@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Symmetry and microstructure in Martensite"
+title:  "1998, F. Hane, Symmetry and microstructure in Martensite"
 date:   1998-01-02
 author: "F. Hane"
 header-img: "img/post-bg-os-metro.jpg"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Symmetry, Texture, Shape-memory Poly-crystal"
+title:  "1996, K. Bhattacharya, Symmetry, Texture, Shape-memory Poly-crystal"
 date:   1996-01-01
 author: "K. Bhattacharya"
 header-img: "img/post-bg-os-metro.jpg"

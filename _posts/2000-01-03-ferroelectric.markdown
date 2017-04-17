@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ferroelectirc"
+title:  "2000, A.G. Khachaturyan, Ferroelectirc"
 date:   2000-01-03
 author: "A.G. Khachaturyan"
 header-img: "img/post-bg-os-metro.jpg"

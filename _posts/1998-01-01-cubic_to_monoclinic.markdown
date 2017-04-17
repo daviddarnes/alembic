@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generic and Non-generic Cubic to Monoclinic"
+title:  "1998, Pitteri, Generic and Non-generic Cubic to Monoclinic"
 date:   1998-01-01
 author: "Pitteri"
 header-img: "img/post-bg-os-metro.jpg"

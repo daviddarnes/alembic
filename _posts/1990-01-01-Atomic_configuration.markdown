@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Martensite phase transition and shape memory material"
+title:  "2000-01-02, James and K.F. Hane, Martensite phase transition and shape memory material"
 date:   2000-01-02
 author: "James and K.F. Hane"
 header-img: "img/post-bg-os-metro.jpg"
