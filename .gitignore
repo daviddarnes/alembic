@@ -5,3 +5,21 @@ alembic-jekyll-theme-*.gem
 Gemfile.lock
 **/Gemfile.lock
 
+
+_includes/site-search.html
+
+_sass/_sassline-base.scss
+
+alembic-jekyll-theme.gemspec
+
+demo/index.md
+
+assets/styles.scss
+
+README.md
+
+index.md
+
+README.md
+
+README.md
