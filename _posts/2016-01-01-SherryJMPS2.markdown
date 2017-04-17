@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2013, Xian Chen, Determination of stretch tensor for transformation"
+title:  "2016, Xian Chen, Determination of stretch tensor for transformation"
 date:   2017-04-17
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
