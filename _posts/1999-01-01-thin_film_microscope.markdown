@@ -24,5 +24,6 @@ Shape memory alloy thin films in optical devices is introduced and explored for 
 The reflection coefficient of TiNi change as a function of phase transformation and wavelength. Not focus on the interface of phase transformation.
 
 Reference:
+
 [Tabib-Azar, Massood, B. Sutapun, and M. Huff. "Applications of TiNi thin film shape memory alloys in micro-opto-electro-mechanical systems." Sensors and Actuators A: Physical 77.1 (1999): 34-38.](http://www.sciencedirect.com/science/article/pii/S0924424799000539)
 
