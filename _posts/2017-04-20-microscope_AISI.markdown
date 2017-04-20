@@ -25,3 +25,6 @@ Metallography, SEM, XRD
 
 This paper includes many technics to characterize the Martensite phase transformation. And it also use differential phase contrast to distinguish the interface between martensite and austenite. But it does not use the color to clarify the deformation gradient. It also points out the drawbacks of the classical light microscopy and the drawbacks of the other technics in it. It suggests to use neutron diffraction to observe the material and use AE to track the phase transformation.
 
+Reference:
+[Haušild, P., et al. "Characterization of strain-induced martensitic transformation in a metastable austenitic stainless steel." Materials & Design 31.4 (2010): 1821-1827.](http://www.sciencedirect.com/science/article/pii/S026130690900627X)
+
