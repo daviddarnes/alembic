@@ -80,9 +80,10 @@ body {
 }
 
 .footer {
-  background: lighten(invert($backgroundColour), 15%);
+  background: $headingColour;
+  color: $captionColour;
   a {
-    color: darken($backgroundColour, 15%);
+    color: $captionColour;
     &:hover {
       color: $backgroundColour;
     }
@@ -119,6 +120,7 @@ body {
   @include flexbox;
   @include flex-direction(column);
   @include flex(1, 0, auto);
+  @include justify-content(center);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
     @include flex-direction(row);
@@ -135,21 +137,9 @@ body {
   width: 100%;
   @include breakpoint(break-1) {
     width: 62%;
-    margin-right: 4%;
     &--full {
       width: 100%;
       margin-right: 0%;
-      .figure--full {
-        left: 50%;
-      }
-    }
-    &--aside-left {
-      margin-right: 0;
-      margin-left: 4%;
-      @include order(2);
-      .figure--full {
-        left: 19.4%;
-      }
     }
   }
 }
@@ -164,9 +154,15 @@ body {
   max-width: 100%;
   @include breakpoint(break-1) {
     max-width: 34%;
+    margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
+    &--left {
+      margin-left: 0;
+      margin-right: 4%;
+      order: -1;
+    }
     &:hover {
       opacity: 1;
     }
@@ -227,7 +223,7 @@ body {
     display: inline-block;
     transition: fill .1s;
     &:hover {
-      fill: darken($linkColour, 10%);
+      fill: $hoverColour;
     }
   }
 }
@@ -251,20 +247,7 @@ img {
 
 .figure {
   line-height: 0;
-  &--full {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    .caption {
-      padding-left: .8rem;
-      padding-right: .8rem;
-    }
-  }
   @include breakpoint(break-1) {
-    &--full {
-      left: 80.6%;
-    }
     &--left {
       float: left;
       padding-right: .8rem;
@@ -355,7 +338,7 @@ input,
 textarea {
   &:focus,
   &:hover:focus {
-    outline: solid .12rem invert($accentColour);
+    outline: solid .12rem $focusColour;
   }
 }
 
@@ -370,7 +353,7 @@ textarea {
   width: 100%;
   border: 1px solid $captionColour;
   &:hover {
-    border-color: darken($captionColour, 20%);
+    border-color: $bodyColour;
   }
 }
 
@@ -395,20 +378,20 @@ pre code {
 }
 
 ::-webkit-input-placeholder {
-  color: darken($captionColour, 30%);
+  opacity: 0.5;
 }
 ::-moz-placeholder {
-  color: darken($captionColour, 30%);
+  opacity: 0.5;
 }
 :-ms-input-placeholder {
-  color: darken($captionColour, 30%);
+  opacity: 0.5;
 }
 :-moz-placeholder {
-  color: darken($captionColour, 30%);
+  opacity: 0.5;
 }
 
 ::selection {
-  background: invert($backgroundColour);
+  background: $headingColour;
   color: $backgroundColour;
   text-shadow: none;
 }
@@ -431,7 +414,6 @@ pre code {
     width: 100%;
   }
   li {
-    margin-bottom: .3em;
     > p {
       padding: 0;
       margin: 0;

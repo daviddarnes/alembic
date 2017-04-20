@@ -1,3 +1,32 @@
+// :root {
+//   --backgroundColour: #fff;
+//   --codeBackgroundColour: #f4f4f4;
+//   --featureBackgroundColour: #eee;
+//   --accentColour: #05bf85;
+//
+//   --headingColour: #333;
+//   --bodyColour: #555;
+//   --linkColour: #05bf85;
+//   --hoverColour: green;
+//   --focusColour: #fa407a;
+//   --captionColour: #aaa;
+//   --white: #fff;
+// }
+//
+// $backgroundColour: var(--backgroundColour);
+// $codeBackgroundColour: var(--codeBackgroundColour);
+// $featureBackgroundColour: var(--featureBackgroundColour);
+// $accentColour: var(--accentColour);
+//
+// $headingColour: var(--headingColour);
+// $bodyColour: var(--bodyColour);
+// $linkColour: var(--linkColour);
+// $hoverColour: var(--hoverColour);
+// $focusColour: var(--focusColour);
+// $captionColour: var(--captionColour);
+// $white: var(--white);
+//
+
 // Background colours
 $backgroundColour: #fff;
 $codeBackgroundColour: #f4f4f4;
@@ -6,9 +35,10 @@ $accentColour: #05bf85;
 
 // Text colours
 $headingColour: #333;
-$bodyColour: #111;
+$bodyColour: #555;
 $linkColour: #05bf85;
 $hoverColour: darken($linkColour, 10%);
+$focusColour: #fa407a;
 $captionColour: #aaa;
 $white: #fff;
 
@@ -18,14 +48,14 @@ $bodytype: (
   regular: 400,
   bold: 700,
   italic: italic,
-  cap-height: 0.66
+  cap-height: 0.75
 );
 
 $headingtype: (
-  font-family: 'Helvetica, sans-serif',
+  font-family: '"Merriweather", serif',
   regular: 400,
   bold: 700,
-  cap-height: 0.66
+  cap-height: 0.75
 );
 
 $monospacetype: (
@@ -35,4 +65,4 @@ $monospacetype: (
 );
 
 // Font import, if you're using a non-standard web font
-// @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
