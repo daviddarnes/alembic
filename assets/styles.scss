@@ -6,6 +6,7 @@ title: false
 // Frameworks & Imports
 @charset "utf-8";
 @import "settings";
+@import "settings-custom-props";
 @import "normalize";
 @import "sassline-base";
 @import "syntax";
@@ -298,6 +299,7 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="submit"],
+input[type="color"],
 textarea {
   padding: .6rem 1.2rem;
   margin-bottom: .6rem;
@@ -309,6 +311,20 @@ textarea {
   -webkit-appearance: none;
   .icon {
     margin: 0 0 .35rem;
+  }
+}
+
+input[type="color"] {
+  padding: 0;
+  height: 2.4rem;
+  &::-webkit-color-swatch-wrapper {
+  	padding: 0;
+    &:after {
+      content: "Color";
+    }
+  }
+  &::-webkit-color-swatch {
+  	border: none;
   }
 }
 
@@ -349,6 +365,7 @@ a:hover:focus {
 input[type="text"],
 input[type="email"],
 input[type="search"],
+input[type="color"],
 textarea {
   width: 100%;
   border: 1px solid $captionColour;
