@@ -1,46 +1,17 @@
-// :root {
-//   --backgroundColour: #fff;
-//   --codeBackgroundColour: #f4f4f4;
-//   --featureBackgroundColour: #eee;
-//   --accentColour: #05bf85;
-//
-//   --headingColour: #333;
-//   --bodyColour: #555;
-//   --linkColour: #05bf85;
-//   --hoverColour: green;
-//   --focusColour: #fa407a;
-//   --captionColour: #aaa;
-//   --white: #fff;
-// }
-//
-// $backgroundColour: var(--backgroundColour);
-// $codeBackgroundColour: var(--codeBackgroundColour);
-// $featureBackgroundColour: var(--featureBackgroundColour);
-// $accentColour: var(--accentColour);
-//
-// $headingColour: var(--headingColour);
-// $bodyColour: var(--bodyColour);
-// $linkColour: var(--linkColour);
-// $hoverColour: var(--hoverColour);
-// $focusColour: var(--focusColour);
-// $captionColour: var(--captionColour);
-// $white: var(--white);
-//
-
 // Background colours
-$backgroundColour: #fff;
+$backgroundColour: #ffffff;
 $codeBackgroundColour: #f4f4f4;
-$featureBackgroundColour: #eee;
+$featureBackgroundColour: #eeeeee;
 $accentColour: #05bf85;
 
 // Text colours
-$headingColour: #333;
-$bodyColour: #555;
+$headingColour: #333333;
+$bodyColour: #555555;
 $linkColour: #05bf85;
-$hoverColour: darken($linkColour, 10%);
+$hoverColour: #008000;
 $focusColour: #fa407a;
-$captionColour: #aaa;
-$white: #fff;
+$captionColour: #aaaaaa;
+$white: #ffffff;
 
 // Typography
 $bodytype: (
