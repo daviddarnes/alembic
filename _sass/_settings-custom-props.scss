@@ -1,0 +1,63 @@
+// Set defaults on root
+:root {
+  // Background colours
+  --backgroundColour: #ffffff;
+  --codeBackgroundColour: #f4f4f4;
+  --featureBackgroundColour: #eeeeee;
+  --accentColour: #05bf85;
+
+  // Text colours
+  --headingColour: #333333;
+  --bodyColour: #555555;
+  --linkColour: #05bf85;
+  --hoverColour: #008000;
+  --focusColour: #fa407a;
+  --captionColour: #aaaaaa;
+  --white: #ffffff;
+
+  // Typography
+  --bodyType: Georgia, serif;
+  --headingType: "Merriweather", serif;
+}
+
+// Format SCSS variables to CSS custom properties
+
+// Background colours
+$backgroundColour: var(--backgroundColour);
+$codeBackgroundColour: var(--codeBackgroundColour);
+$featureBackgroundColour: var(--featureBackgroundColour);
+$accentColour: var(--accentColour);
+
+// Text colours
+$headingColour: var(--headingColour);
+$bodyColour: var(--bodyColour);
+$linkColour: var(--linkColour);
+$hoverColour: var(--hoverColour);
+$focusColour: var(--focusColour);
+$captionColour: var(--captionColour);
+$white: var(--white);
+
+// Typography
+$bodytype: (
+  font-family: 'var(--bodyType)',
+  regular: 400,
+  bold: 700,
+  italic: italic,
+  cap-height: 0.75
+);
+
+$headingtype: (
+  font-family: 'var(--headingType)',
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75
+);
+
+$monospacetype: (
+  font-family: 'Menlo, monospace',
+  regular: 400,
+  cap-height: 0.68
+);
+
+// Font import, if you're using a non-standard web font
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
