@@ -6,15 +6,13 @@ layout: default
 
 <main class="main  container">
 
-	<article class="article  article--page  content  typeset">
+	<article class="article  article--post  content  typeset">
 
     <h1>{{ page.title }}</h1>
-
+		{% include post-meta.html %}
     {{ content }}
 
   </article>
-
-	{% include site-aside.html align="left" %}
 
 </main>
 

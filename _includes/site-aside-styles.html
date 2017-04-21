@@ -1,0 +1,81 @@
+<aside class="aside  typeset{% if include.align == "left" %}  aside--left{% endif %}">
+  <h3>Style options</h3>
+  <div class="style-options">
+
+  </div>
+</aside>
+<script type="text/javascript">
+// The array of styles in the stylesheet
+const styles = {
+  "backgroundColour": "#ffffff",
+  "codeBackgroundColour": "#f4f4f4",
+  "featureBackgroundColour": "#eeeeee",
+  "accentColour": "#05bf85",
+  "headingColour": "#333333",
+  "bodyColour": "#555555",
+  "linkColour": "#05bf85",
+  "hoverColour": "#008000",
+  "focusColour": "#fa407a",
+  "captionColour": "#aaaaaa",
+  "white": "#fff",
+  "bodyType": "Georgia, serif",
+  "headingType": "'Merriweather', serif"
+};
+
+// Create fields with labels
+// append them to the styles panel
+// listen to changes
+function createField(property, value, panel) {
+	const stylesPanel = document.querySelector(panel);
+
+	const input = document.createElement('input');
+	const label = document.createElement('label');
+
+	label.innerHTML = property.replace('--', ' ');
+  input.setAttribute('placeholder', value);
+  input.setAttribute('type', 'text');
+
+	stylesPanel.appendChild(input);
+	stylesPanel.insertBefore(label, input);
+
+	input.addEventListener('keyup', () => { getInputValue(input.value, property) } );
+  if (value.includes('#')) {
+    input.setAttribute('type', 'color');
+    input.value = value;
+    input.addEventListener('change', () => { getInputValue(input.value, property) } );
+  }
+};
+
+// Get the inputted value and update the styles
+function getInputValue(updatedValue, updatedProperty) {
+	for (const property of Object.keys(styles)) {
+		if (updatedProperty == property) {
+			styles[property] = updatedValue;
+		}
+	}
+	applyStyles(styles);
+}
+
+// Apply styles to the page
+function applyStyles(styles) {
+	let updatedStyles = "";
+	for (const property of Object.keys(styles)) {
+		let value = styles[property];
+
+		updatedStyles += `--${property}:${value};`;
+	}
+	document.body.setAttribute('style', updatedStyles);
+}
+
+// Create all the fields for each style
+function generateSettings(panel) {
+	for (const property of Object.keys(styles)) {
+		let value = styles[property];
+
+		createField(property, value, panel);
+	}
+}
+
+// init
+generateSettings('.style-options');
+</script>

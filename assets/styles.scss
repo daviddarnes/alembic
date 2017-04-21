@@ -5,7 +5,8 @@ title: false
 
 // Frameworks & Imports
 @charset "utf-8";
-@import "colors";
+@import "settings";
+@import "settings-custom-props";
 @import "normalize";
 @import "sassline-base";
 @import "syntax";
@@ -14,8 +15,8 @@ title: false
 
 // Structural elements
 body {
-  background: $color__site--background;
-  color: $color__site--body;
+  background: $backgroundColour;
+  color: $bodyColour;
   height: 100%;
   display: flex;
   @include flex-direction(column);
@@ -52,7 +53,7 @@ body {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
   text-align: center;
-  background: $color__site--accent;
+  background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
   @include flexbox;
@@ -75,16 +76,17 @@ body {
 
 .small {
   padding-top: .8rem;
-  color: $color__site--captions;
+  color: $captionColour;
   display: inline-block;
 }
 
 .footer {
-  background: lighten(invert($color__site--background), 15%);
+  background: $headingColour;
+  color: $captionColour;
   a {
-    color: invert($color__site--heading);
+    color: $captionColour;
     &:hover {
-      color: lighten(invert($color__site--body), 15%);
+      color: $backgroundColour;
     }
   }
 }
@@ -95,7 +97,7 @@ body {
   &--paginator {
     @include flexbox;
     @include justify-content(space-between);
-    color: $color__site--captions;
+    color: $captionColour;
     text-align: center;
   }
   &--social {
@@ -119,6 +121,7 @@ body {
   @include flexbox;
   @include flex-direction(column);
   @include flex(1, 0, auto);
+  @include justify-content(center);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
     @include flex-direction(row);
@@ -135,21 +138,9 @@ body {
   width: 100%;
   @include breakpoint(break-1) {
     width: 62%;
-    margin-right: 4%;
     &--full {
       width: 100%;
       margin-right: 0%;
-      .figure--full {
-        left: 50%;
-      }
-    }
-    &--aside-left {
-      margin-right: 0;
-      margin-left: 4%;
-      @include order(2);
-      .figure--full {
-        left: 19.4%;
-      }
     }
   }
 }
@@ -164,9 +155,15 @@ body {
   max-width: 100%;
   @include breakpoint(break-1) {
     max-width: 34%;
+    margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
+    &--left {
+      margin-left: 0;
+      margin-right: 4%;
+      order: -1;
+    }
     &:hover {
       opacity: 1;
     }
@@ -212,7 +209,7 @@ body {
   }
   &--current {
     a {
-      color: $color__site--link--current;
+      opacity: 0.5;
     }
   }
 }
@@ -227,7 +224,7 @@ body {
     display: inline-block;
     transition: fill .1s;
     &:hover {
-      fill: darken($color__site--link, 10%);
+      fill: $hoverColour;
     }
   }
 }
@@ -251,20 +248,7 @@ img {
 
 .figure {
   line-height: 0;
-  &--full {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    .caption {
-      padding-left: .8rem;
-      padding-right: .8rem;
-    }
-  }
   @include breakpoint(break-1) {
-    &--full {
-      left: 80.6%;
-    }
     &--left {
       float: left;
       padding-right: .8rem;
@@ -315,6 +299,7 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="submit"],
+input[type="color"],
 textarea {
   padding: .6rem 1.2rem;
   margin-bottom: .6rem;
@@ -329,12 +314,26 @@ textarea {
   }
 }
 
+input[type="color"] {
+  padding: 0;
+  height: 2.4rem;
+  &::-webkit-color-swatch-wrapper {
+  	padding: 0;
+    &:after {
+      content: "Color";
+    }
+  }
+  &::-webkit-color-swatch {
+  	border: none;
+  }
+}
+
 input[type="submit"],
 button,
 .button {
   cursor: pointer;
   display: inline-block;
-  background: $color__site--accent;
+  background: $accentColour;
   position: relative;
   transition: box-shadow .1s;
   will-change: box-shadow;
@@ -355,7 +354,7 @@ input,
 textarea {
   &:focus,
   &:hover:focus {
-    outline: solid .12rem invert($color__site--accent);
+    outline: solid .12rem $focusColour;
   }
 }
 
@@ -366,11 +365,12 @@ a:hover:focus {
 input[type="text"],
 input[type="email"],
 input[type="search"],
+input[type="color"],
 textarea {
   width: 100%;
-  border: 1px solid $color__site--captions;
+  border: 1px solid $captionColour;
   &:hover {
-    border-color: darken($color__site--captions, 20%);
+    border-color: $bodyColour;
   }
 }
 
@@ -395,21 +395,21 @@ pre code {
 }
 
 ::-webkit-input-placeholder {
-  color: darken($color__site--captions, 30%);
+  opacity: 0.5;
 }
 ::-moz-placeholder {
-  color: darken($color__site--captions, 30%);
+  opacity: 0.5;
 }
 :-ms-input-placeholder {
-  color: darken($color__site--captions, 30%);
+  opacity: 0.5;
 }
 :-moz-placeholder {
-  color: darken($color__site--captions, 30%);
+  opacity: 0.5;
 }
 
 ::selection {
-  background: $color__site--heading;
-  color: $color__site--background;
+  background: $headingColour;
+  color: $backgroundColour;
   text-shadow: none;
 }
 
@@ -419,19 +419,18 @@ pre code {
   button {
     background-image: none;
     text-shadow: none;
-    color: lighten(invert($color__site--body), 15%);
+    color: $backgroundColour;
     &:hover,
     &:active,
     &:focus {
       background-image: none;
-      color: lighten(invert($color__site--body), 15%);
+      color: $backgroundColour;
     }
   }
   hr {
     width: 100%;
   }
   li {
-    margin-bottom: .3em;
     > p {
       padding: 0;
       margin: 0;
