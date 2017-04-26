@@ -20,7 +20,7 @@ This is one of the most important papers for the Martensite phase transformation
 5. For the interface of Austenite/Martensite, the eigenvalue of a matrix must equals to 1, but it is very hard to make such a material so this paper ignore this kind of situation and suppose there is no interface between single variant Martensite and Austenite;
 6. The interface between Austenite and Martensite twin is possible, but deformation are essentially piecewise affine and a small correction is necessary close to the interface so as to render the deformation gradients compatible;
 7. The deformation gradient of the twin, is the average deformation gradient of two kinds of Martensite, the gradient depends on the fraction of the Martensite variants   <br>
-$$Dy(x) = \lambda A + (1-\lambda)B$$   <br>
+<center> $$Dy(x) = \lambda A + (1-\lambda)B$$ </center>  <br>
 A and B is the deformation gradient of two kinds of martensite, $\lambda$ is the fraction and $Dy(x)$ is the deformation gradient of a particular point. Here is the point to use the twin's deformation to approach the compatible deformation gradient;
 8. The paper also prove that the Austenite/finely twinned martensite interface is flat;
 9. $\lambda_2 = 1$ is the necessary condition for the solution of compatibility equation. And use the compatibility equation, we can figure out the $b$ and $m$;
