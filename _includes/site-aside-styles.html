@@ -4,6 +4,7 @@
 
   </div>
 </aside>
+
 <script type="text/javascript">
 // The array of styles in the stylesheet
 const styles = {
@@ -22,29 +23,51 @@ const styles = {
   "headingType": "'Merriweather', serif"
 };
 
+// The array of fonts in the stylesheet
+const fonts = {
+  "Helvetica": "Helvetica, sans-serif",
+  "Tahoma": "Tahoma, sans-serif",
+  "Verdana": "Verdana, sans-serif",
+  "Georgia": "Georgia, serif",
+  "Merriweather": "'Merriweather', serif"
+};
+
+
 // Create fields with labels
 // append them to the styles panel
 // listen to changes
 function createField(property, value, panel) {
 	const stylesPanel = document.querySelector(panel);
 
-	const input = document.createElement('input');
 	const label = document.createElement('label');
+  const input = document.createElement('input');
 
-	label.innerHTML = property.replace('--', ' ');
-  input.setAttribute('placeholder', value);
-  input.setAttribute('type', 'text');
-
-	stylesPanel.appendChild(input);
-	stylesPanel.insertBefore(label, input);
-
-	input.addEventListener('keyup', () => { getInputValue(input.value, property) } );
   if (value.includes('#')) {
     input.setAttribute('type', 'color');
     input.value = value;
     input.addEventListener('change', () => { getInputValue(input.value, property) } );
+    stylesPanel.appendChild(input);
+    stylesPanel.insertBefore(label, input);
+
+  } else if (property.includes('Type')) {
+    const select = document.createElement('select');
+    select.addEventListener('change', () => { getInputValue(select.value, property) } );
+    stylesPanel.appendChild(createFontOptions(fonts, select));
+    stylesPanel.insertBefore(label, select);
   }
-};
+
+	label.innerHTML = property.replace('--', ' ');
+}
+
+function createFontOptions(fonts, select) {
+  for (const font of Object.keys(fonts)) {
+    const option = document.createElement('option');
+    option.value = fonts[font];
+    option.innerHTML = font;
+    select.appendChild(option);
+  }
+  return select;
+}
 
 // Get the inputted value and update the styles
 function getInputValue(updatedValue, updatedProperty) {
@@ -71,7 +94,6 @@ function applyStyles(styles) {
 function generateSettings(panel) {
 	for (const property of Object.keys(styles)) {
 		let value = styles[property];
-
 		createField(property, value, panel);
 	}
 }
