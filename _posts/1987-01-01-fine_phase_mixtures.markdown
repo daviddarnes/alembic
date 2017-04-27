@@ -31,3 +31,8 @@ A and B is the deformation gradient of two kinds of martensite, $\lambda$ is the
 This paper is just like a milestone of the martensite transformation. It use the math to figure out the solution of the phase transformation interface and point out the necessary and sufficient conditions for the solution. And we can use it to predict the kind of the twin and what will happen with a martensite material. Also it points out the question too. It points out that, there is a competition between the interfacial energy and phase transition interface energy, so that is why this theory cannot perfectly predict why the material cannot be finer and finer.
 
 
+Reference:
+
+[Ball, John M., and Richard D. James. "Fine phase mixtures as minimizers of energy." Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.](http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d)
+
+
