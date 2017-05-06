@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "1999, K.F. Hane, Microstructure in cubic to monoclinic transition"
+title:  "1999, K.F. Hane, T.W. Shield, Microstructure in the cubic to monoclinic transition in titanium–nickel shape memory alloys"
 date:   2017-04-17
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
@@ -17,4 +17,8 @@ Ni-Ti microstructure
 3. It can be used as catalog of Ni-Ti, microstructure to check whether a microstructure is possible for a specific composition;
 4. We should know the coordinate correspondence first, then we can transfer the coordination, then calculate the transformation matrix. The procedure is the same in Sherry's paper.
 5. All the paper is based on the James 1987 and 1992. It's the milestone of Martensite phase transformation.
+
+Reference:
+
+[Hane, Kevin F., and T. W. Shield. "Microstructure in the cubic to monoclinic transition in titanium–nickel shape memory alloys." Acta materialia 47.9 (1999): 2603-2617.](http://www.sciencedirect.com/science/article/pii/S1359645499001433)
 
