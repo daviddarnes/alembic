@@ -15,9 +15,9 @@ It is after the nonlinear geometry just a few years, I think this is a kind of a
 
 1. Minimize the total free energy to get the deformation gradient so it can predict the twins layer;
 2. Since the transformation is second order, so there is no temperature range for the parent phase and the product phase coexist;
-2. Although theory is beautiful, but it cannot reduce the transition layer, so the biggest drawback of this article is it cannot explain the equation of the transition layer;
-3. Maybe is this article, improves the fine and fine microstructure to reduce the transformation layer;
-4. It teaches us how to calculate the $U, R$ and $n, a$ and other things.
+3. Although theory is beautiful, but it cannot reduce the transition layer, so the biggest drawback of this article is it cannot explain the equation of the transition layer;
+4. Maybe is this article, improves the fine and fine microstructure to reduce the transformation layer;
+5. It teaches us how to calculate the $U, R$ and $n, a$ and other things.
 
 Reference:
 
