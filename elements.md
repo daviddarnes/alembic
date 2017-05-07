@@ -4,6 +4,7 @@ feature_text: |
   A demo of Markdown and HTML includes
 feature_image: "https://unsplash.it/1300/400?image=1061"
 excerpt: "A demo of Markdown and HTML includes"
+aside: true
 ---
 
 # Heading 1

@@ -121,9 +121,10 @@ body {
   @include flexbox;
   @include flex-direction(column);
   @include flex(1, 0, auto);
-  @include justify-content(center);
+  @include justify-content(flex-start);
   margin-bottom: 1.6rem;
   @include breakpoint(break-1) {
+    @include justify-content(center);
     @include flex-direction(row);
   }
 }
@@ -159,6 +160,10 @@ body {
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
+    .section {
+      position: sticky;
+      top: 0;
+    }
     &--left {
       margin-left: 0;
       margin-right: 4%;
@@ -172,10 +177,6 @@ body {
 
 .section {
   margin: 0;
-  &--category-index {
-    position: sticky;
-    top: 0;
-  }
 }
 
 

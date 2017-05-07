@@ -20,7 +20,7 @@ layout: default
 
 	</div>
 
-	{% include site-aside.html align="left" %}
+	{% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
 
 </main>
 
