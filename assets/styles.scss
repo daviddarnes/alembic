@@ -103,6 +103,15 @@ body {
   &--social {
     text-align: left;
   }
+  button {
+    background: none;
+    color: $linkColour;
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      color: $hoverColour;
+    }
+  }
 }
 
 .pagination {
@@ -190,6 +199,10 @@ body {
   &--categories {
     list-style: none;
   }
+  &--nav {
+    transition: .2s;
+    overflow: hidden;
+  }
   .item--post {
     margin-left: 0;
   }
@@ -203,7 +216,11 @@ body {
 .item {
   &--nav {
     display: inline-block;
-    margin-left: 1rem;
+    width: 100%;
+    @include breakpoint(break-1) {
+      width: auto;
+      margin-left: 1rem;
+    }
     &:first-of-type {
       margin-left: 0;
     }

@@ -11,3 +11,25 @@
 {% else %}
   {% include nav-default.html %}
 {% endif %}
+
+<script type="text/javascript">
+  const navList = document.querySelector('.nav--header ul');
+  const nav = navList.parentElement;
+  const navListHeight = navList.clientHeight;
+  const navToggle = document.createElement('button');
+
+  navToggle.innerHTML = '<svg class="icon  icon--nav" role="img"><use xlink:href="#nav"></use></svg>';
+
+  if (navList.childElementCount > 5 && document.body.clientWidth < 640 ) {
+    navList.setAttribute('style', 'height: 0');
+    nav.insertBefore(navToggle, navList);
+  }
+
+  navToggle.onclick = () => {
+    if (navList.clientHeight == 0) {
+      navList.setAttribute('style', `height: ${navListHeight}px`);
+    } else {
+      navList.setAttribute('style', 'height: 0');
+    }
+  };
+</script>
