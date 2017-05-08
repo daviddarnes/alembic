@@ -34,17 +34,13 @@ body {
 .header,
 .footer {
   .container {
-    padding: 1rem 0;
     @include flexbox;
-    @include flex-direction(column);
-    @include align-items(center);
-    text-align: center;
-  }
-  @include breakpoint(break-1) {
-    .container {
-      @include flex-direction(row);
-      @include justify-content(space-between);
-      text-align: inherit;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    padding: 1rem 0;
+    text-align: inherit;
+    @include breakpoint(break-1) {
+      @include align-items(center);
     }
   }
 }
@@ -89,11 +85,20 @@ body {
       color: $backgroundColour;
     }
   }
+  .container {
+    @include flex-wrap(wrap);
+  }
+  .small {
+    padding-top: 0;
+  }
 }
 
 
 // Nav and copyright
 .nav {
+  &--header {
+    text-align: right;
+  }
   &--paginator {
     @include flexbox;
     @include justify-content(space-between);
@@ -106,6 +111,9 @@ body {
   button {
     background: none;
     color: $linkColour;
+    margin-bottom: 0;
+    min-height: 4rem;
+    min-width: 4rem;
     &:hover,
     &:focus {
       box-shadow: none;
@@ -117,13 +125,6 @@ body {
 .pagination {
   min-width: 20%;
 }
-
-.copyright {
-  @include breakpoint(break-1) {
-    @include order(-1);
-  }
-}
-
 
 // Main content
 .main {
