@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Martensite Phase Transition/马氏体相变"
-date:   2017-04-17
+date:   2017-05-10
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
@@ -36,12 +36,12 @@ Here, we know the basic concepts of martensite phase transformation. We majority
 
 Reference:
 
-[Ball, John M., and Richard D. James. "Fine phase mixtures as minimizers of energy." Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.](http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d)
-[Ball, John M., and Richard D. James. "Proposed experimental tests of a theory of fine microstructure and the two-well problem." Philosophical Transactions of the Royal Society of London A: Mathematical, Physical and Engineering Sciences 338.1650 (1992): 389-450.](http://rsta.royalsocietypublishing.org/content/338/1650/389.short)
-[Chen, Xian. "Influence of compatibility conditions on the microstructure at phase transformation." (2013).](http://conservancy.umn.edu/handle/11299/165222)
-[Ball, John M., and Richard D. James. "Fine phase mixtures as minimizers of energy." Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.](http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d)
-[Chen, L. Q. (2002). Phase-field models for microstructure evolution. Annual review of materials research, 32(1), 113-140.](http://annualreviews.org/doi/abs/10.1146/annurev.matsci.32.112001.132041)
-[Martensite](https://en.wikipedia.org/wiki/Martensite)
-[马氏体相变](http://baike.baidu.com/item/马氏体相变)
+1. [Ball, John M., and Richard D. James. "Fine phase mixtures as minimizers of energy." Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.](http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d)
+2. [Ball, John M., and Richard D. James. "Proposed experimental tests of a theory of fine microstructure and the two-well problem." Philosophical Transactions of the Royal Society of London A: Mathematical, Physical and Engineering Sciences 338.1650 (1992): 389-450.](http://rsta.royalsocietypublishing.org/content/338/1650/389.short)
+3. [Chen, Xian. "Influence of compatibility conditions on the microstructure at phase transformation." (2013).](http://conservancy.umn.edu/handle/11299/165222)
+4. [Ball, John M., and Richard D. James. "Fine phase mixtures as minimizers of energy." Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.](http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d)
+5. [Chen, L. Q. (2002). Phase-field models for microstructure evolution. Annual review of materials research, 32(1), 113-140.](http://annualreviews.org/doi/abs/10.1146/annurev.matsci.32.112001.132041)
+6. [Martensite](https://en.wikipedia.org/wiki/Martensite)
+7. [马氏体相变](http://baike.baidu.com/item/马氏体相变)
 
 
