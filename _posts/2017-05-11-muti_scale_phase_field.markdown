@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2006, Yunzhi Wanga, Armen G. Khachaturyanb, Multi-scale phase field approach to martensitic transformations"
+title:  "2006, Yunzhi Wang, Armen G. Khachaturyan, Multi-scale phase field approach to martensitic transformations"
 date:   2017-05-11
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
