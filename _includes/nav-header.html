@@ -1,6 +1,9 @@
 {% if site.navigation_header %}
 <nav class="nav  nav--header">
-  <ul class="list list--nav">
+  <button class="button  button--nav">
+    {% include icon.html id="nav" %}
+  </button>
+  <ul class="list  list--nav">
     {% for item in site.navigation_header %}
       <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">
         <a href="{{ item[1] }}" title="Page - {{ item[0] }}">{{ item[0] }}</a>
@@ -11,37 +14,23 @@
 {% else %}
   {% include nav-default.html %}
 {% endif %}
-
 <script type="text/javascript">
-  const navList = document.querySelector('.nav--header ul')
+const applyToggle = (list, button, breakpoint, itemCount) => {
+  const navList = document.querySelector(list)
+  if (document.body.clientWidth < breakpoint && navList.childElementCount >= itemCount) {
+    const navHeight = navList.clientHeight
+    const navButton = document.querySelector(button)
+    navList.style.maxHeight = '0px'
 
-  const createButton = (parent) => {
-  	const navToggle = document.createElement('button')
-    navToggle.innerHTML = '<svg class="icon  icon--nav" role="img"><use xlink:href="#nav"></use></svg>';
-  	parent.insertBefore(navToggle, navList)
-
-  	return navToggle
-  };
-
-  const toggle = (el, elHeight) => {
-  	if (el.clientHeight === 0) {
-  	  el.setAttribute('style', `height: ${elHeight}px`)
-  	} else {
-  	  el.setAttribute('style', 'height: 0')
-  	}
-  };
-
-  const applyState = (itemCount, breakpoint) => {
-  	if (navList.childElementCount > itemCount && document.body.clientWidth < breakpoint ) {
-  		const navListHeight = navList.clientHeight
-
-  		toggle(navList, navListHeight)
-
-  		createButton(navList.parentElement).onclick = () => {
-  			toggle(navList, navListHeight)
-  		}
-  	}
+    navButton.onclick = () => {
+      if (navList.style.maxHeight == '0px') {
+        navList.style.maxHeight = `${navHeight}px`
+      } else {
+        navList.style.maxHeight = '0px'
+      }
+    }
   }
+}
 
-  applyState(5, 640)
+applyToggle('.list--nav', '.button', 640, 6)
 </script>
