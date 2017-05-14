@@ -31,6 +31,9 @@ body {
 // Header, feature and footer
 .header,
 .footer {
+  .nav {
+    text-align: right;
+  }
   .container {
     @include flexbox;
     @include flex-direction(row);
@@ -94,9 +97,6 @@ body {
 
 // Nav and copyright
 .nav {
-  &--header {
-    text-align: right;
-  }
   &--paginator {
     @include flexbox;
     @include justify-content(space-between);
