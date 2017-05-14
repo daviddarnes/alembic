@@ -79,4 +79,4 @@ Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit e
 
 {% include figure.html image="https://unsplash.it/300/400?image=123" position="right" %}
 
-{% include figure.html image="https://unsplash.it/2000/400?image=123" %}
+{% include figure.html image="https://unsplash.it/800/400?image=123" %}
