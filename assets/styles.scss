@@ -191,7 +191,8 @@ body {
     overflow: hidden;
     transition: .2s;
   }
-  .item--post {
+  .item--post,
+  .item--result {
     margin-left: 0;
   }
   &--categories {
