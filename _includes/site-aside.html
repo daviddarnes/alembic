@@ -1,31 +1,23 @@
-<aside class="aside  typeset">
+<aside class="aside  typeset{% if include.align == "left" %}  aside--left{% endif %}">
 
-  {% unless page.layout == "categories" or page.collection == "posts" %}
-    <h3>About this site</h3>
-    <p>{{ site.description }}</p>
-  {% endunless %}
+  {% if page.layout == "post" %}
+    <section class="section  section--related-posts">
+      {% include post-related.html %}
+    </section>
 
-  {% unless page.layout == "categories" or page.layout == "search" or page.collection == "posts" or paginator.posts %}
-    {% include post-list.html %}
-  {% endunless %}
+  {% elsif page.layout == "page" or page.layout == "home" or page.layout == "blog" %}
+    <section class="section  section--description">
+      <h3>About this site</h3>
+      <p>{{ site.description }}</p>
+      {% include nav-social.html %}
+    </section>
 
-  {% if page.layout == "categories" %}
+  {% elsif page.layout == "categories" %}
     <section class="section  section--category-index">
       <h3>Index</h3>
       {% include nav-categories.html %}
     </section>
-  {% endif %}
 
-  {% if page.collection == "posts" %}
-    {% include post-related.html %}
   {% endif %}
-
-  {% if page.collection == "posts" or paginator.posts %}
-    {% include button.html text="Subscribe to posts &nbsp;" icon="rss" link="/feed.xml" %}
-  {% endif %}
-
-  {% unless page.layout == "categories" %}
-    {% include nav-social.html %}
-  {% endunless %}
 
 </aside>

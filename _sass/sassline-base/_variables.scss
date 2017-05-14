@@ -94,15 +94,3 @@ $white: #FFFFFF !default;
 // Background colours.
 $backgroundColour: #FCFCFC !default;
 $codeBackgroundColour: #F5F4F2 !default;
-
-
-// Alembic reassigned variables
-$headingColour: $color__site--heading;
-$bodyColour: $color__site--body;
-$linkColour: $color__site--link;
-$hoverColour: $color__site--link--hover;
-$captionColour: $color__site--captions;
-$white: #fff;
-
-$backgroundColour: $color__site--background;
-$codeBackgroundColour: darken($color__site--background, 5%);

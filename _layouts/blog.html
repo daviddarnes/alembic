@@ -10,10 +10,16 @@ layout: default
 
     <article class="article  article--page  typeset">
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<h1>{{ collectiondata.title }}</h1>
+			{% if paginator.posts %}
+				{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+				<h1>{{ collectiondata.title }}</h1>
+				{{ collectiondata.description | markdownify }}
 
-			{{ collectiondata.description | markdownify }}
+			{% else %}
+				<h1>{{ page.title }}</h1>
+				{{ content }}
+				
+			{% endif %}
 
     </article>
 
@@ -21,7 +27,7 @@ layout: default
 
   </div>
 
-  {% include site-aside.html %}
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
 
 </main>
 

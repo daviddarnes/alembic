@@ -24,7 +24,7 @@
 
 		{% include site-favicons.html %}
 	</head>
-	<body class="layout-{{ page.layout }}  {{ page.title | slugify }}">
+	<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
 		{% include site-icons.svg %}
 
 		{{ content }}

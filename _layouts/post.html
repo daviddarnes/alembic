@@ -18,7 +18,7 @@ layout: default
 
   </article>
 
-  {% include site-aside.html %}
+	{% if page.aside == true %}{% include site-aside.html %}{% endif %}
 
 </main>
 

@@ -30,9 +30,9 @@
         const resultsArray = findResults(this.value, pages);
         const html = resultsArray.map(item => {
           return `
-              <li class="item">
+              <li class="item  item--result">
                   <article class="article  typeset">
-                      <h4><a href="{{ site.url }}${item.url}" title="Result - ${item.title}">${item.title}</a></h4>
+                      <h4><a href="${item.url}" title="Result - ${item.title}">${item.title}</a></h4>
                       <p>${item.excerpt}</p>
                   </article>
               </li>`;

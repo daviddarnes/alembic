@@ -1,0 +1,39 @@
+// Background colours
+$backgroundColour: #ffffff;
+$codeBackgroundColour: #f4f4f4;
+$featureBackgroundColour: #eeeeee;
+$accentColour: #05bf85;
+
+// Text colours
+$headingColour: #333333;
+$bodyColour: #555555;
+$linkColour: #05bf85;
+$hoverColour: #008000;
+$focusColour: #fa407a;
+$captionColour: #aaaaaa;
+$white: #ffffff;
+
+// Typography
+$bodytype: (
+  font-family: 'Georgia, serif',
+  regular: 400,
+  bold: 700,
+  italic: italic,
+  cap-height: 0.75
+);
+
+$headingtype: (
+  font-family: '"Merriweather", serif',
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75
+);
+
+$monospacetype: (
+  font-family: 'Menlo, monospace',
+  regular: 400,
+  cap-height: 0.68
+);
+
+// Font import, if you're using a non-standard web font
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
