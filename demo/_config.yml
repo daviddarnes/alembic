@@ -29,6 +29,8 @@ gems:
 - jekyll-feed
 - jemoji
 
+theme: alembic-jekyll-theme
+
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
