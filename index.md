@@ -52,7 +52,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`
 4. Change the `placeholder-logo.svg` and `placeholder-social.png` in the `assets/` folder to your own branding
-5. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](#configuration)
+5. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
 5. Change the `CNAME` record to your projects' record
 6. Install bundler with `$ gem install bundler`
 7. Install gems with `$ bundle install`
@@ -62,7 +62,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 ### As a Jekyll 3.3 theme gem
 
 1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
-2. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](#configuration)
+2. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
 3. Create a `placeholder-logo.svg` and `placeholder-social.png` in a new `assets/` folder
 4. Install bundler with `$ gem install bundler`
 5. Install gems with `$ bundle install`
