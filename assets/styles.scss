@@ -355,21 +355,19 @@ button,
   }
 }
 
-.button {
+.button--nav {
   @include breakpoint(break-1) {
     display: none;
   }
-  &--nav {
-    background: none;
-    color: $linkColour;
-    margin-bottom: 0;
-    min-height: 4rem;
-    min-width: 4rem;
-    &:hover,
-    &:focus {
-      box-shadow: none;
-      color: $hoverColour;
-    }
+  background: none;
+  color: $linkColour;
+  margin-bottom: 0;
+  min-height: 4rem;
+  min-width: 4rem;
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: $hoverColour;
   }
 }
 

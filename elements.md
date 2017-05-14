@@ -63,6 +63,8 @@ Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit e
 
 {% include button.html text="A button" link="https://david.darn.es" %}
 
+{% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %}
+
 ### Icon include
 
 {% include icon.html id="twitter" %}
