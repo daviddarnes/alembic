@@ -2,11 +2,9 @@
 title: false
 ---
 
-
 // Frameworks & Imports
 @charset "utf-8";
 @import "settings";
-@import "settings-custom-props";
 @import "normalize";
 @import "sassline-base";
 @import "syntax";
@@ -113,6 +111,7 @@ body {
 .pagination {
   min-width: 20%;
 }
+
 
 // Main content
 .main {
@@ -445,6 +444,7 @@ pre code {
   color: $backgroundColour;
   text-shadow: none;
 }
+
 
 // Sassline overrides
 .typeset {
