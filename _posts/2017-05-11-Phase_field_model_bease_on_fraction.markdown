@@ -7,6 +7,7 @@ header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
 - Martensite Phase Transformation/马氏体相变
+- Phase-field/相场法
 comments: true
 ---
 Base on the phase-field equation, it uses another order parameter to build up the free energy function and solve it.

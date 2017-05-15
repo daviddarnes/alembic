@@ -7,6 +7,7 @@ header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
 - Martensite Phase Transformation/马氏体相变
+- Phase-field/相场法
 comments: true
 ---
 Introduce the KS's phase field model and the meanings of the order parameter in his theory
