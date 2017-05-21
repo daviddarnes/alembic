@@ -15,9 +15,9 @@
   {% include nav-default.html %}
 {% endif %}
 <script type="text/javascript">
-const applyToggle = (list, button, breakpoint, itemCount) => {
+const applyToggle = (list, button, breakpoint) => {
   const navList = document.querySelector(list)
-  if (document.body.clientWidth < breakpoint && navList.childElementCount >= itemCount) {
+  if (document.body.clientWidth < breakpoint) {
     const navHeight = navList.clientHeight
     const navButton = document.querySelector(button)
     navList.style.maxHeight = '0px'
@@ -32,5 +32,5 @@ const applyToggle = (list, button, breakpoint, itemCount) => {
   }
 }
 
-applyToggle('.list--nav', '.button', 640, 6)
+applyToggle('.list--nav', '.button', 640)
 </script>
