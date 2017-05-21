@@ -62,7 +62,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`
-4. Change the `placeholder-logo.svg` and `placeholder-social.png` in the `assets/` folder to your own branding
+4. Change the `logo.svg` and `default-social-image.png` in the `assets/` folder to your own branding
 5. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](#configuration)
 5. Change the `CNAME` record to your projects' record
 6. Install bundler with `$ gem install bundler`
@@ -74,7 +74,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
 2. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](#configuration)
-3. Create a `placeholder-logo.svg` and `placeholder-social.png` in a new `assets/` folder
+3. Create a `logo.svg` and `default-social-image.png` in a new `assets/` folder
 4. Install bundler with `$ gem install bundler`
 5. Install gems with `$ bundle install`
 6. Run Jekyll with `$ bundle exec jekyll serve --watch`
@@ -94,7 +94,7 @@ There's a number of settings you'll need to change before you can start hacking 
 `twitter`, `author` and `social` values will need to be changed to the projects' social information or removed. Look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) - follow the link to find out more.
 
 ### Site settings
-You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/placeholder-logo.svg` `/assets/placeholder-social.png` with project logo and default social image. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value should be changed to your project username on [Disqus](https://disqus.com). Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
+You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` `/assets/default-social-image.png` with the project logo and default social image. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value should be changed to your project username on [Disqus](https://disqus.com). Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
 ### Site navigation
 There are a total of 4 different navigation types:

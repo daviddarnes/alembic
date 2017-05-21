@@ -51,7 +51,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
 3. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`
-4. Change the `placeholder-logo.svg` and `placeholder-social.png` in the `assets/` folder to your own branding
+4. Change the `logo.svg` and `default-social-image.png` in the `assets/` folder to your own branding
 5. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
 5. Change the `CNAME` record to your projects' record
 6. Install bundler with `$ gem install bundler`
@@ -63,7 +63,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
 2. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
-3. Create a `placeholder-logo.svg` and `placeholder-social.png` in a new `assets/` folder
+3. Create a `logo.svg` and `default-social-image.png` in a new `assets/` folder
 4. Install bundler with `$ gem install bundler`
 5. Install gems with `$ bundle install`
 6. Run Jekyll with `$ bundle exec jekyll serve --watch`
