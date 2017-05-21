@@ -49,7 +49,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-3. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`
+3. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png` and `alembic-jekyll-theme.gemspec`
 4. Change the `logo.svg` and `default-social-image.png` in the `assets/` folder to your own branding
 5. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
 5. Change the `CNAME` record to your projects' record
