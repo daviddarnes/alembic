@@ -213,7 +213,7 @@ body {
 a .icon {
   transition: fill .1s;
   &:hover {
-    fill: $hoverColour;
+    fill: currentColor;
   }
 }
 
