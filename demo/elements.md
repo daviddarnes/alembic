@@ -67,7 +67,7 @@ Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit 
 
 ### Icon include
 
-{% include icon.html id="twitter" %}
+{% include icon.html id="twitter" %} [{% include icon.html id="linkedin" %}](https://linkedin.com/daviddarnes)
 
 ### Video include
 

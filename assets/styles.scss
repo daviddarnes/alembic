@@ -34,12 +34,14 @@ body {
   .nav {
     text-align: right;
   }
+  .logo {
+    @include flex(0 0 auto);
+  }
   .container {
     @include flexbox;
     @include flex-direction(row);
     @include justify-content(space-between);
     padding: 1rem 0;
-    text-align: inherit;
     @include breakpoint(break-1) {
       @include align-items(center);
     }
@@ -53,7 +55,6 @@ body {
   background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
-  @include flexbox;
   .container {
     min-height: 35vh;
     max-width: 60%;
@@ -70,6 +71,16 @@ body {
   @include align-items(center);
   img {
     max-height: 4rem;
+  }
+}
+
+.nav {
+  a {
+    padding: .2rem;
+  }
+  &--social a {
+    display: inline-block;
+    line-height: 1;
   }
 }
 
@@ -97,17 +108,12 @@ body {
 }
 
 
-// Nav and copyright
-.nav {
-  &--paginator {
-    @include flexbox;
-    @include justify-content(space-between);
-    color: $captionColour;
-    text-align: center;
-  }
-  &--social {
-    text-align: left;
-  }
+// Pagination nav
+.nav--paginator {
+  @include flexbox;
+  @include justify-content(space-between);
+  color: $captionColour;
+  text-align: center;
 }
 
 .pagination {
@@ -135,24 +141,16 @@ body {
 }
 
 .content {
-  width: 100%;
   @include breakpoint(break-1) {
     width: 62%;
-    &--full {
-      width: 100%;
-      margin-right: 0%;
-    }
   }
 }
 
-.share {
-  .button {
-    margin-right: .3rem;
-  }
+.share .button {
+  margin-right: .3rem;
 }
 
 .aside {
-  max-width: 100%;
   @include breakpoint(break-1) {
     max-width: 34%;
     margin-left: 4%;
@@ -181,36 +179,23 @@ body {
 
 // Lists
 .list {
-  &--posts,
-  &--results {
-    list-style: none;
-  }
-  &--nav,
-  &--categories {
-    list-style: none;
-  }
+  list-style: none;
   &--nav {
     overflow: hidden;
     transition: .2s;
   }
   .item--post,
-  .item--result {
+  .item--result,
+  .item--category {
     margin-left: 0;
-  }
-  &--categories {
-    .item {
-      margin-left: 0;
-    }
   }
 }
 
 .item {
   &--nav {
-    display: inline-block;
-    width: 100%;
     @include breakpoint(break-1) {
-      width: auto;
-      margin-left: 1rem;
+      margin-left: .4rem;
+      display: inline-block;
     }
     &:first-of-type {
       margin-left: 0;
@@ -225,16 +210,10 @@ body {
 
 
 // Links, icons and images
-.link {
-  display: inline-block;
-  margin: .2rem;
-  line-height: 1;
-  .icon {
-    display: inline-block;
-    transition: fill .1s;
-    &:hover {
-      fill: $hoverColour;
-    }
+a .icon {
+  transition: fill .1s;
+  &:hover {
+    fill: $hoverColour;
   }
 }
 
@@ -245,11 +224,7 @@ body {
   fill: CurrentColor;
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-}
-
+// Media content
 img {
   max-width: 100%;
   height: auto;
@@ -257,20 +232,16 @@ img {
 
 .figure {
   line-height: 0;
-  @include breakpoint(break-1) {
-    &--left {
-      float: left;
-      padding-right: .8rem;
-    }
-    &--right {
-      float: right;
-      padding-left: .8rem;
-    }
+  &--left {
+    float: left;
+    padding-right: .8rem;
+  }
+  &--right {
+    float: right;
+    padding-left: .8rem;
   }
 }
 
-
-// Video and map embeds
 .video,
 .map {
   position: relative;
@@ -324,20 +295,6 @@ select {
   }
 }
 
-input[type="color"] {
-  padding: 0;
-  height: 2.4rem;
-  &::-webkit-color-swatch-wrapper {
-  	padding: 0;
-    &:after {
-      content: "Color";
-    }
-  }
-  &::-webkit-color-swatch {
-  	border: none;
-  }
-}
-
 input[type="submit"],
 button,
 .button {
@@ -345,16 +302,15 @@ button,
   display: inline-block;
   color: $backgroundColour;
   background: $accentColour;
-  position: relative;
   transition: box-shadow .1s;
   will-change: box-shadow;
   box-shadow: inset 0 0 0 2rem transparent;
   &:hover {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
   }
   &:active,
   &:focus {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
   }
 }
 
@@ -383,6 +339,7 @@ select {
   &:focus,
   &:hover:focus {
     outline: solid .12rem $focusColour;
+    outline-offset: -.12rem;
   }
 }
 
