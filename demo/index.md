@@ -34,7 +34,6 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 Here are a few examples of Alembic out in the wild being used in a variety of ways:
 
 - [bitpodcast.com](https://bitpodcast.com/)
-- [katiesimonemusic.com](http://katiesimonemusic.com/)
 - [joelcagedesign.com](https://joelcagedesign.com/)
 - [bawejakunal.github.io](https://bawejakunal.github.io/)
 - [case2111.github.io](http://case2111.github.io/)

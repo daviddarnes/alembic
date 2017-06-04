@@ -10,7 +10,7 @@
       {% if id contains "facebook" %}https://facebook.com/sharer/sharer.php?u={{ url }}{% endif %}
       {% if id contains "google+" %}https://plus.google.com/share?url={{ url }}{% endif %}
       {% if id contains "pinterest" %}https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title }}&media={{ page.image }}{% endif %}
-      {% if id contains "linkedin" %}https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title }}&source={{ site.title }}&summary={{ page.excerpt }}&mini=true{% endif %}
+      {% if id contains "linkedin" %}https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title }}&source={{ site.title }}&mini=true{% endif %}
       {% if id contains "tumblr" %}https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags={{ page.category }}&caption={{ page.title }}{% endif %}
       {% if id contains "reddit" %}https://reddit.com/submit?url={{ url }}&title={{ page.title }}&resubmit=true{% endif %}
       {% if id contains "hackernews" %}https://news.ycombinator.com/submitlink?u={{ url }}&t={{ page.title }}{% endif %}

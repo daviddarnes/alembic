@@ -67,7 +67,7 @@ Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit 
 
 ### Icon include
 
-{% include icon.html id="twitter" %} [{% include icon.html id="linkedin" %}](https://linkedin.com/daviddarnes)
+{% include icon.html id="twitter" %} [{% include icon.html id="linkedin" %}](https://www.linkedin.com/in/daviddarnes)
 
 ### Video include
 
@@ -77,6 +77,6 @@ Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit 
 
 {% include figure.html image="https://unsplash.it/300/400?image=123" caption="This image has a caption" %}
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" position="right" %}
+{% include figure.html image="https://unsplash.it/300/400?image=123" caption="This image has a caption but also alt text" alt="This is the alt text" position="right" %}
 
-{% include figure.html image="https://unsplash.it/800/400?image=123" %}
+{% include figure.html image="https://unsplash.it/800/400?image=123" alt="This image has alt text but no caption" %}
