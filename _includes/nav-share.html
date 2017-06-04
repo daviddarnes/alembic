@@ -2,7 +2,7 @@
   {% for network in site.sharing_links %}
     {% assign name = network[0] %}
     {% assign id = network[0] | downcase | remove: " " %}
-    {% assign url = site.url | append: page.url %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% assign color = network[1] %}
 
     {% capture share_link %}
