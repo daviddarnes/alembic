@@ -26,7 +26,9 @@ When a X-ray shooting on a material, many particles in the material will be exci
 ## Bragg diffraction
 
 Because the atoms in the crystal material are in order, so there are several "planes" which are formed by the atoms will diffract the X-ray in a particular point in the space. Just like a mirror reflect the light, but we should know that this is not the reflection. If the "plane" satisfy the Bragg angle,
-$$2d = sin \theta n \lambda$$
+
+$$2d = sin \theta n \lambda,$$
+
 it can "reflect" the X-ray and make it concentrate in a spectacular point. $d$ is the distance between the plane, $\theta$ is the Bragg angle (angle of X-ray incidence), $n$ is an integer and $\lambda$ is the X-ray wavelength. So we can use some other tools to make sure the intensity distribution in the space.
 
 ## Intensity
