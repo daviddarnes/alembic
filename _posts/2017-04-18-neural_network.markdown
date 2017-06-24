@@ -8,6 +8,7 @@ catalog: true
 tag:
 - Neural Network/神经网络
 - Machine Learning/机器学习
+- Introduction/介绍
 comments: true
 ---
 神经网络入门

@@ -18,7 +18,7 @@ Metallography, SEM, XRD
 3. Comparing the characterization of martensitic transformation by several techniques, including classical light metallography scanning electron microscopy, XRD, neutron diffraction and electron back scattered diffraction(EBSD). 
 4. Shape of stress-strain curves is strongly dependent on strain rate. Increasing strain rate yield stress increases, ultimate tensile strength decreases, and also heating of specimens occurred.
 5. In metastable steels, mechanical grinding and polishing can produce deformation-induced phase transformation.
-6. It use XRD for characterization, and it use the formula of theoretical intensity: $I = mSLPF$, I is the intensity, m is multiplicity factor, S is scale factor, L is Lorentz factor, F is structure factor.
+6. It use XRD for characterization, and it use the formula of theoretical intensity: $I = mSLPF$, I is the intensity, m is multiplicity factor, S is scale factor, L is Lorentz factor, P is the polarization factor, F is structure factor.
 7. Accuracy of diffraction methods is influenced by type of radiation(penetration depth, sampled volume), angular range, etc. The most powerful technique is neutron diffraction. AE(Acoustic emission) is very precise in characterizing the kinetics of the deformation induced martensitic transformation.
 8. Classical light or scanning electron microscopy do not allow us to distinguish precisely between martensitic lathes, slip lines and deformation twins and to quantify the martensitic volume fraction by image analysis.
 9. It also use differential phase contrast to distinguish the microstructure of the martensitic.
