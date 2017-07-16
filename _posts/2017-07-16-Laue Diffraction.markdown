@@ -22,21 +22,23 @@ $2dsin \theta = \lambda$
 For the traditionally Bragg diffraction, it changes the Bragg angle, $\theta$, and makes the wavelength of the X-ray does not change. The working pattern of the machine just like the picture below. It can record the intensity respect to the Bragg angle.
 
 
-![](img/BraggDiffraction.jpg =100x100)
+![Bragg diffraction](img/BraggDiffraction.jpg)
 
 
 But for the Laue pattern, it keeps the Bragg angle does not change, and uses continuously wavelength as the light source to record the diffraction result. The working situation of the Laue pattern machine is like the picture below. 
 
 
-![](img/LaueDiffraction.png =100x100)
+![Laue diffraction](img/LaueDiffraction.png)
 
 
 With this kind of diffraction pattern, we can record the intensity in the 2D area and inversely calculate out the lattice parameters. For the Laue diffraction pattern, it should obey
 
 
-$a \times (Sh - So) = h λ \\
-b \times (Sh - So) = k λ \\
-c \times (Sh - So) = l λ$
+$a \times (Sh - So) = h λ$ \\
+
+$b \times (Sh - So) = k λ$ \\
+
+$c \times (Sh - So) = l λ$
 
 
 where $Sh$ is the incident light direction, $So$ is emitting light direction, $a, b, c, h, k and l$ are lattice parameter and $\lambda$ is the wavelength. If those equations are satisfied, the X-ray can be reflected by the surface of $[1/h, 1/k, 1/l]$. And actually, the Laue diffraction law and the Bragg diffraction law are the same, they are just for different X-ray diffracitons.
