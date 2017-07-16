@@ -15,20 +15,21 @@ An introduction to Laue diffraction
 
 There are many ways to get the diffraction patterns. We can use single crystal, powder and poly-crystal to do the X-ray diffraction experiments. All of the diffraction patterns should obey the Bragg diffraction law,
 
-
+<div  align="center">    
 $2dsin \theta = \lambda$
+</div>
 
 
 For the traditionally Bragg diffraction, it changes the Bragg angle, $\theta$, and makes the wavelength of the X-ray does not change. The working pattern of the machine just like the picture below. It can record the intensity respect to the Bragg angle.
 
 
-<img src="joephy.github.io/_posts/img/BraggDiffraction.jpg" width="200px" />
+<img src="img/BraggDiffraction.jpg" width="200px" />
 
 
 But for the Laue pattern, it keeps the Bragg angle does not change, and uses continuously wavelength as the light source to record the diffraction result. The working situation of the Laue pattern machine is like the picture below. 
 
 
-<img src="joephy.github.io/_posts/img/LaueDiffraction.png" style="height:200px" />
+<img src="img/LaueDiffraction.png" style="height:200px" />
 
 
 With this kind of diffraction pattern, we can record the intensity in the 2D area and inversely calculate out the lattice parameters. For the Laue diffraction pattern, it should obey
