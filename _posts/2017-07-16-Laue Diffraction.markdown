@@ -20,10 +20,10 @@ $2dsin \theta = \lambda$
 </div>
 
 
-For the traditionally Bragg diffraction, it changes the Bragg angle, $\theta$, and makes the wavelength of the X-ray does not change. The working pattern of the machine just like the picture below. It can record the intensity respect to the Bragg angle.
+For the traditionally Bragg diffraction, it changes the Bragg angle, $\theta$, and makes the wavelength of the X-ray does not change. The working pattern of the machine just like the picture below. It can record the intensity with respect to the Bragg angle.
 
 
-"img/BraggDiffraction.jpg"
+![](https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/BraggDiffraction.jpg)
 
 
 But for the Laue pattern, it keeps the Bragg angle does not change, and uses continuously wavelength as the light source to record the diffraction result. The working situation of the Laue pattern machine is like the picture below. 
@@ -42,7 +42,7 @@ $b \times (Sh - So) = k λ$
 $c \times (Sh - So) = l λ$
 
 
-where $Sh$ is the incident light direction, $So$ is emitting light direction, $a, b, c, h, k and l$ are lattice parameter and $\lambda$ is the wavelength. If those equations are satisfied, the X-ray can be reflected by the surface of $[1/h, 1/k, 1/l]$. And actually, the Laue diffraction law and the Bragg diffraction law are the same, they are just for different X-ray diffracitons.
+where $Sh$ is the incident light direction, $So$ is emitting light direction, $a, b, c, h, k, l$ are lattice parameter and $\lambda$ is the wavelength. If those equations are satisfied, the X-ray can be reflected by the surface of $[1/h, 1/k, 1/l]$. And actually, the Laue diffraction law and the Bragg diffraction law are the same, they are just for different X-ray diffraction patterns. 
 
 Reference:
 
