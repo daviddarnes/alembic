@@ -29,7 +29,7 @@ For the traditionally Bragg diffraction, it changes the Bragg angle, $\theta$, a
 But for the Laue pattern, it keeps the Bragg angle does not change, and uses continuously wavelength as the light source to record the diffraction result. The working situation of the Laue pattern machine is like the picture below. 
 
 
-"img/LaueDiffraction.png"
+![](https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/LaueDiffraction.png)
 
 
 With this kind of diffraction pattern, we can record the intensity in the 2D area and inversely calculate out the lattice parameters. For the Laue diffraction pattern, it should obey
