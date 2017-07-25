@@ -238,7 +238,12 @@ img {
   }
   &--right {
     float: right;
+    text-align: right;
     padding-left: .8rem;
+  }
+  &--center {
+    text-align: center;
+    clear: both;
   }
 }
 

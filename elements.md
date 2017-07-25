@@ -75,8 +75,10 @@ Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit 
 
 ### Image includes
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" caption="This image has a caption" %}
+{% include figure.html image="https://unsplash.it/300/400?image=123" caption="Image with caption" %}
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" caption="This image has a caption but also alt text" alt="This is the alt text" position="right" %}
+{% include figure.html image="https://unsplash.it/300/400?image=123" caption="Right aligned image" position="right" %}
 
-{% include figure.html image="https://unsplash.it/800/400?image=123" alt="This image has alt text but no caption" %}
+{% include figure.html image="https://unsplash.it/300/400?image=123" position="center" caption="Center aligned image" %}
+
+{% include figure.html image="https://unsplash.it/800/400?image=123" alt="Image with just alt text" %}
