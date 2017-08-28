@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    {% include site-logo.html %}
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
 
     {% include nav-header.html %}
   </div>

@@ -1,7 +1,7 @@
 <nav class="nav">
   <ul class="list list--nav">
-    {% for item in site.pages %}
-      {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" or item.url contains "/feed." or item.url contains ".json" %}
+    {% for item in site.html_pages %}
+      {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" %}
         <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
 
           {% if item.url contains '://' %}
