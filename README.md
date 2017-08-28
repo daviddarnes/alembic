@@ -93,7 +93,7 @@ There's a number of settings you'll need to change before you can start hacking 
 `twitter`, `author` and `social` values will need to be changed to the projects' social information or removed. Look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) - follow the link to find out more.
 
 ### Site settings
-You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` `/assets/default-social-image.png` with the project logo and default social image. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value should be changed to your project username on [Disqus](https://disqus.com). Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
+You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
 ### Site navigation
 There are a total of 4 different navigation types:
