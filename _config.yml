@@ -28,6 +28,7 @@ gems:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
+- jekyll-default-layout
 - jekyll-feed
 - jemoji
 
@@ -67,18 +68,7 @@ collections:
 # 6. Jekyll collections settings
 defaults:
   -
-    scope:
-      path: ""
-      type: pages
     values:
-      layout: page # Default layout
-      image: "/assets/default-social-image.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
       image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings

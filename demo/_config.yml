@@ -21,6 +21,7 @@ gems:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
+- jekyll-default-layout
 - jekyll-feed
 - jemoji
 
@@ -62,18 +63,7 @@ collections:
 # 6. Jekyll collections settings
 defaults:
   -
-    scope:
-      path: ""
-      type: pages
     values:
-      layout: page # Default layout
-      image: "/assets/default-social-image.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
       image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
@@ -85,7 +75,7 @@ description: "Alembic is a starting point for Jekyll projects. Rather than start
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 repo: "https://github.com/daviddarnes/alembic"
 email: "me@daviddarnes.com"
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# disqus: "" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
