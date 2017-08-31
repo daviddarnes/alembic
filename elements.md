@@ -41,10 +41,37 @@ Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit 
 
 > A simple blockquote
 
+Some HTML...
+
 ``` html
-<div>
-  <span>Some example code</span>
-</div>
+<blockquote cite="http://www.imdb.com/title/tt0284978/quotes/qt1375101">
+  <p>You planning a vacation, Mr. Sullivan?</p>
+  <footer>
+    <a href="http://www.imdb.com/title/tt0284978/quotes/qt1375101">Sunways Security Guard</a>
+  </footer>
+</blockquote>
+```
+
+...CSS...
+
+``` css
+blockquote {
+  text-align: center;
+  font-weight: bold;
+}
+blockquote footer {
+  font-size: .8rem;
+}
+```
+
+...and JavaScript
+
+``` js
+const blockquote = document.querySelector("blockquote")
+const bolden = (keyString, string) =>
+	string.replace(new RegExp(keyString, 'g'), '<strong>'+keyString+'</strong>')
+
+blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 ```
 
 `Single line of code`
