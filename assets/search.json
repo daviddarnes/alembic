@@ -12,7 +12,7 @@ sitemap: false
       {
         "title": {{ doc.title | jsonify }},
         "excerpt": {{ doc.excerpt | markdownify | strip_html | jsonify }},
-        "content": {{ doc.content | markdownify | strip_html | jsonify | replace:'\n',' ' | replace:'   ',' ' | replace:'  ',' ' }},
+        "content": {{ doc.content | markdownify | strip_html | jsonify }},
         "url": {{ site.baseurl | append: doc.url | jsonify }}
       },
     {% endfor %}
@@ -22,7 +22,7 @@ sitemap: false
   {
     "title": {{ page.title | jsonify }},
     "excerpt": {{ page.excerpt | markdownify | strip_html | jsonify }},
-    "content": {{ page.content | markdownify | strip_html | jsonify | replace:'\n',' ' | replace:'   ',' ' | replace:'  ',' ' }},
+    "content": {{ page.content | markdownify | strip_html | jsonify }},
     "url": {{ site.baseurl | append: page.url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
