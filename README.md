@@ -5,6 +5,8 @@
 
 ![Screenshot](https://raw.githubusercontent.com/daviddarnes/alembic/master/screenshot.png)
 
+[Tweet it](https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes){: style="color: #1DA1F2"} | [Tip me $5 💸](https://www.paypal.me/daviddarnes/5usd){: style="color: #05bf85"}
+
 ## Contents
 - [About](#about)
 - [Features](#features)
