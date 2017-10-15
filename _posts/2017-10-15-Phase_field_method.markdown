@@ -32,6 +32,5 @@ Reference:
 1. [Chen, L. Q. (2002). Phase-field models for microstructure evolution. Annual review of materials research, 32(1), 113-140.](http://www.annualreviews.org/doi/abs/10.1146/annurev.matsci.32.112001.132041)
 2. [Artemev, A., Jin, Y., & Khachaturyan, A. G. (2001). Three-dimensional phase field model of proper martensitic transformation. Acta materialia, 49(7), 1165-1177.](http://www.sciencedirect.com/science/article/pii/S1359645401000210)
 3. [Krill Iii, C. E., & Chen, L. Q. (2002). Computer simulation of 3-D grain growth using a phase-field model. Acta materialia, 50(12), 3059-3075.](http://www.sciencedirect.com/science/article/pii/S1359645402000848)
-4. 
 
 
