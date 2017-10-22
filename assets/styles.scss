@@ -48,6 +48,12 @@ body {
   }
 }
 
+.header .nav {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
 .feature {
   padding-bottom: .4rem;
   margin-bottom: 1.6rem;
