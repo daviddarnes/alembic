@@ -1,8 +1,5 @@
 {% if site.navigation_header %}
 <nav class="nav  nav--header">
-  <button class="button  button--nav" aria-label="Nav toggle">
-    {% include icon.html id="nav" %}
-  </button>
   <ul class="list  list--nav">
     {% for item in site.navigation_header %}
 
@@ -21,7 +18,20 @@
 {% else %}
   {% include nav-default.html %}
 {% endif %}
+
+<template id="buttontoggle">
+  <button class="button  button--nav" aria-label="Nav toggle">
+    {% include icon.html id="nav" %}
+  </button>
+</template>
+
 <script type="text/javascript">
+
+const nav = document.querySelector('.nav')
+const buttonTemplate = document.querySelector('#buttontoggle')
+const button = document.importNode(buttonTemplate.content, true)
+nav.appendChild(button)
+
 const applyToggle = (list, button, breakpoint) => {
   const navList = document.querySelector(list)
   if (document.body.clientWidth < breakpoint) {
@@ -40,4 +50,5 @@ const applyToggle = (list, button, breakpoint) => {
 }
 
 applyToggle('.list--nav', '.button', 640)
+
 </script>
