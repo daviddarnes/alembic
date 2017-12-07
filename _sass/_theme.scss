@@ -404,6 +404,9 @@ pre code {
 
 // Sassline overrides
 .typeset {
+  a > code {
+    text-shadow: none;
+  }
   .button,
   button {
     background-image: none;
