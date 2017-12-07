@@ -59,7 +59,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ## Installation
 
-### As a Jekyll theme _Recommended for general use_
+### As a Jekyll theme
 
 1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
 2. Run the command `bundle install` in the root of project to install the theme and its dependancies
@@ -67,7 +67,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 4. Run `bundle exec jekyll serve` to build and serve your site
 5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
-### As a GitHub Pages remote theme _Recommended for use with GitHub Pages_
+### As a GitHub Pages remote theme
 
 1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
 2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
@@ -76,7 +76,9 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 5. Run `bundle exec jekyll serve` to build and serve your site
 6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
-### As a Boilerplate / Fork _*(deprecated, not recommended)*_
+### As a Boilerplate / Fork
+
+_(deprecated, not recommended)_
 
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Replace the `Gemfile` with one stating all the gems used in your project
@@ -98,12 +100,15 @@ If you're just looking to set your own colours and fonts copy the [`_settings.sc
 There are a number of optional settings for you to configure. Use the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file in the repo and use the documentation below to configure your site:
 
 ### Gem dependency settings
+
 `twitter`, `author` and `social` values will need to be changed to the projects' social information or removed. Look for the `Gem settings` comment within the `/_config.yml` file. These values are for the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) - follow the link to find out more.
 
 ### Site settings
+
 You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
 ### Site navigation
+
 There are a total of 4 different navigation types:
 
 - `navigation_header`: The links shown in the header (it is also used on the 404 page)
