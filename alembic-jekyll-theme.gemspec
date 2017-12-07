@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alembic-jekyll-theme"
-  spec.version       = "2.2.5"
+  spec.version       = "3"
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 3.4"
+  spec.add_runtime_dependency "jekyll", "~> 3.6"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 0.13"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.2"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
