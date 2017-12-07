@@ -45,32 +45,28 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ## Installation
 
-### As a Boilerplate / Fork
+## As a Jekyll theme _Recommended for general use_
+
+1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
+2. Run the command `bundle install` in the root of project to install the theme and its dependancies
+3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
+4. Run `bundle exec jekyll serve` to build and serve your site
+5. Done! Use the [configuration](#configuration) documentation and the example `[_config.yml](https://github.com/daviddarnes/alembic/blob/master/_config.yml)` file to set things like the navigation, contact form and social sharing buttons
+
+## As a GitHub Pages remote theme _Recommended for use with GitHub Pages_
+
+1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
+2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
+3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
+4. Add `remote_theme: daviddarnes/alembic` to your `_config.yml` file to set the site theme
+5. Run `bundle exec jekyll serve` to build and serve your site
+6. Done! Use the [configuration](#configuration) documentation and the example `[_config.yml](https://github.com/daviddarnes/alembic/blob/master/_config.yml)` file to set things like the navigation, contact form and social sharing buttons
+
+### As a Boilerplate / Fork _*(deprecated, not recommended)*_
 
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
-2. Clone down the repo with `git clone git@github.com:username/reponame.git`
-3. Replace the `Gemfile` in the root of the repo with the one in `demo/Gemfile`
-4. Delete the following unnecessary files/folders: `demo/`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png` and `alembic-jekyll-theme.gemspec`
-5. Change the `logo.svg` and `default-social-image.png` in the `assets/` folder to your own branding
-6. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](#configuration)
-7. Change the `CNAME` record to your projects' record
-8. Install bundler with `gem install bundler`
-9. Install gems with `bundle install`
-10. Run Jekyll with `bundle exec jekyll serve --watch`
-11. Begin hacking for your project
-
-### As a Jekyll 3.3 theme gem
-
-1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/daviddarnes/alembic/tree/master/demo)
-2. Configure your site settings using the `_config.yml`, more info can be found in [Configuration](https://github.com/daviddarnes/alembic#configuration)
-3. Create a `logo.svg` and `default-social-image.png` in a new `assets/` folder
-4. Install bundler with `$ gem install bundler`
-5. Install gems with `$ bundle install`
-6. Run Jekyll with `$ bundle exec jekyll serve --watch`
-7. Begin hacking for your project
-
-### Boilerplate & Theme differences
-
-The boilerplate kit is better for more drastic hacking and changes, a project that's quite different to any other and needs a lot of custom work done. Additionally you'll only be able to use this method if you want to host it on GitHub Pages, as [themes can't be submitted](https://pages.github.com/themes/)... yet.
-
-Using the theme will allow you to receive updates made and will be more programmatic. To make your own changes you'll need to overwrite the files with your own. For example: If I want to change the colours and typography of my site I'll need to copy the [`_settings.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_settings.scss) file and create my own in `_sass/_settings.scss` with my own changes. This is the same for all files within the theme, which means your own project will be more lean than if you were to use the boilerplate.
+2. Replace the `Gemfile` with one stating all the gems used in your project as well as `alembic-jekyll-theme`
+3. Delete the following unnecessary files/folders: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
+4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
+5. Run `bundle exec jekyll serve` to build and serve your site
+6. Done! Use the [configuration](#configuration) documentation and the example `[_config.yml](https://github.com/daviddarnes/alembic/blob/master/_config.yml)` file to set things like the navigation, contact form and social sharing buttons
