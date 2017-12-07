@@ -18,11 +18,10 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
-- demo/*
 - alembic-jekyll-theme.gemspec
 
 # 2. Installed Gems
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-mentions
 - jekyll-paginate
