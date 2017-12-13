@@ -229,7 +229,7 @@ $max-widths: map-values($maxwidths);
   // Check if value exists in scale.
   $in-scale: in-modular-scale(scale-0, $fontsize);
 
-  // Set the line-height (if it isn’t set at 0).
+  // Set the line-height (if it isn't set at 0).
   @if $lineheight != 0 {
     line-height: #{$lineheight}rem;
   }
