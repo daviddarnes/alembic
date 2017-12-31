@@ -1,3 +1,15 @@
+{% if page.categories %}
+  {% capture categories %}
+    {% for category in page.categories %}
+      <span class="label  label--category"><a href="{{ site.baseurl }}/categories#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  {% endcapture %}
+{% elsif page.category %}
+  {% capture categories %}
+    <span class="label  label--category"><a href="{{ site.baseurl }}/categories#{{ page.category | downcase }}">{{ page.category }}</a></span>
+  {% endcapture %}
+{% endif %}
+
 <small class="small  post-meta">
-  {% if page.category %}<span class="label  label--category"><a href="{{ site.baseurl }}/categories#{{ page.category | downcase }}">{{ page.category }}</a></span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;{% endif %}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
 </small>
