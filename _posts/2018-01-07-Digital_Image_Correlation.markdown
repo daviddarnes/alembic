@@ -7,6 +7,7 @@ header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
 - Optical Microscope/光学显微镜
+- Introduction/介绍
 comments: true
 ---
 An introduction to Digital Image Correlation
