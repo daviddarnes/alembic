@@ -56,6 +56,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 - [venuthatikonda.github.io](https://venuthatikonda.github.io/)
 - [ccs17.bsc.es](https://ccs17.bsc.es/)
 - [karateca.org](http://www.karateca.org/)
+- [p-recs.github.io](https://p-recs.github.io/2018/)
 
 ## Installation
 
