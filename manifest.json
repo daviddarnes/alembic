@@ -1,0 +1,17 @@
+---
+---
+{
+  "lang": "{{ site.lang }}",
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.title | replace: ' ', '' }}",
+  "theme_color": "black",
+  "background_color": "white",
+  "icons": [
+    {
+      "src": "{{ site.logo }}",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "browser"
+}
