@@ -13,7 +13,7 @@ const buildContentBlob = () => {
         "{{ page.url }}",
       {%- endunless -%}
     {%- endfor -%}
-      "/assets/logo.svg","/assets/styles.css"
+      "{{ site.logo }}","/assets/styles.css","/assets/default-offline-image.png"
   ]
 }
 
@@ -56,9 +56,9 @@ self.addEventListener("fetch", event => {
   let url = new URL(request.url);
 
   // Only deal with requests from the same domain.
-  if (url.origin !== location.origin) {
-    return;
-  }
+  // if (url.origin !== location.origin) {
+  //   return;
+  // }
 
   // Always fetch non-GET requests from the network.
   if (request.method !== "GET") {
@@ -80,7 +80,7 @@ self.addEventListener("fetch", event => {
         return response;
       }
       console.log("Fetching: ", event.request.url);
-      return fetch(request);
+      return fetch(request).catch(() => caches.match('/assets/default-offline-image.png'));
     })
   );
 });
