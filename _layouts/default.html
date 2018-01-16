@@ -20,11 +20,8 @@
 			{% seo %}
 		{% endif %}
 
-		{% if site.serviceWorker != false %}
-			<!-- Startup configuration -->
-			<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-			<meta name="theme-color" content="#ffffff"/>
-		{% endif %}
+		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+		<meta name="theme-color" content="{{ site.manifest.theme_color | default: '#24292e' }}"/>
 
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
 
