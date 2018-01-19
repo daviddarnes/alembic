@@ -1,3 +1,3 @@
 <div class="map">
-  {% if include.id %}<iframe src="https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}"></iframe>{% else %}<small>Map not found</small>{% endif %}
+  {% if include.id %}<iframe src="https://www.google.com/maps/d/u/0/embed?mid={{ include.id }}" title="{{ include.title | default: 'Map' }}"></iframe>{% else %}<small>Map not found</small>{% endif %}
 </div>
