@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shape memory alloys"
-date:   2018-01-
+date:   2018-01-11
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
