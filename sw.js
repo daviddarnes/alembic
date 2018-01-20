@@ -66,22 +66,19 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  // For all images try the network first and then fallback to the offline image
+  // Default url returned if page isn't cached
+  let offlineAsset = "404.html";
+
   if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
-    event.respondWith(
-      fetch(request).catch(async () => {
-        return (await caches.match(request)) || caches.match("/assets/default-offline-image.png");
-      })
-    );
-    return;
+    // If url requested is an image and isn't cached, return default offline image
+    offlineAsset = "/assets/default-offline-image.png";
   }
 
-  // For all files try the network and then fallback to the cache
+  // For all urls request image from network, then fallback to cache, then fallback to offline page
   event.respondWith(
     fetch(request).catch(async () => {
-      return (await caches.match(request)) || caches.match("404.html");
+      return (await caches.match(request)) || caches.match(offlineAsset);
     })
   );
   return;
-
 });
