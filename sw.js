@@ -56,9 +56,9 @@ self.addEventListener("fetch", event => {
   let url = new URL(request.url);
 
   // Only deal with requests from the same domain.
-  // if (url.origin !== location.origin) {
-  //   return;
-  // }
+  if (url.origin !== location.origin) {
+    return;
+  }
 
   // Always fetch non-GET requests from the network.
   if (request.method !== "GET") {
@@ -66,21 +66,22 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  // For HTML requests, try the network first else fall back to the offline page.
-  if (request.headers.get("Accept").indexOf("text/html") !== -1) {
-    event.respondWith(fetch(request).catch(() => caches.match(event.request)));
+  // For all images try the network first and then fallback to the offline image
+  if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+    event.respondWith(
+      fetch(request).catch(async () => {
+        return (await caches.match(request)) || caches.match("/assets/default-offline-image.png");
+      })
+    );
     return;
   }
 
-  // For non-HTML requests, look in the cache first else fall back to the network.
+  // For all files try the network and then fallback to the cache
   event.respondWith(
-    caches.match(request).then(response => {
-      if (response) {
-        console.log("Serving cached: ", event.request.url);
-        return response;
-      }
-      console.log("Fetching: ", event.request.url);
-      return fetch(request).catch(() => caches.match('/assets/default-offline-image.png'));
+    fetch(request).catch(async () => {
+      return (await caches.match(request)) || caches.match("404.html");
     })
   );
+  return;
+
 });
