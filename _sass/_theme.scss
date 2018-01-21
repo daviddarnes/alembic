@@ -196,7 +196,7 @@ body {
   }
   &--current {
     a {
-      opacity: 0.5;
+      color: $captionColour;
     }
   }
 }
