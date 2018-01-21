@@ -106,6 +106,6 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 {% include figure.html image="https://unsplash.it/300/400?image=123" caption="Right aligned image" position="right" %}
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" position="center" caption="Center aligned image" %}
+{% include figure.html image="https://unsplash.it/300/400?image=123" position="left" caption="Center aligned image" %}
 
 {% include figure.html image="https://unsplash.it/800/400?image=123" alt="Image with just alt text" %}
