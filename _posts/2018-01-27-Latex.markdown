@@ -1,69 +1,153 @@
 ---
 layout: post
-title:  "Digital Image Correlation"
-date:   2018-01-07
+title:  "Latex Introduction"
+date:   2018-01-27
 author: "Joephy"
 header-img: "img/post-bg-os-metro.jpg"
 catalog: true
 tag:
-- Optical Microscope/光学显微镜
 - Introduction/介绍
 comments: true
 ---
-An introduction to Digital Image Correlation
+An introduction Latex
 ------------
 
-Digital Image Correlation is a technology to observe the surface strain and stress on a material under some thermal or mechanical loadings. It uses camera to capture series pictures during the loading process and track some specific points on the material and get the displacement field, so we can know the strain and stress on the material's surface. Here I just use a simple way to introduce the digital image correlation, how it works and what can we do with it.
+There are many famous wars in this world, Microsoft Word vs Latex is one in it. Actually, if one want to change the article editing tool from Microsoft Word to Latex, it will be a difficult thing because these two tools are totally different. Microsoft Word is a GUI to edit the files you need and you have to click many buttons to change the outline of your files. But Latex is like coding, if you want to have an equation, enlarge the words or change the color, all are needed to code. But there is one benefit if you choose Latex, you will not worry about the typesetting of your file too much. To be honestly, these two typesetting tools are for different targets. 
 
-## History
+>Microsoft Word: It is invented by Microsoft company. In the beginning, the user can only type some words in it. And because a lot of users want to use more complicated functions, so Microsoft company adds many functions in it and makes Microsoft Word a big and useful tool now.
 
-Digital image correlation is an optical metrology based on digital image processing and numerical computing. The first research group to use this kind of technics is at the University of South Carolina in 1980s (see reference 7 in details). Actually, there are many different name for the same technics, such as, digital speckle correlation, computer-aided speckle interferometry, electronic speckle photography and etc..
+And Latex is different:
 
-During this three decades, this kind of technics had been improved a lot. In my opinions, the critical improvements are the improvement of the correlation function (in order to find the exact region before and after the deformation), deformation function (describes the material's deformation) and different method to estimate the deformation gradient.
+>Latex: Originally, because the Microsoft Word is not good at sorting the figures, tables and references, and those things are very important to academic area. For researchers who want to publish a paper, a useful tool to sort up the figures, tables and references is needed. And this is the advantage of Latex. In Latex, once you name a reference or figure, you will not worry about the number of them and just keep on writing. Also, if one likes coding, Latex will be the first choose because every thing in Latex should be coded. If one just wants to use a tool to edit and do not like coding, I will recommend him to Word.
 
-And also, some people also use 2 cameras to get the 3D strain field of a material. Also, because the machine learning is growing rapidly, maybe in the future, researchers can develop a algorithm which is using machine learning to calculate the strain-stress field on a deformed materials. But the most important thing is the working principle of digital image correlation and I am going to introduce it.
+The things above are briefly introducing the Latex and Microsoft Word and now, I will introduce Latex a little bit more.Let's use an example to introduce the basic thing of Latex:
 
-## Working principle
+<pre><code>
+    \documentclass[UTF8]{article}      %%%% In the very beginning, we should
+                                            define the style of our file, it
+                                            should be book, article, paper or
+                                            other things and also, UTF8 here means
+                                            we can use Chinese in this file.
+                                            
+    \title{Write your file's title here}
+    \author{Name of author}
+    \bibliographystyle{unsrt}          %%%% If you have any reference and want to
+                                            show them, just write this code and 
+                                            unsrt means different style to sort up
+                                            your references.
 
-In the beginning, people just use one camera to capture series of pictures on the materials' surface and assume that:
+    \usepackage{amsmath, graphicx}     %%%% If you want to use some math symbol or 
+                                            equations, figures or subfigures, you
+                                            must add some pakages here to initial 
+                                            the software and let it knows what you
+                                            need in this file.
+    \usepackage{subfigure}
 
-1. The material's surface is parallel to the camera's sensor.
-2. The deformation in z direction, which is perpendicular to the camera's sensor can be ignored.
-3. The image system should not suffer from geometric distortion. Although it is impossible to fully avoid the distortion, the distortion should be small enough so we can ignore it.
+    \begin{document}                   %%%% If every things are setting up, you
+                                            can begin to write your article now
+    \date{}                            %%%% Show the date you edit the file.
+    \maketitle                         %%%% Show title.
+    \begin{abstract}                   %%%% Begin abstract, if any.
+    \textbf{Keywords:}                 %%%% textbf here means using bold word.
+    \end{abstract}                     %%%% Do not forget to end abstract.
+    \tableofcontents                   %%%% Make contents
+    \section{Section name}             %%%% Begin the section one and do not worry
+                                            about the order of your section. Also, 
+                                            the contents will change according to
+                                            the section in your file.
+    \subsection{Subsection name}       %%%% If you want a subsubsection, just type
+                                            \subsubsection{name} and as so on.               
+    \begin{equation}                    
+        p_Y=\frac{tR}{Y},
+    \end{equation}                     %%%% Here is the equation part. You can
+                                            type many strange symbol here and 
+                                            if you want to use symbol or equation
+                                            in the file, you can type $equation$.
+                                            And if you have some problems, check
+                                            the package first. Do not forget to
+                                            end this part.
+                                            
+    \begin{equation}
+    \begin{cases}
+        1,\\
+        2.
+    \end{cases} \label{labelname}
+    \end{equation}                     %%%% Using this, you can type many
+                                            equations and tables and the Latex
+                                            will help you to sort them up. If you
+                                            want to cite them in file, just give
+                                            them a name, \label{labelname}, then
+                                            use \cite{labelname} to cite. It is
+                                            the same if you want to cite 
+                                            reference. And if you want to use
+                                            bibtex to edit the references, do not
+                                            forget to run Latex first, then bibtex
+                                            and then run Latex twice, and finally
+                                            you will find the Latex will sort up
+                                            everything for you.
+                                            
+    \begin{figure}
+    \centering
+    \includegraphics[scale]{figurename}
+    \caption{Edit the figure caption}
+    \end{figure}                           %%%% Here is an example to insert
+                                                figure and center it.
+                                            
+    \end{document}                         %%%% Do nor forget to end your file.
+</code></pre>
 
-With just one camera, it is impossible to detect the displacement field in 3D. Only the deformation is small enough to be ignored, can people know the displacement field in other two directions. So people can track the movement of the points on the materials' surface.
+This is a very simple example for you to begin to use Latex. And if there are something wrong in your code, please do no ignore the attention and warning which is generated by Latex itself. I emit a lot of functions of Latex here, such as inserting table, adjust the scale of the word, insert subfigure and etc. What's more, Latex can also be used to edit PPT, although the PPT here do not have any animations. And I just give an example for reference.
 
-Under the assumptions above, the camera will capture series pictures under the process of deforming the material. The process is like this:
+<pre><code>
+\documentclass{beamer}
+\usepackage{times}
+\usepackage{mathptmx}
+\usefonttheme{serif}
+\usetheme{Berkeley}
+\usecolortheme{spruce}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Title}
+\institute{}
+\author{}
+\date{\today}
+\subject{}
+\logo{\includegraphics[scale]{figurename}}
 
-Step one: Prepare the specimen, make some speckles or special markers on it so that the intensity distribution of every sub-region is unique, so when we using computer to analyze the pictures, computer can distinguish different sub-region between two different pictures. 
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
 
-Step two: Tracking the same points between the two images recorded before and after the material deformation. This step majority using correlation criterion to match the same sub-region among series of photos. In my point of view, it is using the intensity distribution to distinguish the unique region, to search the least different intensity distribution and mark it as the same region before and after the deformation. Here, there are many algorithm to speed up the searching speed, such as sub-pixel displacement registration algorithm and coarse-fine search algorithm.
+\begin{frame}{Content}
+\tableofcontents
+\end{frame}
 
-Step three: Calculate the displacement field base on step two. According to step two, we know every sub-region has moved how many pixels so we know the displacement field of every pictures. Than, we can get the shape function (deformation function). If we use first order shape function, the accuracy is worst but the speed is faster than the second order shape function.
+\section{Section one}
+\begin{frame}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+\end{frame}
 
-Step four: Using a criterion or a threshold to judge whether the correlation criterion satisfy or not. If not, use the new shape function or other algorithm to get new shape function, to do step two and three again. If it satisfy the correlation criterion, the computer will output the displacement field.
+\section{Section two}
+\begin{frame}
+\begin{block}{title}
+this is a block
+\end{block}
+\end{frame}
 
-Step five: From step four, we already know the displacement field, so we can use the solid mechanics knowledge to calculate the strain field and stress field.
+\end{document}
+</code></pre>
 
-Base on this working principle, although there will be some errors which is introduced by distortion of image, intensity noise, correlation criterion and other affect, it can tell people the strain field of a material's surface. And because it just use camera to capture the pictures, it is non-contactable method to observe what will happen on a material under external effects. Also, if one use high speed camera to do the digital image correlation experiments, he can know the in-situ strain field of a material's surface.
-
-## Drawbacks & future development
-
-Although digital image correlation is a convenient tool to measure the plane strain and stress, but it has its drawbacks too:
-
-1. Random gray intensity distribution must be achieved or it will be a mess;
-2. The measurements highly depend on the quality of the camera, if the picture is blur, it will be a big trouble;
-3. The accuracy of the digital image correlation is not very high and it is lower than the interferometric techniques, so maybe it can be improved in the future.
-
-Because one camera can just detect the two dimensional strain field, so people want to use other ways to fill this gap. An easy way is to use one more camera for this target. Two cameras means people can detect three directions of displacement, so people can detect 3D displacement field and 3D strain field. But the algorithm is more complex than the 2D digital image correlation method. Also, this kind of technics is combined with SEM and applied on the studying of martensite phase transition. We are looking forward that digital image correlation will play more and more important role in research area and industry. 
+Latex is a useful tool to edit the article and paper and it is very good if you use MacBook and want to use a lot of figures, equations and references. Also for the people who do not like Microsoft Word, Latex is a good choice. There are many sources in Internet to learn how to utilize Latex, if you are interested in it, you can search and learn.
 
 Reference:
+1. Latex入门(作者：刘海洋，电子工业出版社)
+2. [Latex for Beginners](http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf)
+3. [Latex Software](http://www.tug.org/mactex/)
+4. [Latex Symbols](https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
+5. [Latex Colors](https://www.sharelatex.com/learn/Using_colours_in_LaTeX)
 
-1. [Pan, B., Qian, K., Xie, H., & Asundi, A. (2009). Two-dimensional digital image correlation for in-plane displacement and strain measurement: a review. Measurement science and technology, 20(6), 062001.](http://iopscience.iop.org/article/10.1088/0957-0233/20/6/062001/meta)
-2. [Hild, F., Raka, B., Baudequin, M., Roux, S., & Cantelaube, F. (2002). Multiscale displacement field measurements of compressed mineral-wool samples by digital image correlation. Applied optics, 41(32), 6815-6828.](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-41-32-6815)
-3. [Tarigopula, V., Hopperstad, O. S., Langseth, M., Clausen, A. H., Hild, F., Lademo, O. G., & Eriksson, M. (2008). A study of large plastic deformations in dual phase steel using digital image correlation and FE analysis. Experimental Mechanics, 48(2), 181-196.](https://link.springer.com/article/10.1007/s11340-007-9066-4)
-4. [Sánchez-Arévalo, F. M., & Pulos, G. (2008). Use of digital image correlation to determine the mechanical behavior of materials. Materials characterization, 59(11), 1572-1579.](http://www.sciencedirect.com/science/article/pii/S1044580308000636)
-5. [Tarigopula, V., Hopperstad, O. S., Langseth, M., Clausen, A. H., & Hild, F. (2008). A study of localisation in dual-phase high-strength steels under dynamic loading using digital image correlation and FE analysis. International Journal of Solids and Structures, 45(2), 601-619.](http://www.sciencedirect.com/science/article/pii/S0020768307003411)
-6. [Sutton, M. A., Yan, J. H., Tiwari, V., Schreier, H. W., & Orteu, J. J. (2008). The effect of out-of-plane motion on 2D and 3D digital image correlation measurements. Optics and Lasers in Engineering, 46(10), 746-757.](http://www.sciencedirect.com/science/article/pii/S0143816608000985)
-7. [Peters, W. H., & Ranson, W. F. (1982). Digital imaging techniques in experimental stress analysis. Optical engineering, 21(3), 213427-213427.](http://spiedigitallibrary.org/pdfaccess.ashx?url=/data/journals/optice/24618/213427.pdf)
+
 
