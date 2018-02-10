@@ -9,11 +9,11 @@ const buildContentBlob = () => {
       "{{ post.url }}",
     {%- endfor -%}
     {%- for page in site.pages -%}
-      {%- unless page.url contains 'sw.js' -%}
+      {%- unless page.url contains 'sw.js' or page.url contains '404.html' -%}
         "{{ page.url }}",
       {%- endunless -%}
     {%- endfor -%}
-      "{{ site.logo }}","/assets/styles.css","/assets/default-offline-image.png"
+      "{{ site.logo }}", "/assets/default-offline-image.png"
   ]
 }
 
@@ -67,7 +67,7 @@ self.addEventListener("fetch", event => {
   }
 
   // Default url returned if page isn't cached
-  let offlineAsset = "404.html";
+  let offlineAsset = "/offline/";
 
   if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
     // If url requested is an image and isn't cached, return default offline image
