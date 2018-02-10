@@ -13,7 +13,7 @@ const buildContentBlob = () => {
         "{{ page.url }}",
       {%- endunless -%}
     {%- endfor -%}
-      "{{ site.logo }}", "/assets/default-offline-image.png"
+      "{{ site.logo }}", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
   ]
 }
 
