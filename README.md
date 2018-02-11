@@ -143,7 +143,8 @@ Example usage: `{% include figure.html image="/uploads/feature-image.jpg" captio
 Available options:
 - `image`: The image shown _required_
 - `caption`: A caption to explain the image
-- `position`: The position of the image, `left` or `right`
+- `position`: The position of the image; `left`, `right` or `center`
+- `width` & `height`: Optional width and height attributes of the containing image
 
 ### `icon.html`
 An icon.
@@ -154,6 +155,7 @@ Available options:
 - `id`: The reference for the icon _required_
 - `title`: The accessible label for the icon
 - `color`: The desired colour of the icon
+- `width` & `height`: Width and height attributes for the icon, default is `16`
 
 ### `nav-share.html`
 A set of buttons that share the current page to various social networks, which is controlled within the `_config.yml` file under the `sharing_links` keyword.
