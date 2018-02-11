@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alembic-jekyll-theme"
-  spec.version       = "2.3.1"
+  spec.version       = "3.0.0"
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
