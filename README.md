@@ -31,6 +31,7 @@
 - Available as a **theme gem** and **GitHub Pages** theme
 - Simple and elegant design that can be used out of the box or as solid starting point
 - Tested in all major browsers, including **IE and Edge**
+- Built in **Service Worker** so it can work offline and on slow connections
 - **Configurable colours** and typography in a single settings file
 - Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
 - Solid **typographic framework** from [Sassline](https://sassline.com/)
@@ -106,6 +107,8 @@ There are a number of optional settings for you to configure. Use the example [`
 ### Site settings
 
 You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
+
+By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `serviceWorker` to false in the `/_config.yml`.
 
 ### Site navigation
 
