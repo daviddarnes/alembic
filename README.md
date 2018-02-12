@@ -31,6 +31,7 @@
 - Available as a **theme gem** and **GitHub Pages** theme
 - Simple and elegant design that can be used out of the box or as solid starting point
 - Tested in all major browsers, including **IE and Edge**
+- Built in **Service Worker** so it can work offline and on slow connections
 - **Configurable colours** and typography in a single settings file
 - Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
 - Solid **typographic framework** from [Sassline](https://sassline.com/)
@@ -83,7 +84,7 @@ _(deprecated, not recommended)_
 
 1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
 2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
+3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
 4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
 5. Run `bundle exec jekyll serve` to build and serve your site
 6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
@@ -107,6 +108,8 @@ There are a number of optional settings for you to configure. Use the example [`
 ### Site settings
 
 You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
+
+By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `serviceWorker` to false in the `/_config.yml`.
 
 ### Site navigation
 
@@ -144,7 +147,8 @@ Example usage: `{% include figure.html image="/uploads/feature-image.jpg" captio
 Available options:
 - `image`: The image shown _required_
 - `caption`: A caption to explain the image
-- `position`: The position of the image, `left` or `right`
+- `position`: The position of the image; `left`, `right` or `center`
+- `width` & `height`: Optional width and height attributes of the containing image
 
 ### `icon.html`
 An icon.
@@ -155,6 +159,7 @@ Available options:
 - `id`: The reference for the icon _required_
 - `title`: The accessible label for the icon
 - `color`: The desired colour of the icon
+- `width` & `height`: Width and height attributes for the icon, default is `16`
 
 ### `nav-share.html`
 A set of buttons that share the current page to various social networks, which is controlled within the `_config.yml` file under the `sharing_links` keyword.

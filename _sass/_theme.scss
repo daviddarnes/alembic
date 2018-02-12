@@ -63,7 +63,7 @@ body {
   @include flexbox;
   @include align-items(center);
   img {
-    max-height: 4rem;
+    max-height: 5rem;
   }
 }
 
@@ -196,7 +196,7 @@ body {
   }
   &--current {
     a {
-      opacity: 0.5;
+      color: $captionColour;
     }
   }
 }
@@ -372,6 +372,7 @@ label {
 
 code {
   padding: .12rem .2rem;
+  color: $headingColour;
 }
 
 pre code {

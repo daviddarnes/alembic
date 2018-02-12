@@ -1,0 +1,17 @@
+---
+---
+{
+  "lang": "{{ site.lang | default: "en-US" }}",
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.title | replace: ' ', '' }}",
+  "theme_color": "{{ site.manifest.theme_color | default: '#24292e' }}",
+  "background_color": "{{ site.manifest.background_color | default: '#ffffff' }}",
+  "icons": [
+    {
+      "src": "{{ site.logo }}",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

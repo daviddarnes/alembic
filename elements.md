@@ -2,7 +2,7 @@
 title: Elements
 feature_text: |
   A demo of Markdown and HTML includes
-feature_image: "https://unsplash.it/1300/400?image=1061"
+feature_image: "https://picsum.photos/2560/600?image=873"
 excerpt: "A demo of Markdown and HTML includes"
 aside: true
 ---
@@ -84,7 +84,7 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 ### Demo map embed
 
-{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}
+{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" title="Coffee shop map" %}
 
 ### Button include
 
@@ -94,18 +94,18 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 ### Icon include
 
-{% include icon.html id="twitter" %} [{% include icon.html id="linkedin" %}](https://www.linkedin.com/in/daviddarnes)
+{% include icon.html id="twitter" title="twitter" %} [{% include icon.html id="linkedin" title="twitter" %}](https://www.linkedin.com/in/daviddarnes)
 
 ### Video include
 
-{% include video.html id="zrkcGL5H3MU" %}
+{% include video.html id="zrkcGL5H3MU" title="Siteleaf tutorial video" %}
 
 ### Image includes
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" caption="Image with caption" %}
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Image with caption" width="300" height="800" %}
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" caption="Right aligned image" position="right" %}
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Right aligned image" position="right" width="300" height="800" %}
 
-{% include figure.html image="https://unsplash.it/300/400?image=123" position="center" caption="Center aligned image" %}
+{% include figure.html image="https://picsum.photos/600/800?image=894" position="left" caption="Center aligned image" width="300" height="800" %}
 
-{% include figure.html image="https://unsplash.it/800/400?image=123" alt="Image with just alt text" %}
+{% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %}

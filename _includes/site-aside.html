@@ -1,4 +1,4 @@
-<aside class="aside  typeset{% if include.align == "left" %}  aside--left{% endif %}">
+<aside class="aside  typeset  aside--{{ include.align | default: 'right' }}">
 
   {% if page.layout == "post" %}
     <section class="section  section--related-posts">
