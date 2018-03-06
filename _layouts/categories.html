@@ -6,21 +6,21 @@ layout: default
 
 <main class="main  container">
 
-	<div class="content">
+  <div class="content">
 
-		<article class="article  article--page  typeset">
+    <article class="article  article--page  typeset">
 
-	    <h1>{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
 
-			{{ content }}
+      {{ content }}
 
-		</article>
+    </article>
 
-		{% include post-categories.html %}
+    {% include post-categories.html %}
 
-	</div>
+  </div>
 
-	{% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
+  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
 
 </main>
 

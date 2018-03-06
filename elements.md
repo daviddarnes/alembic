@@ -69,7 +69,7 @@ blockquote footer {
 ``` js
 const blockquote = document.querySelector("blockquote")
 const bolden = (keyString, string) =>
-	string.replace(new RegExp(keyString, 'g'), '<strong>'+keyString+'</strong>')
+  string.replace(new RegExp(keyString, 'g'), '<strong>'+keyString+'</strong>')
 
 blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 ```

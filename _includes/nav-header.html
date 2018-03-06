@@ -4,9 +4,9 @@
     {% for item in site.navigation_header %}
 
       {% if item[1] contains '://' %}
-      {% assign url = item[1] %}
+        {% assign url = item[1] %}
       {% else %}
-      {% assign url = item[1] | relative_url %}
+        {% assign url = item[1] | relative_url %}
       {% endif %}
 
       <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">

@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-	<head>
-		<!-- General meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- General meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		{% if page.indexing == false %}
-			<meta name="robots" content="noindex">
-		{% endif %}
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
-		{% if page.collectionpage %}
-			{% seo title=false %}
+    {% if page.collectionpage %}
+      {% seo title=false %}
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-			<meta property="og:title" content="{{ collectiondata.title }}">
-			<meta name="description" content="{{ collectiondata.description }}">
-			<meta property="og:description" content="{{ collectiondata.description }}">
-		{% else %}
-			{% seo %}
-		{% endif %}
+      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+      <title>{{ collectiondata.title }} - {{ site.title }}</title>
+      <meta property="og:title" content="{{ collectiondata.title }}">
+      <meta name="description" content="{{ collectiondata.description }}">
+      <meta property="og:description" content="{{ collectiondata.description }}">
+    {% else %}
+      {% seo %}
+    {% endif %}
 
-		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-		<meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
 
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
 
-		{% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
-	</head>
-	<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-		{% include site-icons.svg %}
+    {% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
+  </head>
+  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+    {% include site-icons.svg %}
 
-		{{ content }}
+    {{ content }}
 
-		{% if site.serviceWorker != false %}{% include site-sw.html %}{% endif %}
-	</body>
+    {% if site.serviceWorker != false %}{% include site-sw.html %}{% endif %}
+  </body>
 </html>
