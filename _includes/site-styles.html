@@ -1,0 +1,3 @@
+{% for item in site.pages %}{% if item.styles == true %}
+<style>{{ item.content | scssify | strip_newlines }}</style>
+{% endif %}{% endfor %}
