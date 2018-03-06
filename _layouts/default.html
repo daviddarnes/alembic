@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  
-	<head>
-		<!-- General meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		{% if page.indexing == false %}
-			<meta name="robots" content="noindex">
-		{% endif %}
+  <head>
+    <!-- General meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		{% if page.collectionpage %}
-			{% seo title=false %}
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-			<meta property="og:title" content="{{ collectiondata.title }}">
-			<meta name="description" content="{{ collectiondata.description }}">
-			<meta property="og:description" content="{{ collectiondata.description }}">
-		{% else %}
-			{% seo %}
-		{% endif %}
+    {% if page.collectionpage %}
+      {% seo title=false %}
 
-		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-		<meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+      <title>{{ collectiondata.title }} - {{ site.title }}</title>
+      <meta property="og:title" content="{{ collectiondata.title }}">
+      <meta name="description" content="{{ collectiondata.description }}">
+      <meta property="og:description" content="{{ collectiondata.description }}">
+    {% else %}
+      {% seo %}
+    {% endif %}
+
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
 
     {% if site.css_inline == true %}
       {% include site-styles.html %}
     {% else %}
-		  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
     {% endif %}
 
-		{% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
+    {% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
 
-		{% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
-	</head>
-  
-	<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-		{% include site-icons.svg %}
+    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+  </head>
 
-		{{ content }}
+  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+    {% include site-icons.svg %}
 
-		{% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
-	</body>
-  
+    {{ content }}
+
+    {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
+  </body>
+
 </html>

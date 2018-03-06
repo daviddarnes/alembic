@@ -5,17 +5,17 @@
         <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
 
           {% if item.url contains '://' %}
-          {% assign url = item.url %}
+            {% assign url = item.url %}
           {% else %}
-          {% assign url = item.url | relative_url %}
+            {% assign url = item.url | relative_url %}
           {% endif %}
 
           {% if item.collectionpage %}
-      			{% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
-      			<a href="{{ url }}">{{ collectiondata.title }}</a>
-      		{% else %}
+            {% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
+            <a href="{{ url }}">{{ collectiondata.title }}</a>
+          {% else %}
             <a href="{{ url }}">{{ item.title }}</a>
-      		{% endif %}
+          {% endif %}
         </li>
       {% endunless %}
     {% endfor %}

@@ -2,7 +2,7 @@
   <ul class="list  list--categories">
     {% for item in site.categories %}
       <li class="item  item--category">
-          <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
+        <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
       </li>
     {% endfor %}
   </ul>
