@@ -116,7 +116,7 @@ Google Analytics can be enabled via the site configuration too. Add your trackin
 
 Alembic comes with a couple of options to enhance the speed and overall performance of the site you build upon it.
 
-By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `serviceWorker` to false in the `/_config.yml`.
+By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `service_worker` to false in the `/_config.yml`.
 
 Another option to speed up Alembic is to enable inline CSS, which is off by default. You can enable this by setting `css_inline: true` inside your `/_config.yml` file.
 
