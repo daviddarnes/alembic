@@ -16,6 +16,7 @@
 - [Configuration](#configuration)
   - [Gem dependency settings](#gem-dependency-settings)
   - [Site settings](#site-settings)
+  - [Site performance settings](#site-performance-settings)
   - [Site navigation](#site-navigation)
 - [Using includes](#using-includes)
 - [Page layouts](#page-layouts)
@@ -109,7 +110,17 @@ There are a number of optional settings for you to configure. Use the example [`
 
 You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
+Google Analytics can be enabled via the site configuration too. Add your tracking ID to the `/_config.yml` file in the following method: `google_analytics: 'UA-XXXXXXXX-1'`
+
+### Site performance settings
+
+Alembic comes with a couple of options to enhance the speed and overall performance of the site you build upon it.
+
 By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `service_worker` to false in the `/_config.yml`.
+
+Another option to speed up Alembic is to enable inline CSS, which is off by default. You can enable this by setting `css_inline: true` inside your `/_config.yml` file.
+
+Please note that these options aren't a "silver bullet" for making your site faster, make sure to audit and debug your site to get the best performance for your situation.
 
 ### Site navigation
 
