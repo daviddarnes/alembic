@@ -20,7 +20,7 @@ exclude:
 - alembic-jekyll-theme.gemspec
 
 # 2. Installed Gems
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-mentions
 - jekyll-paginate
@@ -33,7 +33,7 @@ gems:
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-author: Chenyan Xiong # jekyll-seo-tag > real name
+author: Chenyan Xiong and Laura Dietz # jekyll-seo-tag > real name
 social: # jekyll-seo-tag > social overrides
   name: Chenyan Xiong # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
@@ -88,9 +88,10 @@ email: "cx@cs.cmu.edu"
 navigation_header:
   Home: /
 #  Call for Participation: /cfp/
-  Submit: /submit/
-  Important Dates: /dates/
+  Submit and Dates: /submit/
+#  Important Dates: /dates/
   Organization: /organization/
+  Previous: /previous/
 
 navigation_footer:
   Created by Chenyan Xiong: http://www.cs.cmu.edu/~cx/
