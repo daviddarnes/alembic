@@ -67,6 +67,8 @@ collections:
 # 6. Jekyll collections settings
 defaults:
   -
+    scope:
+      path: ""
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
 
