@@ -23,6 +23,6 @@ In this paper, although it has modulated bias components, it just detect the sam
 
 Reference:
 
-1. [2. [Shribak, M. (2013, February). Using liquid crystal variable retarders for fast modulation of bias and shear direction in quantitative differential interference contrast (DIC) microscope. In Three-Dimensional and Multidimensional Microscopy: Image Acquisition and Processing XX (Vol. 8589, p. 85891I). International Society for Optics and Photonics.](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8589/85891I/Using-liquid-crystal-variable-retarders-for-fast-modulation-of-bias/10.1117/12.2008243.short)
+1. [Shribak, M. (2013, February). Using liquid crystal variable retarders for fast modulation of bias and shear direction in quantitative differential interference contrast (DIC) microscope. In Three-Dimensional and Multidimensional Microscopy: Image Acquisition and Processing XX (Vol. 8589, p. 85891I). International Society for Optics and Photonics.](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8589/85891I/Using-liquid-crystal-variable-retarders-for-fast-modulation-of-bias/10.1117/12.2008243.short)
 
 
