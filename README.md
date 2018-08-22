@@ -61,11 +61,14 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ## Installation
 
+### Quick setup
+
 If you’re looking for a quick way to install Alembic, try one of the starter kits below:
-- [GitHub Pages starter](https://github.com/daviddarnes/alembic-starters/archive/master.zip)
+
 - [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/)
-- [Deploy to Netlify + Forestry](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry)
 - [Deploy to Netlify CMS](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/netlify-cms&stack=cms)
+- [GitHub Pages starter](https://github.com/daviddarnes/alembic-starters/archive/master.zip)
+- [Deploy to Netlify + Forestry](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry)
 
 ### As a Jekyll theme
 

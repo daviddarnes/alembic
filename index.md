@@ -44,12 +44,12 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ## Installation
 
-If you're looking for a quick way to install Alembic, try one of the starter kits below:
+### Quick setup
 
-{% include button.html text="GitHub Pages starter" link="https://github.com/daviddarnes/alembic-starters/archive/master.zip" color="#0366d6" %}  
-{% include button.html text="Deploy to Netlify" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/" color="#00b09f" %}  
-{% include button.html text="Deploy to Netlify + Forestry" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry" color="#20c997" %}  
-{% include button.html text="Deploy to Netlify CMS" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/netlify-cms&stack=cms" color="#00b09f" %}
+If you're looking for a quick way to install Alembic, try one of these starter kits:
+
+{% include button.html text="Deploy to Netlify" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/" color="#00b09f" %} {% include button.html text="Deploy to Netlify CMS" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/netlify-cms&stack=cms" color="#7ca511" %}<br/>
+{% include button.html text="GitHub Pages starter" link="https://github.com/daviddarnes/alembic-starters/archive/master.zip" color="#0366d6" %} {% include button.html text="Deploy to Netlify + Forestry" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry" color="#20c997" %}
 
 ### As a Jekyll theme
 
