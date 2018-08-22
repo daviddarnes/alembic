@@ -44,6 +44,10 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ## Installation
 
+If you're looking for a quick way to install Alembic, try one of the starter kits below:
+
+{% include button.html text="Download for GitHib Pages use" link="https://github.com/daviddarnes/alembic-starters/archive/master.zip" color="#0366d6" %} {% include button.html text="Deploy to Netlify" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/" color="#00b09f" %} {% include button.html text="Deploy to Netlify with Forestry" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry" color="#20c997" %} {% include button.html text="Deploy to Netlify with Netlify CMS" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/netlify-cms&stack=cms" color="#00b09f" %}
+
 ### As a Jekyll theme
 
 1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
