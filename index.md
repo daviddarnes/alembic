@@ -46,10 +46,17 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 ### Quick setup
 
-If you're looking for a quick way to install Alembic, try one of these starter kits:
+To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
 
-{% include button.html text="Deploy to Netlify" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/" color="#00b09f" %} {% include button.html text="Deploy to Netlify CMS" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/netlify-cms&stack=cms" color="#7ca511" %}<br/>
-{% include button.html text="GitHub Pages starter" link="https://github.com/daviddarnes/alembic-starters/archive/master.zip" color="#0366d6" %} {% include button.html text="Deploy to Netlify + Forestry" link="https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-starters/tree/forestry" color="#20c997" %}
+- ⚗️🍨 Vanilla Jekyll starter kit  
+  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit){:style="background: none"}
+- ⚗️🌲 Forestry starter kit  
+  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-forestry-kit){:style="background: none"}
+- ⚗️💠 Netlify CMS starter kit  
+  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-netlifycms-kit&stack=cms){:style="background: none"}
+
+- ⚗️:octocat: GitHub Pages with remote theme kit  
+  {% include button.html text="Download kit" link="https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip" color="#24292e" %}
 
 ### As a Jekyll theme
 
