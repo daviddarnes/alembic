@@ -1,6 +1,7 @@
 ---
 title: History of the Alembic
-category: History
+categories:
+- History
 feature_text: |
   The History of the Alembic tool
 ---
