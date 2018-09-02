@@ -260,7 +260,8 @@ img {
 
 .figure,
 .video,
-.map {
+.map,
+.form {
   margin-bottom: .8rem;
 }
 
@@ -271,6 +272,18 @@ video {
 
 
 // Form elements and buttons
+.form {
+  position: relative;
+  &__legend {
+    font-style: italic;
+    color: $captionColour;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
 button,
 .button,
 input[type="text"],
