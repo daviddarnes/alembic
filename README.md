@@ -40,7 +40,7 @@
 - Modular Jekyll components
 - Post category support in the form of a single post index page grouped by category
 - Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
+- **Contact form** built in using [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/features/#forms)
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
