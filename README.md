@@ -40,7 +40,7 @@
 - Modular Jekyll components
 - Post category support in the form of a single post index page grouped by category
 - Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
+- **Contact form** built in using [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/features/#forms)
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
@@ -219,11 +219,16 @@ Available options:
 - `id`: The map ID for the video _required_
 
 ### `site-form.html`
-Adds a contact form to the page.
+Adds a contact form to the page. This can be used with [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/docs/form-handling/) depending on your setup.
 
 Example usage: `{% include site-form.html %}`
 
-This include has no options. Use the `email` option in the `/_config.yml` to change to the desired email.
+Available options:
+- `netlify_form=true`: Set whether you would like to use Netlify Forms, otherwise the form will default to Formspree
+- `name`: Give the form a name, by default the form is called "Contact". The name will be reflected when form submissions come through in Netlify or in your email client. The name is also used in the label and input elements for accessibility
+
+
+Use the `email` option in the `/_config.yml` to change to the desired email.
 
 ### `site-search.html`
 Adds a search form to the page.
