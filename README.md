@@ -122,8 +122,7 @@ You'll need to change the `description`, `title` and `url` to match with the pro
 Google Analytics can be enabled via the site configuration too. Add your tracking ID to the `/_config.yml` file in the following method: `google_analytics: 'UA-XXXXXXXX-1'`
 
 Date format can be customised in the `/_config.yml` with the option `date_format` (please refer to Liquid date filters documentation for learning about formatting possibilities):
-`alembic:
-  date_format: "%-d %B %Y" # NOTE: only placeholder formatting is supported (do not try to use ordinal dates introduced in Jekyll 3.8)`
+`date_format: "%-d %B %Y" # NOTE: only placeholder formatting is supported (do not try to use ordinal dates introduced in Jekyll 3.8)`
 
 ### Site performance settings
 

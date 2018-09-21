@@ -11,6 +11,6 @@
 {% endif %}
 
 <small class="small  post-meta">
-  {% assign date_format = site.alembic.date_format | default: "%d %b %Y" %}
+  {% assign date_format = site.date_format | default: "%d %b %Y" %}
   {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
 </small>
