@@ -128,6 +128,8 @@ Google Analytics can be enabled via the site configuration too. Add your trackin
 Date format can be customised in the `/_config.yml` with the option `date_format` (please refer to Liquid date filters documentation for learning about formatting possibilities):
 `date_format: "%-d %B %Y" # NOTE: only placeholder formatting is supported (do not try to use ordinal dates introduced in Jekyll 3.8)`
 
+Additional Javascript files can be included in header or body by adding `include_before_start_js` or `include_before_end_js` in `/_config.yml` file respectively.
+
 ### Site performance settings
 
 Alembic comes with a couple of options to enhance the speed and overall performance of the site you build upon it.

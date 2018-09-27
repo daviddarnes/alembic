@@ -1,0 +1,3 @@
+{% for script in site.include_before_start_js %}
+  <script async src="{{ script | relative_url }}"></script>
+{% endfor %}
