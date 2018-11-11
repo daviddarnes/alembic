@@ -244,6 +244,11 @@ Example usage: `{% include site-search.html %}`
 
 This include has no options. This include will add a block of javascript to the page and javascript reference in order for the search field to work correctly.
 
+### `site-before-start.html` & `site-before-end.html`
+Optional html includes for adding scripts, css, js or any embed code you wish to add to every page without the need to overwrite the entire `default.html` template.
+
+**Example usage:** These are different to other includes as they are designed to be overwritten. If you create a `site-before-start.html` file in the `_includes/` the contents of the file will be included just before the closing `</head>` tag. If you create a `site-before-end.html` file the contents of the file will be included just before the closing `</body>` tag.
+
 ## Page layouts
 
 As well as `page`, `post`, `blog`, there are a few alternative layouts that can be used on pages:
