@@ -34,7 +34,7 @@
 
     {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
-    {% if site.include_before_start_js %}{% include site-before-start.html %}{% endif %}
+    {% include site-before-start.html %}
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
@@ -44,7 +44,7 @@
 
     {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
 
-    {% if site.include_before_end_js %}{% include site-before-end.html %}{% endif %}
+    {% include site-before-end.html %}
   </body>
 
 </html>

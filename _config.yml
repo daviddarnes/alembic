@@ -88,13 +88,6 @@ avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # 
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
-# Include additional javascript files in header and body, scripts must be in a relative path to the site
-# include_before_start_js:
-#  - /assets/scripts/my-awesome-header.js
-# 
-# include_before_end_js:
-#  - /assets/scripts/my-awesome-footer.js
-
 # 8. Site navigation
 navigation_header:
   Home: /
