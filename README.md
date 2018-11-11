@@ -128,8 +128,6 @@ Google Analytics can be enabled via the site configuration too. Add your trackin
 Date format can be customised in the `/_config.yml` with the option `date_format` (please refer to Liquid date filters documentation for learning about formatting possibilities):
 `date_format: "%-d %B %Y" # NOTE: only placeholder formatting is supported (do not try to use ordinal dates introduced in Jekyll 3.8)`
 
-Additional customizations can be included in header or body using `site-before-start.html` or `site-before-end.html` files. `site-before-start.html` is included just before the closing `</head>` tag and `site-before-end.html` is included just before the closing `</body>` tag.
-
 ### Site performance settings
 
 Alembic comes with a couple of options to enhance the speed and overall performance of the site you build upon it.
@@ -245,6 +243,11 @@ Adds a search form to the page.
 Example usage: `{% include site-search.html %}`
 
 This include has no options. This include will add a block of javascript to the page and javascript reference in order for the search field to work correctly.
+
+### `site-before-start.html` & `site-before-end.html`
+Optional html includes for adding scripts, css, js or any embed code you wish to add to every page without the need to overwrite the entire `default.html` template.
+
+**Example usage:** These are different to other includes as they are designed to be overwritten. If you create a `site-before-start.html` file in the `_includes/` the contents of the file will be included just before the closing `</head>` tag. If you create a `site-before-end.html` file the contents of the file will be included just before the closing `</body>` tag.
 
 ## Page layouts
 
