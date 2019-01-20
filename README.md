@@ -43,6 +43,7 @@
 - **Contact form** built in using [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/features/#forms)
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
+- Built in "dark mode" and reduced motion styles for a more accessible experience
 - Has documentation
 
 ## Examples

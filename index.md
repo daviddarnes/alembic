@@ -27,6 +27,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - **Contact form** built in using [Formspree](https://formspree.io/)
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
+- Built in "dark mode" and reduced motion styles for a more accessible experience
 - Has documentation
 
 ## Examples
@@ -34,13 +35,16 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 Here are a few examples of Alembic out in the wild being used in a variety of ways:
 
 - [bitpodcast.com](https://bitpodcast.com/)
-- [joelcagedesign.com](https://joelcagedesign.com/)
+- [ccs17.bsc.es](https://ccs17.bsc.es/)
 - [bawejakunal.github.io](https://bawejakunal.github.io/)
+- [trenki2.github.io](https://trenki2.github.io/)
+- [overtonestudio.github.io](https://overtonestudio.github.io/)
+- [hrkeni.me](http://hrkeni.me/)
+- [isaacsmith.github.io](https://isaacsmith.github.io/)
 - [case2111.github.io](http://case2111.github.io/)
 - [www.10people.co.uk](http://www.10people.co.uk/)
-- [hrkeni.me](http://hrkeni.me/)
-- [ccs17.bsc.es](https://ccs17.bsc.es/)
 - [karateca.org](http://www.karateca.org/)
+- [lillianpetersen.github.io](https://lillianpetersen.github.io/)
 
 ## Installation
 
