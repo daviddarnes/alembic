@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|sw|manifest)}i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 3.6"
+  spec.add_runtime_dependency "jekyll", "~> 3.8"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 0.13"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.2"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
@@ -23,7 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.12"
   spec.add_runtime_dependency "jekyll-default-layout", "~> 0.1"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
+  spec.add_runtime_dependency "jekyll-commonmark", "~> 1.2"
+  spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
   spec.add_runtime_dependency "jemoji", "~> 0.9"
+  spec.add_runtime_dependency "liquid-c", "~> 4.0"
 
   spec.add_development_dependency "bundler", "~> 1.14"
 end
