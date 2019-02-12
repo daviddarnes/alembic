@@ -30,8 +30,8 @@ body {
   @include flex-direction(column);
   overflow-x: hidden;
   @include darkMode {
-    background: darken($backgroundColour, 90%);
-    color: lighten($bodyColour, 90%);
+    background: invert($backgroundColour, 100%);
+    color: invert($bodyColour, 100%);
   }
 }
 
@@ -83,7 +83,7 @@ body {
       left: 0;
       bottom: 0;
       right: 0;
-      background: fade-out(darken($featureBackgroundColour, 90%), 0.5);
+      background: fade-out(invert($featureBackgroundColour, 100%), 0.5);
     }
   }
   background-size: cover;
@@ -123,7 +123,7 @@ body {
   padding-top: .8rem;
   color: $captionColour;
   @include darkMode {
-    color: lighten($captionColour, 20%);
+    color: invert($captionColour, 100%);
   }
   display: inline-block;
 }
@@ -144,9 +144,13 @@ body {
     padding-top: 0;
   }
   @include darkMode {
-    color: lighten($captionColour, 20%);
+    background: invert($headingColour, 100%);
+    color: invert($captionColour, 100%);
     a {
-      color: lighten($captionColour, 20%);
+      color: invert($captionColour, 100%);
+      &:hover {
+        color: invert($backgroundColour, 100%);
+      }
     }
   }
 }
@@ -159,7 +163,7 @@ body {
   text-align: center;
   color: $captionColour;
   @include darkMode {
-    color: lighten($captionColour, 20%);
+    color: invert($captionColour, 100%);
   }
 }
 
@@ -260,7 +264,7 @@ body {
 
 // Links, icons and images
 a {
-  @include reducedMotion {}  
+  @include reducedMotion {}
 }
 a .icon {
   transition: fill .1s;
@@ -338,7 +342,7 @@ video {
     font-style: italic;
     color: $captionColour;
     @include darkMode {
-      color: lighten($captionColour, 20%);
+      color: invert($captionColour, 100%);
     }
     position: absolute;
     overflow: hidden;
@@ -435,8 +439,8 @@ select {
     border-color: $bodyColour;
   }
   @include darkMode {
-    background: darken($backgroundColour, 90%);
-    color: lighten($bodyColour, 90%);
+    background: invert($backgroundColour, 100%);
+    color: invert($bodyColour, 100%);
   }
 }
 
@@ -482,8 +486,8 @@ pre code {
   background: $headingColour;
   color: $backgroundColour;
   @include darkMode {
-    background: lighten($headingColour, 90%);
-    color: darken($backgroundColour, 90%);
+    background: invert($headingColour, 100%);
+    color: invert($backgroundColour, 100%);
   }
   text-shadow: none;
 }
@@ -522,14 +526,13 @@ pre code {
   }
   @include darkMode {
     pre,
-    code {
-      color: lighten($headingColour, 90%);
-      background: darken($backgroundColour, 85%);
-    }
-  }
-  @include darkMode {
+    code,
     h1, h2, h3, h4, h5, h6 {
-      color: lighten($headingColour, 90%);
+      color: invert($headingColour, 100%);
+    }
+    pre,
+    code {
+      background: invert($backgroundColour, 90%);
     }
   }
 }
