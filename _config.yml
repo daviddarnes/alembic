@@ -49,10 +49,10 @@ social: # jekyll-seo-tag > social overrides
     - https://www.linkedin.com/in/daviddarnes
     - https://plus.google.com/+DavidDarnes
     - https://github.com/daviddarnes
-markdown: CommonMark # Markdown parse settings
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
+# markdown: CommonMark # Markdown parse settings
+# commonmark:
+  # options: ["SMART", "FOOTNOTES"]
+  # extensions: ["strikethrough", "autolink", "table"]
 
 # 4. Jekyll settings
 sass:
