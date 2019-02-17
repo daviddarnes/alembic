@@ -49,7 +49,7 @@ social: # jekyll-seo-tag > social overrides
     - https://www.linkedin.com/in/daviddarnes
     - https://plus.google.com/+DavidDarnes
     - https://github.com/daviddarnes
-# markdown: CommonMark # Markdown parse settings
+# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
   # extensions: ["strikethrough", "autolink", "table"]
