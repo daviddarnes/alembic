@@ -101,6 +101,7 @@ favicons: # Favicons are looped through and added to the head as well as the man
   32: '/assets/logos/logo@32px.png'
   96: '/assets/logos/logo@96px.png'
   512: '/assets/logos/logo@512px.png'
+  1024: '/assets/logos/logo@1024px.png'
 
 # 9. Site navigation
 navigation_header:
