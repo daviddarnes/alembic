@@ -3,4 +3,4 @@
     <link rel="icon" type="image/png" href="{{ icon[1] }}" sizes="{{ icon[0] }}x{{ icon[0] }}">
   {% endfor %}
 {% endif %}
-<link rel="shortcut icon" href="{{ site.avatarurl | default: site.logo }}">
+<link rel="shortcut icon" href="{{ site.avatarurl + '?s=32' | default: site.logo }}">
