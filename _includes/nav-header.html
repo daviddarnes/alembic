@@ -26,29 +26,38 @@
 </template>
 
 <script type="text/javascript">
+  // Append button to nav
+  const buttonTemplate = document.querySelector('#buttontoggle')
+  document.querySelector('.nav')
+    .appendChild(document.importNode(buttonTemplate.content, true))
 
-const nav = document.querySelector('.nav')
-const buttonTemplate = document.querySelector('#buttontoggle')
-const button = document.importNode(buttonTemplate.content, true)
-nav.appendChild(button)
+  // Get initial height of nav list
+  const navList = document.querySelector('.list--nav')
+  const navHeight = navList.clientHeight
 
-const applyToggle = (list, button, breakpoint) => {
-  const navList = document.querySelector(list)
-  if (document.body.clientWidth < breakpoint) {
-    const navHeight = navList.clientHeight
-    const navButton = document.querySelector(button)
-    navList.style.maxHeight = '0px'
-
-    navButton.onclick = () => {
-      if (navList.style.maxHeight == '0px') {
-        navList.style.maxHeight = `${navHeight}px`
-      } else {
-        navList.style.maxHeight = '0px'
-      }
+  // Initially collapse nav
+  const collapseNav = () => {
+    if (document.body.clientWidth < 640) {
+      navList.style.maxHeight = '0px'
+    } else {
+      navList.removeAttribute('style')
     }
   }
-}
 
-applyToggle('.list--nav', '.button', 640)
+  collapseNav()
 
+  // Check on resize if to collapse nav
+  window.addEventListener('resize', () => {
+    collapseNav()
+  })
+
+  // Apply toggle on button click event
+  document.querySelector('.nav--header .button--nav').onclick = () => {
+    console.log('test')
+    if (navList.style.maxHeight == '0px') {
+      navList.style.maxHeight = `${navHeight}px`
+    } else {
+      navList.style.maxHeight = '0px'
+    }
+  }
 </script>
