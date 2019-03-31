@@ -14,33 +14,34 @@
       </li>
     {% endfor %}
   </ul>
+  <button class="button  button--nav" aria-label="Menu toggle">
+    {% include icon.html id="nav" title="Menu" %}
+  </button>
 </nav>
 {% else %}
   {% include nav-default.html %}
 {% endif %}
 
-<template id="buttontoggle">
-  <button class="button  button--nav" aria-label="Menu toggle">
-    {% include icon.html id="nav" title="Menu" %}
-  </button>
-</template>
-
 <script type="text/javascript">
-  // Append button to nav
-  const buttonTemplate = document.querySelector('#buttontoggle')
-  document.querySelector('.nav')
-    .appendChild(document.importNode(buttonTemplate.content, true))
+  // Get list and button
+  const navList = document.querySelector('.header .list--nav')
+  const button  = document.querySelector('.header .button--nav')
 
-  // Get initial height of nav list
-  const navList = document.querySelector('.list--nav')
-  const navHeight = navList.clientHeight
-
-  // Initially collapse nav
+  // Hide nav and apply toggle
   const collapseNav = () => {
     if (document.body.clientWidth < 640) {
-      navList.style.maxHeight = '0px'
+      navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
     } else {
       navList.removeAttribute('style')
+    }
+
+    button.onclick = () => {
+      navList.style.setProperty('transition', `margin .1s`)
+      if (navList.style.getPropertyValue('--listHeight')) {
+        navList.style.removeProperty('--listHeight')
+      } else {
+        navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+      }
     }
   }
 
@@ -50,14 +51,4 @@
   window.addEventListener('resize', () => {
     collapseNav()
   })
-
-  // Apply toggle on button click event
-  document.querySelector('.nav--header .button--nav').onclick = () => {
-    console.log('test')
-    if (navList.style.maxHeight == '0px') {
-      navList.style.maxHeight = `${navHeight}px`
-    } else {
-      navList.style.maxHeight = '0px'
-    }
-  }
 </script>
