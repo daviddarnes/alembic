@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alembic-jekyll-theme"
-  spec.version       = "3.0.11"
+  spec.version       = "3.0.12"
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.2"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
-  spec.add_runtime_dependency "jemoji", "~> 0.9"
+  spec.add_runtime_dependency "jemoji", "~> 0.11"
 
   spec.add_development_dependency "bundler", "~> 1.14"
 end
