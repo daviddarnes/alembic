@@ -201,9 +201,9 @@ Pinterest: "#BD081C"
 LinkedIn: "#0077B5"
 tumblr: "#36465D"
 Reddit: "#FF4500"
-Hacker News: "#ff6600"
-Designer News: "#2D72D9"
-Email: ""
+HackerNews: "#ff6600"
+DesignerNews: "#2D72D9"
+Email: true
 ```
 
 _The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
