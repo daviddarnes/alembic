@@ -26,6 +26,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.2"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
   spec.add_runtime_dependency "jemoji", "~> 0.11"
-
-  spec.add_development_dependency "bundler", "~> 1.14"
 end
