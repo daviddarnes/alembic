@@ -108,15 +108,22 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 
 # 9. Site navigation
 navigation_header:
-  Home: /
-  Elements: /elements/
-  Blog: /blog/
-  Categories: /categories/
-  Search: /search/
-  Fork Alembic: https://github.com/daviddarnes/alembic
+- title: Home
+  url: /
+- title: Elements
+  url: /elements/
+- title: Blog
+  url: /blog/
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
+- title: Fork Alembic
+  url: https://github.com/daviddarnes/alembic
 
 navigation_footer:
-  Created by David Darnes: https://darn.es
+- title: Created by David Darnes
+  url: https://darn.es
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/DavidDarnes
@@ -125,13 +132,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   link: https://darn.es
   RSS: /feed.xml
 
-sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
   facebook: "#3B5998"
-  # Pinterest: "#BD081C"
-  # LinkedIn: "#0077B5"
-  # tumblr: "#36465D"
-  # Reddit: "#FF4500"
-  # Hacker News: "#ff6600"
-  # Designer News: "#2D72D9"
-  # Email: ""
+  Email: true
