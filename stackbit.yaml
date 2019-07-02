@@ -1,0 +1,305 @@
+ssgName: jekyll
+stackbitVersion: "^0.2.41"
+uploadDir: assets
+injectLocations:
+  htmlHead:
+    file: _includes/site-before-start.html
+  htmlBody:
+    file: _includes/site-before-end.html
+collections:
+  - label: Home
+    source: pages
+    create: true
+    models: ["home"]
+  - label: Pages
+    source: pages
+    create: true
+    models: ["page"]
+  - label: Posts
+    source: pages
+    create: true
+    models: ["post"]
+models:
+  config:
+    type: config
+    label: Config
+    fields:
+      - type: string
+        name: title
+        label: Site Title
+      - type: image
+        name: logo
+        label: Site Logo
+      - type: string
+        name: baseurl
+        label: Base URL
+        description: Serve the website from the given base URL
+        hidden: true
+      - type: string
+        name: permalink
+        label: Permalink
+        description: The output path for your pages, posts, or collections.
+        default: /posts/:slug:output_ext
+        hidden: true
+      - type: object
+        name: collections
+        label: collections
+        fields:
+          - type: object
+            name: posts
+            label: posts
+            fields:
+              - type: string
+                name: title
+                label: Collection Title
+              - type: boolean
+                name: output
+                label: Output
+              - type: string
+                name: description
+                label: Collection Description
+              - type: markdown
+                name: feature_text
+                label: Collection Feature Text
+              - type: image
+                name: feature_image
+                label: Collection Feature Image
+      - type: list
+        name: navigation_header
+        label: Header Navigation
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Button title
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+      - type: list
+        name: navigation_footer
+        label: Footer Navigation
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Button title
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+      - type: string
+        name: email
+        label: Site Email
+      - type: object
+        name: social_links
+        label: Social Links
+        description: Leave empty to hide
+        fields:
+          - type: string
+            name: Twitter
+            label: Twitter
+          - type: string
+            name: LinkedIn
+            label: LinkedIn
+          - type: string
+            name: Googleplus
+            label: Google+
+          - type: string
+            name: GitHub
+            label: GitHub
+          - type: string
+            name: link
+            label: link
+          - type: string
+            name: RSS
+            label: RSS
+      - type: object
+        name: sharing_links
+        label: Sharing Links
+        description: Leave empty to hide
+        fields:
+          - type: enum
+            name: Twitter
+            label: Twitter
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#0d94e7"}
+          - type: enum
+            name: facebook
+            label: facebook
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#3B5998"}
+          - type: enum
+            name: Googleplus
+            label: Google+
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#DC4E41"}
+          - type: enum
+            name: Pinterest
+            label: Pinterest
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#BD081C"}
+          - type: enum
+            name: LinkedIn
+            label: LinkedIn
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#0077B5"}
+          - type: enum
+            name: tumblr
+            label: tumblr
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#36465D"}
+          - type: enum
+            name: Reddit
+            label: Reddit
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#FF4500"}
+          - type: enum
+            name: HackerNews
+            label: Hacker News
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#ff6600"}
+          - type: enum
+            name: DesignerNews
+            label: Designer News
+            options:
+              - {label: "Disabled", value: ""}
+              - {label: "Enabled", value: "#2D72D9"}
+          - type: string
+            name: Email
+            label: Email
+  home:
+    type: page
+    label: Home
+    template: home
+    file: index.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: markdown
+        name: feature_text
+        label: Feature text
+      - type: image
+        name: feature_image
+        label: Feature image
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: boolean
+        name: aside
+        label: Aside
+  page:
+    type: page
+    label: Page
+    template: page
+    exclude: index.md
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: markdown
+        name: feature_text
+        label: Feature text
+      - type: image
+        name: feature_image
+        label: Feature image
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: boolean
+        name: aside
+        label: Aside
+      - type: boolean
+        name: indexing
+        label: Indexing
+      - type: boolean
+        name: sitemap
+        label: Sitemap
+      - type: string
+        name: permalink
+        label: Permalink
+  post:
+    type: page
+    label: Post
+    template: post
+    folder: _posts
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: markdown
+        name: feature_text
+        label: Feature text
+      - type: image
+        name: feature_image
+        label: Feature image
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: image
+        name: image
+        label: Image
+      - type: boolean
+        name: comments
+        label: Enable Comments
+        default: true
+      - type: boolean
+        name: aside
+        label: Aside
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+      - type: boolean
+        name: indexing
+        label: Indexing
+  blog:
+    type: page
+    label: Blog
+    template: blog
+    singleInstance: true
+    file: blog/index.html
+    fields:
+      - type: boolean
+        name: aside
+        label: Aside
+      - type: string
+        name: collectionpage
+        label: Collection page
+  categories:
+    type: page
+    label: Categories Page
+    template: categories
+    singleInstance: true
+    file: categories.md
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: boolean
+        name: aside
+        label: Aside
