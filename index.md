@@ -58,7 +58,7 @@ To give you a running start I've put together some starter kits that you can dow
 
 - ⚗️:octocat: GitHub Pages with remote theme kit  
   {% include button.html text="Download kit" link="https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip" color="#24292e" %}
-- ⚗️🚀 Stackbit starter kit
+- ⚗️🚀 Stackbit starter kit  
   [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/alembic-stackbit-kit){:style="background: none"}
 
 ### As a Jekyll theme
