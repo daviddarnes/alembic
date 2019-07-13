@@ -91,6 +91,6 @@ service-worker: true
 friends: [
     {
         title: "Shaun",
-        href: "http://liusongxiang.com/"
+        href: "https://liusongxiang.github.io/"
     }
 ]
