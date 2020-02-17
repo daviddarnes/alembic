@@ -26,7 +26,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 - Post category support in the form of a single post index page grouped by category
 - Built in live search using JavaScript
 - **Contact form** built in using [Formspree](https://formspree.io/)
-- Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
+- Designed with **[Siteleaf](https://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
 
@@ -37,11 +37,11 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 - [bitpodcast.com](https://bitpodcast.com/)
 - [joelcagedesign.com](https://joelcagedesign.com/)
 - [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](http://case2111.github.io/)
-- [www.10people.co.uk](http://www.10people.co.uk/)
-- [hrkeni.me](http://hrkeni.me/)
+- [case2111.github.io](https://case2111.github.io/)
+- [www.10people.co.uk](https://www.10people.co.uk/)
+- [hrkeni.me](https://hrkeni.me/)
 - [ccs17.bsc.es](https://ccs17.bsc.es/)
-- [karateca.org](http://www.karateca.org/)
+- [karateca.org](https://www.karateca.org/)
 
 ## Installation
 
