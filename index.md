@@ -4,7 +4,6 @@ feature_text: |
   ## Sushi Squad
   A community FIRST Robotics Competition team based in Redmond, WA
 feature_image: "https://picsum.photos/1300/400?image=989"
-{% include button.html text="Github" icon="github" link="https://github.com/SushiSquad7461" color="#0366d6" %}
 layout: page
 ---
 
