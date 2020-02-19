@@ -25,6 +25,7 @@ exclude:
 # 2. Installed Gems
 plugins:
 - jekyll-sitemap
+- jekyll-remote-theme
 - jekyll-mentions
 - jekyll-paginate
 - jekyll-seo-tag
@@ -34,6 +35,8 @@ plugins:
 - jekyll-commonmark
 - jekyll-include-cache
 - jemoji
+
+remote-theme: daviddarnes/alembic
 
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
