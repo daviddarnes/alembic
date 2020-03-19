@@ -20,10 +20,46 @@
     .then(data => pages.push(...data))
 
   function findResults(termToMatch, pages) {
-    return pages.filter(item => {
-      const regex = new RegExp(termToMatch, 'gi');
-      return item.title.match(regex) || item.content.match(regex);
+    let results = [];
+    const titleBoost = 2;
+    const excerptPad = 20 - termToMatch.length;
+    const qRegex = new RegExp(termToMatch, 'gi');
+
+    /* A null string should show the no-results state. */
+    if (!termToMatch.length) {
+      return results;
+    }
+
+    Array.prototype.forEach.call(pages, (result) => {
+      let score = 0, matchIndex;
+  
+      /* Boost title matches by multiplier. */
+      score += (result.title.match(qRegex)) ? (titleBoost * result.title.match(qRegex).length) : 0;
+  
+      if (result.content.match(qRegex)) {
+        /* Add to relevance score for every match. */
+        score += result.content.match(qRegex).length;
+  
+        /* Create an excerpt with context and the search phrase in bold */
+        matchIndex = result.content.search(qRegex);
+        result.excerpt = "..."
+          + result.content.substr((matchIndex - excerptPad), excerptPad)
+          +  "<strong>" + termToMatch + "</strong>"
+          + result.content.substr((matchIndex + termToMatch.length), excerptPad)
+          + "...";
+      }
+  
+      /* Score is zero (falsy) if neither title nor content match. */
+      if (score) {
+        result.score = score;
+        results.push(result);
+      }
     });
+  
+    /* Highest score first. */
+    results.sort((a, b) => (a.score < b.score) ? 1 : -1);
+  
+    return results;
   }
 
   function displayResults() {
