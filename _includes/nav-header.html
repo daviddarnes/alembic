@@ -29,10 +29,14 @@
 
   // Hide nav and apply toggle
   const collapseNav = () => {
-    if (document.body.clientWidth < 640) {
+    let wrapped = false;
+    for (let i = 1; i < navList.children.length && !wrapped; i++) wrapped = wrapped || navList.children[i-1].offsetTop !== navList.children[i].offsetTop;
+    if (wrapped) {
       navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+      button.style.display = "inline-block"
     } else {
       navList.removeAttribute('style')
+      button.style.display = "none"
     }
 
     button.onclick = () => {
