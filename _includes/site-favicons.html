@@ -1,4 +1,7 @@
-<link rel="icon" type="image/png" href="{{ site.avatarurl }}?s=16" sizes="16x16">
-<link rel="icon" type="image/png" href="{{ site.avatarurl }}?s=32" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.avatarurl }}?s=96" sizes="96x96">
-<link rel="shortcut icon" href="{{ site.avatarurl }}">
+{% if site.favicons %}
+  {% for icon in site.favicons %}
+    <link rel="icon" type="image/png" href="{{ icon[1] }}" sizes="{{ icon[0] }}x{{ icon[0] }}">
+    <link rel="apple-touch-icon" sizes="{{ icon[0] }}x{{ icon[0] }}" href="{{ icon[1] }}">
+  {% endfor %}
+{% endif %}
+<link rel="shortcut icon" href="{{ site.avatarurl + '?s=32' | default: site.logo }}">

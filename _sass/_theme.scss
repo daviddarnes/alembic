@@ -66,6 +66,8 @@ body {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .feature {
@@ -236,6 +238,7 @@ body {
     overflow: hidden;
     transition: .2s;
     @include reducedMotion {}
+    margin-bottom: var(--listHeight, 0);
   }
   .item--post,
   .item--result,

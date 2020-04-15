@@ -3,52 +3,52 @@
   <ul class="list  list--nav">
     {% for item in site.navigation_header %}
 
-      {% if item[1] contains '://' %}
-        {% assign url = item[1] %}
+      {% if item.url contains '://' %}
+        {% assign url = item.url %}
       {% else %}
-        {% assign url = item[1] | relative_url %}
+        {% assign url = item.url | relative_url %}
       {% endif %}
 
-      <li class="item  item--nav{% if item[1] == page.url %}  item--current{% endif %}">
-        <a href="{{ url }}">{{ item[0] }}</a>
+      <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+        <a href="{{ url }}">{{ item.title }}</a>
       </li>
     {% endfor %}
   </ul>
+  <button class="button  button--nav" aria-label="Menu toggle">
+    {% include icon.html id="nav" title="Menu" %}
+  </button>
 </nav>
 {% else %}
   {% include nav-default.html %}
 {% endif %}
 
-<template id="buttontoggle">
-  <button class="button  button--nav" aria-label="Menu toggle">
-    {% include icon.html id="nav" title="Menu" %}
-  </button>
-</template>
-
 <script type="text/javascript">
+  // Get list and button
+  const navList = document.querySelector('.header .list--nav')
+  const button  = document.querySelector('.header .button--nav')
 
-const nav = document.querySelector('.nav')
-const buttonTemplate = document.querySelector('#buttontoggle')
-const button = document.importNode(buttonTemplate.content, true)
-nav.appendChild(button)
+  // Hide nav and apply toggle
+  const collapseNav = () => {
+    if (document.body.clientWidth < 640) {
+      navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
+    } else {
+      navList.removeAttribute('style')
+    }
 
-const applyToggle = (list, button, breakpoint) => {
-  const navList = document.querySelector(list)
-  if (document.body.clientWidth < breakpoint) {
-    const navHeight = navList.clientHeight
-    const navButton = document.querySelector(button)
-    navList.style.maxHeight = '0px'
-
-    navButton.onclick = () => {
-      if (navList.style.maxHeight == '0px') {
-        navList.style.maxHeight = `${navHeight}px`
+    button.onclick = () => {
+      navList.style.setProperty('transition', `margin .1s`)
+      if (navList.style.getPropertyValue('--listHeight')) {
+        navList.style.removeProperty('--listHeight')
       } else {
-        navList.style.maxHeight = '0px'
+        navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
       }
     }
   }
-}
 
-applyToggle('.list--nav', '.button', 640)
+  collapseNav()
 
+  // Check on resize if to collapse nav
+  window.addEventListener('resize', () => {
+    collapseNav()
+  })
 </script>
