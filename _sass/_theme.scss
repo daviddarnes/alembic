@@ -1,3 +1,26 @@
+// Mixins
+@mixin reducedMotion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+    transition: none;
+  }
+}
+
+@mixin darkMode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// Root
+html {
+  scroll-behavior: smooth;
+  @include reducedMotion {
+    scroll-behavior: auto;
+  }
+}
+
+
 // Structural elements
 body {
   background: $backgroundColour;
@@ -6,6 +29,10 @@ body {
   display: flex;
   @include flex-direction(column);
   overflow-x: hidden;
+  @include darkMode {
+    background: invert($backgroundColour, 100%);
+    color: invert($bodyColour, 100%);
+  }
 }
 
 .container {
@@ -48,9 +75,24 @@ body {
   margin-bottom: 1.6rem;
   text-align: center;
   background: $featureBackgroundColour;
+  @include darkMode {
+    position: relative;
+    &::after {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: fade-out(invert($featureBackgroundColour, 100%), 0.5);
+    }
+  }
   background-size: cover;
   background-position: center;
   .container {
+    position: relative;
+    z-index: 1;
     min-height: 35vh;
     max-width: 60%;
     @include flex-direction(column);
@@ -82,6 +124,9 @@ body {
 .small {
   padding-top: .8rem;
   color: $captionColour;
+  @include darkMode {
+    color: invert($captionColour, 100%);
+  }
   display: inline-block;
 }
 
@@ -100,6 +145,16 @@ body {
   .small {
     padding-top: 0;
   }
+  @include darkMode {
+    background: invert($headingColour, 100%);
+    color: invert($captionColour, 100%);
+    a {
+      color: invert($captionColour, 100%);
+      &:hover {
+        color: invert($backgroundColour, 100%);
+      }
+    }
+  }
 }
 
 
@@ -107,8 +162,11 @@ body {
 .nav--paginator {
   @include flexbox;
   @include justify-content(space-between);
-  color: $captionColour;
   text-align: center;
+  color: $captionColour;
+  @include darkMode {
+    color: invert($captionColour, 100%);
+  }
 }
 
 .pagination {
@@ -152,6 +210,7 @@ body {
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
+    @include reducedMotion {}
     .section {
       position: sticky;
       top: 0;
@@ -177,6 +236,8 @@ body {
   list-style: none;
   &--nav {
     overflow: hidden;
+    transition: .2s;
+    @include reducedMotion {}
     margin-bottom: var(--listHeight, 0);
   }
   .item--post,
@@ -205,8 +266,12 @@ body {
 
 
 // Links, icons and images
+a {
+  @include reducedMotion {}
+}
 a .icon {
   transition: fill .1s;
+  @include reducedMotion {}
   &:hover {
     fill: currentColor;
   }
@@ -279,6 +344,9 @@ video {
   &__legend {
     font-style: italic;
     color: $captionColour;
+    @include darkMode {
+      color: invert($captionColour, 100%);
+    }
     position: absolute;
     overflow: hidden;
     right: 0;
@@ -298,6 +366,7 @@ select {
   padding: .6rem 1.2rem;
   margin-bottom: .6rem;
   transition: color .1s, background-color .1s, border .1s;
+  @include reducedMotion {}
   line-height: inherit;
   border: none;
   box-shadow: none;
@@ -316,6 +385,7 @@ button,
   color: $backgroundColour;
   background: $accentColour;
   transition: box-shadow .1s;
+  @include reducedMotion {}
   will-change: box-shadow;
   box-shadow: inset 0 0 0 2rem transparent;
   &:hover {
@@ -371,6 +441,10 @@ select {
   &:hover {
     border-color: $bodyColour;
   }
+  @include darkMode {
+    background: invert($backgroundColour, 100%);
+    color: invert($bodyColour, 100%);
+  }
 }
 
 select {
@@ -378,7 +452,7 @@ select {
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 label {
@@ -387,7 +461,6 @@ label {
 
 code {
   padding: .12rem .2rem;
-  color: $headingColour;
 }
 
 pre code {
@@ -414,24 +487,23 @@ pre code {
 ::selection {
   background: $headingColour;
   color: $backgroundColour;
+  @include darkMode {
+    background: invert($headingColour, 100%);
+    color: invert($backgroundColour, 100%);
+  }
   text-shadow: none;
 }
 
 
 // Sassline overrides
 .typeset {
-  a > code {
-    text-shadow: none;
-  }
   .button,
   button {
-    background-image: none;
-    text-shadow: none;
     color: $backgroundColour;
+    text-decoration: none;
     &:hover,
     &:active,
     &:focus {
-      background-image: none;
       color: $backgroundColour;
     }
   }
@@ -453,5 +525,16 @@ pre code {
   pre {
     white-space: pre;
     overflow-x: scroll;
+  }
+  @include darkMode {
+    pre,
+    code,
+    h1, h2, h3, h4, h5, h6 {
+      color: invert($headingColour, 100%);
+    }
+    pre,
+    code {
+      background: invert($backgroundColour, 90%);
+    }
   }
 }
