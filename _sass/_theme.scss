@@ -43,9 +43,13 @@ body {
   overflow: hidden;
 }
 
+.header {
+  background-color: black;
+}
+
 .feature {
-  padding-bottom: .4rem;
-  margin-bottom: 1.6rem;
+  //padding-bottom: .4rem;
+  //margin-bottom: 1.6rem;
   text-align: center;
   background: $featureBackgroundColour;
   background-size: cover;
@@ -123,6 +127,7 @@ body {
   @include flex(1, 0, auto);
   @include justify-content(flex-start);
   margin-bottom: 1.6rem;
+  padding-top: 1.6rem;
   @include breakpoint(break-1) {
     @include justify-content(center);
     @include flex-direction(row);
@@ -326,6 +331,11 @@ button,
     box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
   }
 }
+
+nav {
+  font-family: Sushi-Sans;
+}
+
 
 .button--nav {
   @include breakpoint(break-1) {

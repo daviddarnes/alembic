@@ -1,3 +1,9 @@
 <a class="logo" href="{{ site.baseurl }}/">
-  <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title | append: ' logo' }}"/>
+  <img src"asdfdsfd" alt="{{ site.title | append: ' logo' }}" id='mascot' height="60" width="60"/>
 </a>
+<script>
+  var mascotNames = ["maki", "maki3", "onigiri", "tamago"];
+  document.getElementById('mascot').src="/assets/logos/" +
+    mascotNames[Math.floor(Math.random()*mascotNames.length)] +
+  ".svg";
+</script>
