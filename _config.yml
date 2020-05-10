@@ -110,7 +110,15 @@ navigation_header:
 - title: Sponsors
   url: /sponsors/
 - title: Resources
-  url: /resources/
+  sublinks:
+    - title: Safety manual
+      url: https://docs.google.com/document/d/1ReB-0HeO8rGdcyTWvBJYWyBEy8vUJQ3sLEYQ2rIfR94/edit?usp=sharing 
+    - title: 2019 Documentation
+      url: https://www.chiefdelphi.com/t/team-7461-documentation-release/360456 
+    - title: Kitbot on Steroids - 2020 Edition
+      url: https://www.chiefdelphi.com/t/team-7461-kitbot-on-steroids-2020-edition/369079 
+    - title: Instagram
+      url: https://www.instagram.com/sushisquad7461/
 - title: About FIRST
   url: https://www.firstinspires.org/robotics/frc
 - title: Accomplishments
