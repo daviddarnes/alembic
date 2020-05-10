@@ -5,11 +5,11 @@ styles: true
 
 @font-face {
 	font-family: Mohave;
-	src: url('Mohave-Regular.otf');
+	src: url('/assets/Mohave-Regular.otf');
 }
 @font-face {
 	font-family: Sushi-Sans;
-	src: url('sushi_big.ttf');
+	src: url('/assets/sushi_big.ttf');
 }
 
 @import "alembic";
