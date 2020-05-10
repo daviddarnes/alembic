@@ -12,4 +12,4 @@ that changes each year. Our team, which includes members from seven different sc
 
 Membership is open to all students in the greater Redmond area. Contact us at [team7461@gmail.com](mailto:team7461@gmail.com) with any questions.
 
-[{% include icon.html id="github" title="github" %}](https://github.com/SushiSquad7461)
+<a href="https://github.com/SushiSquad7461" style="background-image: none"> {% include icon.html id="github" title="github" style="background-image: none !important; color: red !important" %} </a>
