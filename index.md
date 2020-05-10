@@ -1,7 +1,7 @@
 ---
 title: About Us
 feature_text: |
-  ## Sushi Squad
+  ## SUSHI SQUAD 7461
   A community FIRST Robotics Competition team based in Redmond, WA
 feature_image: "/assets/banner.png"
 layout: page
