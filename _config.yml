@@ -112,7 +112,7 @@ navigation_header:
 - title: Resources
   url: /resources/
 - title: About FIRST
-  url: /first/
+  url: https://www.firstinspires.org/robotics/frc
 - title: Accomplishments
 - title: Search
   url: /search/
