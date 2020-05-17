@@ -52,4 +52,12 @@ We are incredibly grateful to the following organizations that keep our team run
          {% include figure.html image="/assets/sponsors/playlive.png"  width="300" height="300" %}
         </th>
     </tr>
+    <tr>
+        <th>
+            Aurora Energy Consulting
+        </th>
+        <th>
+            Tuan and Tuyet Team
+        </th>
+    </tr>
 </table>
