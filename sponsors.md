@@ -17,7 +17,7 @@ We are incredibly grateful to the following organizations that keep our team run
 <table>
     <tr>
     <th>
-        {% include figure.html image="/assets/sponsors/BLR.png" caption="Black Lodge Research" width="300" height="300" %}
+        {% include figure.html image="/assets/sponsors/BLR.png" width="300" height="300" %}
     </th>
     <th>
         {% include figure.html image="/assets/sponsors/microsoft.png"  width="300" height="300" %}
@@ -29,6 +29,11 @@ We are incredibly grateful to the following organizations that keep our team run
         </th>
         <th>
             {% include figure.html image="/assets/sponsors/firstwa.png"  width="300" height="300" %}
+        </th>
+    </tr>
+    <tr>
+        <th>
+            {% include figure.html image="/assets/sponsors/onshape.jpg"  width="300" height="300" %}
         </th>
     </tr>
 </table>
