@@ -33,7 +33,7 @@ We are incredibly grateful to the following organizations that keep our team run
     </tr>
     <tr>
         <th>
-            {% include figure.html image="/assets/sponsors/onshape.jpg"  width="300" height="300" %}
+            {% include figure.html image="/assets/sponsors/onshape.png"  width="300" height="300" %}
         </th>
     </tr>
 </table>
