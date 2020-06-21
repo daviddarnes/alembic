@@ -122,8 +122,7 @@ navigation_header:
 - title: About FIRST
   url: https://www.firstinspires.org/robotics/frc
 - title: Accomplishments
-- title: Search
-  url: /search/
+  url: /accomplishments/
 
 navigation_footer:
 - title: "See you at worlds!"
