@@ -49,15 +49,9 @@
 
 Here are a few examples of Alembic out in the wild being used in a variety of ways:
 
-- [bitpodcast.com](https://bitpodcast.com/)
-- [joelcagedesign.com](https://joelcagedesign.com/)
 - [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](http://case2111.github.io/)
-- [www.10people.co.uk](http://www.10people.co.uk/)
-- [hrkeni.me](http://hrkeni.me/)
-- [ccs17.bsc.es](https://ccs17.bsc.es/)
-- [karateca.org](http://www.karateca.org/)
-- [p-recs.github.io](https://p-recs.github.io/2018/)
+- [case2111.github.io](https://case2111.github.io/)
+- [karateca.org](https://www.karateca.org/)
 
 ## Installation
 
