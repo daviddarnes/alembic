@@ -121,6 +121,8 @@ navigation_header:
       url: https://www.instagram.com/sushisquad7461/
     - title: New member info form
       url: https://forms.gle/aYGh3tikR7d3vKVA8
+    - title: Programming onboarding
+      url: /programming-onboarding/
 - title: About FIRST
   url: https://www.firstinspires.org/robotics/frc
 - title: Accomplishments
