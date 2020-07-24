@@ -5,9 +5,9 @@ layout: page
 
 ### Kotlin resources
 
-This year on prog, we're going to be making the switch from Java to Kotlin. If you're already proficient in Java, Python, or any similar language, the best place to learn is from the [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) or Tutorialspoint.
+This year on prog, we're going to be making the switch from Java to Kotlin. If you're wondering why, read [this paper](https://www.chiefdelphi.com/uploads/default/original/3X/4/9/49f9c846e580bdb9423fc3d0560573d162638b57.pdf)  If you're already proficient in Java, Python, or any similar language, the best place to learn is from the [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) or Tutorialspoint.
 
-If you're a beginner, most Kotlin tutorials you'll find online are either designed for people who already know Java, or are looking to do Android development. The best resource for someone in your situation is [Head First Kotlin](https://www.amazon.com/Head-First-Kotlin-Brain-Friendly-Guide/dp/1491996692).
+If you're a beginner, most Kotlin tutorials you'll find online are either designed for people who already know Java, or are looking to do Android development. The best resource for someone in your situation is [Head First Kotlin](https://www.amazon.com/Head-First-Kotlin-Brain-Friendly-Guide/dp/1491996692). [This](https://www.youtube.com/watch?v=F9UC9DY-vIU) is a pretty good Youtube tutorial that you can follow along with as well.
 
 Before you start the rest of your prog training, you'll need to be reasonably good at Kotlin. To make sure everyone is on the same page during programming discussions, write a program that meets the following requirements:
 
@@ -21,6 +21,8 @@ Before you start the rest of your prog training, you'll need to be reasonably go
 - Must appropriately use `val` and `var`
 - Must use a `filter` statment
 - Must follow the [Kotlin Style Guide](https://kotlinlang.org/docs/reference/coding-conventions.html)
+
+Although the official development environment is VSCode, you should use IntelliJ for most of your development. 
 
 ### Git(hub) requirements
 
@@ -38,3 +40,12 @@ Then, to verify that you've learned enough Git:
 - Add, commit, and push your changes to a new branch
 - Make a pull request so I can look over your project and verify that it meets the requirements.
 
+### WPILib
+WPILib is the library that lets you controll the robot with Kotlin. The documentation is [here](https://docs.wpilib.org/en/stable/). Read it.
+
+### Lectures you should probably watch
+https://www.youtube.com/watch?v=pTuPhJ0DJB8 is a short video that'll help you understand PID control. WPILib can do PID for you, but understanding how it works will allow you to better tune your constants and debug issues.
+
+https://www.youtube.com/watch?v=wqJ4tY0u6IQ explains trajectory tracking using WPILib.
+
+https://www.youtube.com/watch?v=wW_djLkD1B8 explains a robot project's general structure, and although all the info is in the WPILib docs, this is just another way to understand how everything fits together.
