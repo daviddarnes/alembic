@@ -127,6 +127,8 @@ navigation_header:
   url: https://www.firstinspires.org/robotics/frc
 - title: Accomplishments
   url: /accomplishments/
+- title: Code Camp
+  url: https://docs.google.com/forms/d/e/1FAIpQLSdlLXXRE3JCQqvBxJwFzXJ14ssN8Nnjm6jBfKWgjmmMnoe0rg/viewform?usp=sf_link 
 
 navigation_footer:
 - title: "See you at worlds!"
