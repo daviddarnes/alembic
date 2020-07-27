@@ -29,7 +29,6 @@ plugins:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
-- jekyll-default-layout
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
