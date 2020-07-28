@@ -12,8 +12,8 @@ If you're a beginner, most Kotlin tutorials you'll find online are either design
 Before you start the rest of your prog training, you'll need to demonstrate proficiency good at Kotlin. To make sure everyone is on the same page during programming discussions, write a program that meets the following requirements:
 
 - Process Strings from console input
+- Create an abstract class called `Item`, and  subclasses that extend it
 - Hold an inventory of `Item` objects, that the user can manipulate and view
-- Item is an abstract classs, and each type of Item should extend it
 - Must use a Kotlin "when" statment (similar to a switch statement)
 - Must have an inline class definition (that you use somewhere)
 - Must use a for-each loop
@@ -23,7 +23,7 @@ Before you start the rest of your prog training, you'll need to demonstrate prof
 
 Although the official development environment is VSCode, you should use IntelliJ for most of your development. 
 
-### Git(hub) requirements
+### Github Requirements
 
 For collaboration, we use Github to share code. When you first start learning Git and Github, it's important to know the difference between them:
 - **Git** is a free and open source version control system that allows you to work in teams and keep track of your code history.
