@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-  <head>
-    <!-- General meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- General meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  {% if page.indexing == false %}
+  <meta name="robots" content="noindex">
+  {% endif %}
 
-    {% if page.indexing == false %}
-      <meta name="robots" content="noindex">
-    {% endif %}
+  {% if page.collectionpage %}
+  {% seo title=false %}
 
-    {% if page.collectionpage %}
-      {% seo title=false %}
+  {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+  <title>{{ collectiondata.title }} - {{ site.title }}</title>
+  <meta property="og:title" content="{{ collectiondata.title }}">
+  <meta name="description" content="{{ collectiondata.description }}">
+  <meta property="og:description" content="{{ collectiondata.description }}">
+  {% else %}
+  {% seo %}
+  {% endif %}
 
-      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-      <title>{{ collectiondata.title }} - {{ site.title }}</title>
-      <meta property="og:title" content="{{ collectiondata.title }}">
-      <meta name="description" content="{{ collectiondata.description }}">
-      <meta property="og:description" content="{{ collectiondata.description }}">
-    {% else %}
-      {% seo %}
-    {% endif %}
+  <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+  <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}" />
 
-    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+  {% if site.css_inline == true %}
+  {% include site-styles.html %}
+  {% else %}
+  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+  {% endif %}
 
-    {% if site.css_inline == true %}
-      {% include site-styles.html %}
-    {% else %}
-      <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-    {% endif %}
+  {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
 
-    {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
+  {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+  {% include site-before-start.html %}
+</head>
 
-    {% include site-before-start.html %}
-  </head>
+<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+  {% include site-icons.svg %}
 
-  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-    {% include site-icons.svg %}
+  {{ content }}
 
-    {{ content }}
+  {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
 
-    {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
-
-    {% include site-before-end.html %}
-  </body>
+  {% include site-before-end.html %}
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>

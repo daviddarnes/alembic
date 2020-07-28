@@ -5,17 +5,17 @@ $featureBackgroundColour: #f9fafa !default;
 $accentColour: #05bf85 !default;
 
 // Text colours
-$headingColour: #242e2b !default;
-$bodyColour: #384743 !default;
-$linkColour: #05bf85 !default;
-$hoverColour: #008000 !default;
-$focusColour: #fa407a !default;
-$captionColour: #a8adac !default;
+$headingColour: black !default;
+$bodyColour: black !default;
+$linkColour: #56cbf9 !default;
+$hoverColour: #81f4e1 !default;
+$captionColour: #fa407a !default;
+$focusColour: #ff729f !default;
 $white: #ffffff !default;
 
 // Typography
 $bodytype: (
-  font-family: "Georgia, serif",
+  font-family: "Mohave",
   regular: 400,
   bold: 700,
   italic: italic,
@@ -23,8 +23,9 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  font-family: "Sushi-Sans",
   regular: 400,
+  letter-spacing: 0.4em,
   bold: 700,
   cap-height: 0.75
 ) !default;

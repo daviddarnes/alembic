@@ -40,12 +40,16 @@ body {
   flex-direction: column-reverse;
   align-items: flex-end;
   justify-content: flex-end;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.header {
+  background-color: black;
 }
 
 .feature {
-  padding-bottom: .4rem;
-  margin-bottom: 1.6rem;
+  //padding-bottom: .4rem;
+  //margin-bottom: 1.6rem;
   text-align: center;
   background: $featureBackgroundColour;
   background-size: cover;
@@ -123,6 +127,7 @@ body {
   @include flex(1, 0, auto);
   @include justify-content(flex-start);
   margin-bottom: 1.6rem;
+  padding-top: 1.6rem;
   @include breakpoint(break-1) {
     @include justify-content(center);
     @include flex-direction(row);
@@ -327,6 +332,11 @@ button,
   }
 }
 
+nav {
+  font-family: Sushi-Sans;
+}
+
+
 .button--nav {
   @include breakpoint(break-1) {
     display: none;
@@ -454,4 +464,27 @@ pre code {
     white-space: pre;
     overflow-x: scroll;
   }
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  overflow: visible !important;
+}
+nav li {
+  line-height: 30px;
+}
+nav a {
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.dropdown-menu {
+  font-family: Mohave;
+  background-color: black;
+  border-color: #ff729f;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  min-width: 15rem;
 }

@@ -3,4 +3,13 @@ title: false
 styles: true
 ---
 
+@font-face {
+	font-family: Mohave;
+	src: url('/assets/Mohave-Regular.otf');
+}
+@font-face {
+	font-family: Sushi-Sans;
+	src: url('/assets/sushi_big.ttf');
+}
+
 @import "alembic";
