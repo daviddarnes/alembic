@@ -29,9 +29,10 @@ For collaboration, we use Github to share code. When you first start learning Gi
 - **Git** is a free and open source version control system that allows you to work in teams and keep track of your code history.
 - **GitHub** is a cloud service owned by Microsoft that lets you manage your Git repositories for free. There are other online services similar to Github, but Github is the most popular.
 
+
 [Here](https://docs.google.com/presentation/d/1MNZY5AGBjoUL_nHSWLreXEC06QkSJMxzhAiljMVCe2g/edit?usp=sharing) is a slide deck that explains the basics of Git. 
 
-After you understand general Gir concepts, install GitHub Desktop and read some of the documentation [here](https://docs.github.com/en/desktop/getting-started-with-github-desktop).
+After you understand general Git concepts, install GitHub Desktop and read some of the documentation [here](https://docs.github.com/en/desktop/getting-started-with-github-desktop).
 
 Then, to verify that your Git knowlegde:
 - Clone the Sushi Squad onboarding repository from https://github.com/SushiSquad7461/Kotlin-onboarding 
@@ -40,6 +41,7 @@ Then, to verify that your Git knowlegde:
 - Make a pull request so I can look over your project and verify that it meets the requirements.
 
 ### WPILib
+
 WPILib is the library that lets you control the robot with Kotlin. Knowledge of WPILib features and how to use them is essential for the programming subteam. You can access the documentation is [here](https://docs.wpilib.org/en/stable/).
 
 ### Lectures to Watch
@@ -48,3 +50,4 @@ WPILib is the library that lets you control the robot with Kotlin. Knowledge of 
 [This](https://www.youtube.com/watch?v=wqJ4tY0u6IQ) explains trajectory tracking using WPILib.
 
 [This](https://www.youtube.com/watch?v=wW_djLkD1B8) explains a robot project's general structure, and although all the info is in the WPILib docs, this is just another way to understand how everything fits together.
+

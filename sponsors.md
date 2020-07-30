@@ -13,6 +13,7 @@ th {
 
 We are incredibly grateful to the following organizations that keep our team running. If you would like to become a sponsor, please contact us [here](mailto:team7461@gmail.com).
 
+
 <h2>Terabyte Sponsors</h2>
 <table>
     <tr>

@@ -42,4 +42,3 @@ FRC Team 7461 is a high school robotics team based in Redmond, Washington. Each 
 that changes each year. Our team, which includes members from seven different schools, is largely student led, depending off of donations and sponsorships to continue running.
 
 Membership is open to all students in the greater Redmond area. Contact us [here](mailto:team7461@gmail.com) with any questions.
-

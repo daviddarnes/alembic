@@ -104,16 +104,15 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 
 # 9. Site navigation
 navigation_header:
-- title: Home
+- title: About
   url: /
+
 - title: About
   url: /about/
 - title: Sponsors
   url: /sponsors/
-- title: Member Resources
+- title: Resources
   sublinks:
-    - title: About FIRST
-      url: https://www.firstinspires.org/robotics/frc
     - title: Safety Manual
       url: https://docs.google.com/document/d/1ReB-0HeO8rGdcyTWvBJYWyBEy8vUJQ3sLEYQ2rIfR94/edit?usp=sharing 
       title: New Member Info Form
@@ -124,6 +123,8 @@ navigation_header:
       url: https://www.chiefdelphi.com/t/team-7461-documentation-release/360456 
     - title: Kitbot on Steroids - 2020 Edition
       url: https://www.chiefdelphi.com/t/team-7461-kitbot-on-steroids-2020-edition/369079 
+    - title: Instagram
+      url: https://www.instagram.com/sushisquad7461/
 - title: Code Camp
   url: https://docs.google.com/forms/d/e/1FAIpQLSdlLXXRE3JCQqvBxJwFzXJ14ssN8Nnjm6jBfKWgjmmMnoe0rg/viewform?usp=sf_link 
 
@@ -134,6 +135,11 @@ navigation_header:
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Instagram: https://instagram.com/sushisquad7461
   GitHub: https://github.com/SushiSquad7461
+  
+navigation_footer:
+- title: "See you at worlds!"
+  url: https://old.reddit.com/r/FRC/comments/bgmlpn/worlds_has_been_blessed_with_justin/
+
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
