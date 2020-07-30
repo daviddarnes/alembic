@@ -99,7 +99,6 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   96: '/assets/logos/logo@96px.png'
   120: '/assets/logos/logo@120px.png'
   144: '/assets/logos/logo@144px.png'
-  180: '/assets/logos/logo@180px.png'
   512: '/assets/logos/logo@512px.png'
   1024: '/assets/logos/logo@1024px.png'
 
@@ -107,35 +106,40 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: About
   url: /
+
+- title: About
+  url: /about/
 - title: Sponsors
   url: /sponsors/
 - title: Resources
   sublinks:
-    - title: Safety manual
+    - title: Safety Manual
       url: https://docs.google.com/document/d/1ReB-0HeO8rGdcyTWvBJYWyBEy8vUJQ3sLEYQ2rIfR94/edit?usp=sharing 
+      title: New Member Info Form
+      url: https://forms.gle/aYGh3tikR7d3vKVA8
+    - title: Programming Onboarding
+      url: /programming-onboarding/
     - title: 2019 Documentation
       url: https://www.chiefdelphi.com/t/team-7461-documentation-release/360456 
     - title: Kitbot on Steroids - 2020 Edition
       url: https://www.chiefdelphi.com/t/team-7461-kitbot-on-steroids-2020-edition/369079 
     - title: Instagram
       url: https://www.instagram.com/sushisquad7461/
-    - title: New member info form
-      url: https://forms.gle/aYGh3tikR7d3vKVA8
-    - title: Programming onboarding
-      url: /programming-onboarding/
-- title: About FIRST
-  url: https://www.firstinspires.org/robotics/frc
-- title: Accomplishments
-  url: /accomplishments/
 - title: Code Camp
   url: https://docs.google.com/forms/d/e/1FAIpQLSdlLXXRE3JCQqvBxJwFzXJ14ssN8Nnjm6jBfKWgjmmMnoe0rg/viewform?usp=sf_link 
 
+#navigation_footer:
+#- title: "See you at Worlds"
+#  url: https://old.reddit.com/r/FRC/comments/bgmlpn/worlds_has_been_blessed_with_justin/
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Instagram: https://instagram.com/sushisquad7461
+  GitHub: https://github.com/SushiSquad7461
+  
 navigation_footer:
 - title: "See you at worlds!"
   url: https://old.reddit.com/r/FRC/comments/bgmlpn/worlds_has_been_blessed_with_justin/
 
-social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  GitHub: https://github.com/SushiSquad7461
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
