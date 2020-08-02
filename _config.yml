@@ -92,7 +92,13 @@ email: "me@daviddarnes.com"
 # google_analytics: ''
 # google_analytics_anonymize_ip: ''
 # service_worker: false # Will turn off the service worker if set to false
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+#### css_inline IS NOT WORKING #####################################################
+# After the upgrade to Jekyll 4.x this function is not working anymore.            #
+# For this reason it's deactivate (it was activated by default in the old version. #
+# If you are able to fix it, please help.                                          #
+####################################################################################
+css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
