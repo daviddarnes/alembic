@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
+  spec.add_runtime_dependency "jekyll-default-layout", "~> 0.1.4"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.3.1"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
