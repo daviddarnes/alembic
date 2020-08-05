@@ -25,12 +25,12 @@
 
 ## About
 
-**Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate theme is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it.**
+**Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate theme is designed to get rolling immediately. Install it, configure it, tweak it, push it.**
 
 ## Features
 
 - Available as a **theme gem** and **GitHub Pages** theme
-- Simple and elegant design that can be used out of the box or as solid starting point
+- Clear and elegant design that can be used out of the box or as solid starting point
 - Tested in all major browsers, including **IE and Edge**
 - Built in **Service Worker** so it can work offline and on slow connections
 - **Configurable colours** and typography in a single settings file
@@ -128,9 +128,9 @@ Date format can be customised in the `/_config.yml` with the option `date_format
 
 Alembic comes with a couple of options to enhance the speed and overall performance of the site you build upon it.
 
-By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `service_worker` to false in the `/_config.yml`.
+By default the built in Service Worker is enabled, and will work on a 'network first' method. Meaning if there's no internet connection the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker add an option called `service_worker` with a value of `false` in the `/_config.yml` file.
 
-Another option to speed up Alembic is to enable inline CSS, which is off by default. You can enable this by setting `css_inline: true` inside your `/_config.yml` file. **This is not working anymore after the upgrade to Jekyll 4.x**
+Another option to speed up Alembic is to enable inline CSS, which is off by default. You can enable this by setting `css_inline: true` inside your `/_config.yml` file. By switching to inline styles you bypass the use `/assets/styles.scss`, any custom styles will need to be added in `/_includes/site-styles.html` or in a new custom file.
 
 Please note that these options aren't a "silver bullet" for making your site faster, make sure to audit and debug your site to get the best performance for your situation.
 
@@ -145,7 +145,7 @@ There are a total of 4 different navigation types:
 
 All navigations can be edited using the `_config.yml` file. To see example usage either look for the `Site navigation` comment within the `/_config.yml` file or see [the nav-share.html include](#nav-sharehtml).
 
-If there are no items for the `navigation_header` or `navigation_footer`, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or simply `link`, this is so an icon can be set for the link.
+If there are no items for the `navigation_header` or `navigation_footer`, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or a regular `link`, this is so an icon can be set for the link.
 
 ## Using includes
 
@@ -202,7 +202,7 @@ DesignerNews: "#2D72D9"
 Email: true
 ```
 
-_The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
+_The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button remove the line of the same name._
 
 ### `video.html`
 A YouTube video.
@@ -242,7 +242,7 @@ This include has no options. This include will add a block of javascript to the 
 ### `site-before-start.html` & `site-before-end.html`
 Optional html includes for adding scripts, css, js or any embed code you wish to add to every page without the need to overwrite the entire `default.html` template.
 
-**Example usage:** These are different to other includes as they are designed to be overwritten. If you create a `site-before-start.html` file in the `_includes/` the contents of the file will be included just before the closing `</head>` tag. If you create a `site-before-end.html` file the contents of the file will be included just before the closing `</body>` tag.
+**Example usage:** These are different to other includes as they are designed to be overwritten. If you create a `site-before-start.html` file in the `_includes/` the contents of the file will be included immediately before the closing `</head>` tag. If you create a `site-before-end.html` file the contents of the file will be included immediately before the closing `</body>` tag.
 
 ## Page layouts
 
