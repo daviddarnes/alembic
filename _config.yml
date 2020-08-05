@@ -113,9 +113,11 @@ navigation_header:
   url: /sponsors/
 - title: Resources
   sublinks:
+    - title: PPE Resources
+      url: /ppe-resources/
     - title: Safety Manual
       url: https://docs.google.com/document/d/1ReB-0HeO8rGdcyTWvBJYWyBEy8vUJQ3sLEYQ2rIfR94/edit?usp=sharing 
-      title: New Member Info Form
+    - title: New Member Info Form
       url: https://forms.gle/aYGh3tikR7d3vKVA8
     - title: Programming Onboarding
       url: /programming-onboarding/
