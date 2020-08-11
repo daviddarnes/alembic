@@ -78,6 +78,18 @@ defaults:
       path: ""
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
@@ -93,7 +105,7 @@ email: "me@daviddarnes.com"
 # google_analytics: ''
 # google_analytics_anonymize_ip: ''
 # service_worker: false # Will turn off the service worker if set to false
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+css_inline: true # Switches to placing styles in the <head>, note that this will skip 'assets/styles.scss' and start using '_includes/site-styles.html' instead
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
