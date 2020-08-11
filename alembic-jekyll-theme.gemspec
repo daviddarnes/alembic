@@ -2,11 +2,15 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "alembic-jekyll-theme"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   spec.version       = "3.1.0"
 =======
   spec.version       = "4.0.0"
 >>>>>>> Stashed changes
+=======
+  spec.version       = "3.2.0"
+>>>>>>> 6ac70934d8556fe3120cd2e5fdac936545602f8a
   spec.authors       = ["David Darnes"]
   spec.email         = ["me@daviddarnes.com"]
 
@@ -19,6 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|sw|manifest)}i) }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   spec.add_runtime_dependency "jekyll", "~> 3.8"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 0.13"
@@ -32,15 +37,24 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
   spec.add_runtime_dependency "jemoji", "~> 0.11"
 =======
+=======
+>>>>>>> 6ac70934d8556fe3120cd2e5fdac936545602f8a
   spec.add_runtime_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.6.0"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
+<<<<<<< HEAD
+=======
+  spec.add_runtime_dependency "jekyll-default-layout", "~> 0.1.4"
+>>>>>>> 6ac70934d8556fe3120cd2e5fdac936545602f8a
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.3.1"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jemoji", "~> 0.12"
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 6ac70934d8556fe3120cd2e5fdac936545602f8a
 end
