@@ -1,6 +1,7 @@
 ---
 permalink: "manifest.json"
 layout: null
+sitemap: false
 ---
 {
   "lang": "{{ site.lang | default: "en-US" }}",
