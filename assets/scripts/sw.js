@@ -10,7 +10,7 @@ const cacheName = `static::${version}`;
 const buildContentBlob = () => {
   return [
     {%- for post in site.posts limit: 10 -%}
-      "{{ post.url }}",
+      "{{ site.baseurl }}{{ post.url }}",
     {%- endfor -%}
     {%- for page in site.pages -%}
       {%- unless page.url contains 'sw.js' or page.url contains '404.html' -%}
