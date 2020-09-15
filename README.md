@@ -228,6 +228,7 @@ Example usage: `{% include site-form.html %}`
 Available options:
 - `netlify_form=true`: Set whether you would like to use Netlify Forms, otherwise the form will default to Formspree
 - `name`: Give the form a name, by default the form is called "Contact". The name will be reflected when form submissions come through in Netlify or in your email client. The name is also used in the label and input elements for accessibility
+- `endpoint`: To use if your Formspree form has an endpoint different from your email address. If ommited, the email address will be used as endpoint
 
 
 Use the `email` option in the `/_config.yml` to change to the desired email.
