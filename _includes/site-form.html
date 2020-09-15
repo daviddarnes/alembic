@@ -53,7 +53,7 @@
     var endpoint = "{{ endpoint | split: "" | reverse | join: "" }}";
     var unraveledEndpoint = endpoint.split("").reverse().join("");
     var form = document.querySelector(".form--{{ name_id }}");
-      form.setAttribute("action", "https://formspree.io/" + endpoint);
+      form.setAttribute("action", "https://formspree.io/" + unraveledEndpoint);
   </script>
   <noscript>Please enable JavaScript to use the form.</noscript>
 {% endunless %}
