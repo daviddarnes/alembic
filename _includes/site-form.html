@@ -14,10 +14,8 @@
 
 {% if include.endpoint %}
   {% assign endpoint = include.endpoint %}
-  {% assign endpoint_type = "id" %}
 {% else %}
-  {% assign endpoint = site:email | split: "" | reverse | join: "" %}
-  {% assign endpoint_type = "email" %}
+  {% assign endpoint = site:email %}
 {% endif %}
 
 <form class="form  form--{{ name_id }}" method="post" name="{{ name }}" action="{{ thanks_url }}"
@@ -52,14 +50,8 @@
 </form>
 {% unless include.netlify_form %}
   <script>
-    var endpoint = "{{ endpoint }}";
-    var endpointType = "{{ endpoint_type }}";
-
-    if (endpointType === "email") {
-      var unraveledEmail = endpoint.split("").reverse().join("");
-      endpoint = unraveledEmail;
-    }
-
+    var endpoint = "{{ endpoint | split: "" | reverse | join: "" }}";
+    var unraveledEndpoint = endpoint.split("").reverse().join("");
     var form = document.querySelector(".form--{{ name_id }}");
       form.setAttribute("action", "https://formspree.io/" + endpoint);
   </script>
