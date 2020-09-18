@@ -21,6 +21,12 @@
       {% seo %}
     {% endif %}
 
+    {% unless page.image %}
+      {% if page.feature_image %}
+        <meta property="og:image" content="{{ page.feature_image }}" />
+      {% endif %}
+    {% endunless %}
+
     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
     <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
 
