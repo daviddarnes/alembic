@@ -76,7 +76,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
+      image: "/assets/default-social-image.png" # Default image for sharing. Falls back to the value in feature_image if not stated
   -
     scope:
       path: ""
