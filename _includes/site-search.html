@@ -49,8 +49,8 @@
 
   field.addEventListener('keyup', displayResults);
 
-  field.addEventListener('keypress', function(event) {
-    if (event.keyCode == 13) {
+  field.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
       event.preventDefault();
     }
   });
