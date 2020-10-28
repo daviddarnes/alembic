@@ -18,6 +18,7 @@
   - [Site settings](#site-settings)
   - [Site performance settings](#site-performance-settings)
   - [Site navigation](#site-navigation)
+  - [Custom fonts](#custom-fonts)
 - [Using includes](#using-includes)
 - [Page layouts](#page-layouts)
 - [Page and Post options](#page-and-post-options)
@@ -59,16 +60,16 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 
 To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
 
-- Vanilla Jekyll starter kit:  
+- Vanilla Jekyll starter kit:
   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit)
-- Forestry starter kit:  
-  [![Deploy to Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=daviddarnes/alembic-forestry-kit&engine=jekyll)  
+- Forestry starter kit:
+  [![Deploy to Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=daviddarnes/alembic-forestry-kit&engine=jekyll)
   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-forestry-kit)
-- Netlify CMS starter kit:  
+- Netlify CMS starter kit:
   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-netlifycms-kit&stack=cms)
 
 - GitHub Pages with remote theme kit - **[Download kit](https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip)**
-- Stackbit starter kit:  
+- Stackbit starter kit:
   [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/alembic-stackbit-kit)
 
 ### As a Jekyll theme
@@ -146,6 +147,17 @@ There are a total of 4 different navigation types:
 All navigations can be edited using the `_config.yml` file. To see example usage either look for the `Site navigation` comment within the `/_config.yml` file or see [the nav-share.html include](#nav-sharehtml).
 
 If there are no items for the `navigation_header` or `navigation_footer`, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or a regular `link`, this is so an icon can be set for the link.
+
+### Custom fonts
+
+Alembic comes with custom fonts served from Google fonts. By default it requests Merriweather but this can be any font from any provider assuming it supports requesting fonts in the same manner and does not require javascript.
+
+This can be configured under the `custom_fonts` key.
+
+- `urls`: The urls supplied to you from your font provider (eg https://fonts.googleapis.com/css2?family=Merriweather). For best performance try to use as few urls as possible
+- `preconnect`: (optional) If your font provider serves the font files from another domain it can be useful to make a connection to that domain in advance. For example google load the font files from fonts.gstatic.com. This can be omitted if not required
+
+If you want to customise this further you can find the include for custom fonts in `_includes/site-custom-fonts.html`.
 
 ## Using includes
 

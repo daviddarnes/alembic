@@ -1,6 +1,11 @@
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" />
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-<noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
-</noscript>
+{% if site.custom_fonts.urls %}
+    {% for font in site.custom_fonts.urls %}
+        <link rel="preload" as="style" href="{{ font }}" />
+        <link href="{{ font }}" rel="stylesheet" media="print" onload="this.media='all'" />
+    {% endfor %}
+    <noscript>
+        {% for font in site.custom_fonts.urls %}
+            <link href="{{ font }}" rel="stylesheet" />
+        {% endfor %}
+    </noscript>
+{% endif %}
