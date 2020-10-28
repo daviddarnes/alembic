@@ -18,6 +18,7 @@
   - [Site settings](#site-settings)
   - [Site performance settings](#site-performance-settings)
   - [Site navigation](#site-navigation)
+  - [Custom fonts](#custom-fonts)
 - [Using includes](#using-includes)
 - [Page layouts](#page-layouts)
 - [Page and Post options](#page-and-post-options)
@@ -148,6 +149,17 @@ There are a total of 4 different navigation types:
 All navigations can be edited using the `_config.yml` file. To see example usage either look for the `Site navigation` comment within the `/_config.yml` file or see [the nav-share.html include](#nav-sharehtml).
 
 If there are no items for the `navigation_header` or `navigation_footer`, they will fallback to a list of pages within the site. The `social_navigation` properties should either be one that is already in the list (so `Twitter` or `Facebook`) or a regular `link`, this is so an icon can be set for the link.
+
+### Custom fonts
+
+Alembic comes with custom fonts served from Google fonts. By default it requests Merriweather but this can be any font from any provider assuming it supports requesting fonts in the same manner and does not require javascript.
+
+This can be configured under the `custom_fonts` key.
+
+- `urls`: The urls supplied to you from your font provider (eg https://fonts.googleapis.com/css2?family=Merriweather). For best performance try to use as few urls as possible
+- `preconnect`: (optional) If your font provider serves the font files from another domain it can be useful to make a connection to that domain in advance. For example google load the font files from fonts.gstatic.com. This can be omitted if not required
+
+If you want to customise this further you can find the include for custom fonts in `_includes/site-custom-fonts.html`.
 
 ## Using includes
 

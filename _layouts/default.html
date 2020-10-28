@@ -21,6 +21,11 @@
     {% else %}
       {% seo %}
     {% endif %}
+    {% if site.custom_fonts.preconnect %}
+      {% for preconnect in site.custom_fonts.preconnect %}
+        <link rel="preconnect" href="{{ preconnect }}" crossorigin />
+      {% endfor %}
+    {% endif %}
 
     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
     <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>

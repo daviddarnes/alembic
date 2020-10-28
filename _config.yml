@@ -149,3 +149,13 @@ sharing_links: # Appear at the bottom of single blog posts, add as desired. The 
   Twitter: "#0d94e7"
   facebook: "#3B5998"
   Email: true
+
+# Load custom fonts from fonts.google.com etc
+#
+# TIP: Try to keep the number of urls as low to reduce the performance cost
+#      If multiple fonts can be requested in a single url opt for this
+custom_fonts:
+  preconnect:
+    - https://fonts.gstatic.com
+  urls:
+    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
