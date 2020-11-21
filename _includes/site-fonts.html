@@ -1,10 +1,10 @@
-{% if site.custom_fonts.urls %}
-    {% for font in site.custom_fonts.urls %}
+{% if site.fonts.font_urls %}
+    {% for font in site.fonts.font_urls %}
         <link rel="preload" as="style" href="{{ font }}" />
         <link href="{{ font }}" rel="stylesheet" media="print" onload="this.media='all'" />
     {% endfor %}
     <noscript>
-        {% for font in site.custom_fonts.urls %}
+        {% for font in site.fonts.font_urls %}
             <link href="{{ font }}" rel="stylesheet" />
         {% endfor %}
     </noscript>
