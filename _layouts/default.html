@@ -20,9 +20,9 @@
     {% else %}
       {% seo %}
     {% endif %}
-    {% if site.custom_fonts.preconnect %}
-      {% for preconnect in site.custom_fonts.preconnect %}
-        <link rel="preconnect" href="{{ preconnect }}" crossorigin />
+    {% if site.fonts.preconnect_urls %}
+      {% for url in site.fonts.preconnect_urls %}
+        <link rel="preconnect" href="{{ url }}" crossorigin />
       {% endfor %}
     {% endif %}
 
@@ -39,7 +39,7 @@
 
     {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
-    {% include site-custom-fonts.html %}
+    {% include site-fonts.html %}
 
     {% include site-before-start.html %}
   </head>
