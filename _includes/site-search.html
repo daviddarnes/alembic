@@ -3,29 +3,46 @@
     <label class="label" for="search">Search term:</label>
     <input class="input" id="search" type="search" name="search" placeholder="e.g. About us" autocomplete="off" />
 
-    <ul class="list  list--results" id="list">
-        <!-- results go here -->
-    </ul>
+    <div class="search--results-container">
+      <!-- results go here -->
+    </div>
   </form>
 </div>
 
 <script type="text/javascript" src="{{ "/assets/scripts/fetch.js" | relative_url }}"></script>
 <script type="text/javascript">
+  // The JSON file containing the search index.
   const endpoint = '{{ "/assets/search.json" | relative_url }}';
 
-  const pages = [];
+  // Holds timings for hold long it's been since someone typed, so results aren't too fast.
+  let searchDebounce = 0;
 
-  fetch(endpoint)
-    .then(blob => blob.json())
-    .then(data => pages.push(...data))
+  // The search query is captured in the address bar as 'search'.
+  const searchInputs = document.querySelectorAll('input[name="search"]');
 
-  function findResults(termToMatch, pages) {
+  // Holder for search results and their associated messages.
+  const resultsElements = document.querySelectorAll('.search--results-container');
+
+  // Helper to update search as people type.
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Where we'll hold the index results after fetching..
+  let pages = [];
+
+  /**
+   * Take a string query and narrow it (adding metadata) to matching results from the pages index.
+   *
+   * @param termToMatch
+   * @param pages
+   * @returns {[]}
+   */
+  let findResults = (termToMatch, pages) => {
     let results = [];
     const titleBoost = 2;
     const excerptPad = 20 - termToMatch.length;
-    const qRegex = new RegExp(termToMatch, 'gi');
+    const searchRegex = new RegExp(termToMatch, 'gi');
 
-    /* A null string should show the no-results state. */
+    // A null string should show the no-results state.
     if (!termToMatch.length) {
       return results;
     }
@@ -33,15 +50,15 @@
     Array.prototype.forEach.call(pages, (result) => {
       let score = 0, matchIndex;
   
-      /* Boost title matches by multiplier. */
-      score += (result.title.match(qRegex)) ? (titleBoost * result.title.match(qRegex).length) : 0;
+      // Boost title matches by multiplier.
+      score += (result.title.match(searchRegex)) ? (titleBoost * result.title.match(searchRegex).length) : 0;
   
-      if (result.content.match(qRegex)) {
-        /* Add to relevance score for every match. */
-        score += result.content.match(qRegex).length;
+      if (result.content.match(searchRegex)) {
+        // Add to relevance score for every match.
+        score += result.content.match(searchRegex).length;
   
-        /* Create an excerpt with context and the search phrase in bold */
-        matchIndex = result.content.search(qRegex);
+        // Create an excerpt with context and the search phrase in bold.
+        matchIndex = result.content.search(searchRegex);
         result.excerpt = "..."
           + result.content.substr((matchIndex - excerptPad), excerptPad)
           +  "<strong>" + termToMatch + "</strong>"
@@ -49,46 +66,127 @@
           + "...";
       }
   
-      /* Score is zero (falsy) if neither title nor content match. */
+      // Score is zero (falsy) if neither title nor content match.
       if (score) {
         result.score = score;
         results.push(result);
       }
     });
   
-    /* Highest score first. */
+    // Highest score first.
     results.sort((a, b) => (a.score < b.score) ? 1 : -1);
-  
+
     return results;
   }
 
-  function displayResults() {
-    const resultsArray = findResults(this.value, pages);
-    const html = resultsArray.map(item => {
-      return `
-        <li class="item  item--result">
+  /**
+   * Render results to HTML in the prescribed container.
+   *
+   * @param results
+   * @returns {string}
+   */
+  let displayResults = (results) => {
+    // Default if no results.
+    let output = `<div class="alert alert--warning" role="alert">
+      <p>No results found.</p>
+    </div>`;
+
+    // Good plural handling keeps the interface conversational.
+    let resultsSingularOrPlural = `<em>1</em> result`;
+
+    // If we've gotten results, turn them into HTML.
+    if (results.length) {
+      // Go to great lengths to avoid "1 results found".
+      if (results.length >= 2) {
+        resultsSingularOrPlural = `<em>${results.length}</em> results`
+      }
+
+      // Unordered list for semantics.
+      output = `
+      <div class="search--results-counter">
+        ${resultsSingularOrPlural} found.
+      </div>
+      <ul class="list  list--results" id="list">`;
+
+      // Loop through results and render each item individually.
+      Array.prototype.forEach.call(results, (item) => {
+        output += `<li class="item  item--result">
           <article class="article  typeset">
             <h4><a href="${item.url}">${item.title}</a></h4>
             <p>${item.excerpt}</p>
           </article>
         </li>`;
-    }).join('');
-    if ((resultsArray.length == 0) || (this.value == '')) {
-      resultsList.innerHTML = `<p>Sorry, nothing was found</p>`;
-    } else {
-      resultsList.innerHTML = html;
+      });
+
+      output += `</ul>`;
     }
+
+    return output;
   }
 
-  const field = document.querySelector('#search');
-  const resultsList = document.querySelector('#list');
+  /**
+   * Outsourcing our event listener so we can use the same one for multiple events,
+   * and call it directly when fetch is successful to trigger initial page state.
+   *
+   * @param event
+   */
+  let searchListener = (event) => {
+    // The search name/param is reserved on this site for search.
+    if (event.target.name === 'search') {
+      Array.prototype.forEach.call(searchInputs, (elem) => {
+        // All search boxes mirror each other.
+        if (elem !== event.target) {
+          elem.value = event.target.value;
+        }
+        else if (!event.isLoad) {
+          // Keep the search param in the address bar updated, for API and navigation.
+          history.replaceState(null, true, window.location.pathname
+            + '?search=' + encodeURIComponent(event.target.value));
+        }
+      });
 
-  field.addEventListener('keyup', displayResults);
+      // Dynamically update the results with a slight debounce.
+      if (resultsElements.length) {
+        if ((Date.now() - searchDebounce) > 150) {
+          const results = displayResults(findResults(event.target.value, pages));
+          Array.prototype.forEach.call(resultsElements, (elem) => {
+            elem.innerHTML = results;
+          });
 
-  field.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-      event.preventDefault();
+          searchDebounce = Date.now();
+        }
+      }
     }
-  });
+  };
+
+  // The fetch() populates the pages array. Everything else relies on the fetch.
+  fetch(endpoint)
+    .then(blob => blob.json())
+    .then((data) => {
+      pages = data;
+      // Delete local data and rely on global pages for memory conservation.
+      data = null;
+
+      // Register event listeners for form changes and key presses.
+      document.addEventListener('change', searchListener, false);
+      document.addEventListener('keyup', searchListener, false);
+
+      // Handle 'fake' HTTP form handling when the page loads.
+      if (urlParams.has("search")) {
+        Array.prototype.forEach.call(searchInputs, (elem) => {
+          elem.value = urlParams.get("search");
+
+          // Trigger a fake search input. Even though the inputs just got the right value, let the listener know it's
+          // load so it won't mess with the history.
+          searchListener({
+            "isLoad": true,
+            'target': elem
+          });
+        });
+      }
+    })
+    .catch((err)=>  {
+      console.warn('Something went wrong.', err);
+    });
 </script>
 <noscript>Please enable JavaScript to use the search form.</noscript>

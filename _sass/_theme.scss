@@ -455,3 +455,35 @@ pre code {
     overflow-x: scroll;
   }
 }
+
+/**
+ * Alerts.
+ */
+.alert {
+  border: 1px solid;
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px;
+}
+.alert a {
+  color: inherit;
+  font-weight: 600;
+}
+.alert p:first-of-type {
+  margin-top: 0;
+}
+.alert p:last-of-type {
+  margin-bottom: 0;
+}
+.alert--error {
+  background-color: $errorColour;
+  color: $errorBackgroundColour;
+}
+.alert--status {
+  background-color: $statusBackgroundColour;
+  color: $statusColour;
+}
+.alert--warning {
+  background-color: $warningBackgroundColour;
+  color: $warningColour;
+}
