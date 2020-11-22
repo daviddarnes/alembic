@@ -29,7 +29,6 @@ plugins:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
-- jekyll-default-layout
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
@@ -78,6 +77,18 @@ defaults:
       path: ""
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post # Set the default layout for posts
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page # Set the default layout for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
