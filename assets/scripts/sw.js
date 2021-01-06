@@ -10,14 +10,14 @@ const cacheName = `static::${version}`;
 const buildContentBlob = () => {
   return [
     {%- for post in site.posts limit: 10 -%}
-      "{{ site.baseurl }}{{ post.url }}",
+      "{{ post.url | relative_url }}",
     {%- endfor -%}
     {%- for page in site.pages -%}
       {%- unless page.url contains 'sw.js' or page.url contains '404.html' -%}
-        "{{ page.url }}",
+        "{{ page.url | relative_url }}",
       {%- endunless -%}
     {%- endfor -%}
-      "{{ site.logo }}", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
+      "{{ site.logo | relative_url }}", "{{ site.baseurl }}/assets/default-offline-image.png", "{{ site.baseurl }}/assets/scripts/fetch.js"
   ]
 }
 
@@ -75,7 +75,7 @@ self.addEventListener("fetch", event => {
 
   if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
     // If url requested is an image and isn't cached, return default offline image
-    offlineAsset = "/assets/default-offline-image.png";
+    offlineAsset = "{{ site.baseurl }}/assets/default-offline-image.png";
   }
 
   // For all urls request image from network, then fallback to cache, then fallback to offline page

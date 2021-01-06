@@ -13,7 +13,7 @@ sitemap: false
     "icons": [
       {% for icon in site.favicons %}
         {
-          "src": "{{ icon[1] }}",
+          "src": "{{ icon[1] | relative_url }}",
           "sizes": "{{ icon[0] }}x{{ icon[0] }}"
         }{% if forloop.last != true %},{% endif %}
       {% endfor %}
