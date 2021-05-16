@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "「离开世界之前 一切都是过程」"
+description: "Cease to struggle and you cease to live."
 ---
 
 {% for post in paginator.posts %}
@@ -15,11 +15,7 @@ description: "「离开世界之前 一切都是过程」"
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
+            {{ post.content | strip_html | truncate:200 }}
         </div>
     </a>
     <p class="post-meta">
