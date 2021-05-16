@@ -1,0 +1,96 @@
+# Site settings
+title: Joephy's World
+SEOTitle: Joephy's Home Page | 曾卓晖
+header-img: img/home-bg-o.jpg
+email: zhzeng@connect.ust.hk
+description: "This is a box of amazing things"
+keyword: "曾卓晖, Joephy, Zhuohui Zeng"
+url: "http://joephysworld.com/"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+#weibo_username:     5910009434
+#zhihu_username:     liu-song-xiang-48
+#github_username:    liusongxiang
+#twitter_username:
+#facebook_username:  shaun.liu.31
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: zengzhuohui
+
+# Duoshuo settings
+#duoshuo_username: false
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-96237913-1'            # Format: UA-xxxxxx-xx
+ga_domain: joephy.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "The best protective armor of old age is a life that has been spent before it. <br> 晚年的最佳保护铠甲是一段在它之前被悉心度过的生活"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Shaun",
+        href: "https://liusongxiang.github.io/"
+    }
+]
