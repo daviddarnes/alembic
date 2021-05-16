@@ -1,0 +1,16 @@
+I"<h2 id="material-prediction">Material prediction</h2>
+<p>It is after the nonlinear geometry just a few years, I think this is a kind of application, use a new theory to explain a material’s phase transition. Because this kind of material under goes second order phase transformation, so it is different from the martensite phase transformation, but the theory can still works well in this case.</p>
+
+<ol>
+  <li>Minimize the total free energy to get the deformation gradient so it can predict the twins layer;</li>
+  <li>Since the transformation is second order, so there is no temperature range for the parent phase and the product phase coexist;</li>
+  <li>Although theory is beautiful, but it cannot reduce the transition layer, so the biggest drawback of this article is it cannot explain the equation of the transition layer;</li>
+  <li>Maybe is this article, improves the fine and fine microstructure to reduce the transformation layer;</li>
+  <li>It teaches us how to calculate the $U, R$ and $n, a$ and other things.</li>
+</ol>
+
+<p>Reference:</p>
+
+<p><a href="http://www.sciencedirect.com/science/article/pii/S1359645497000803">Jian, Li, and Richard D. James. “Prediction of microstructure in monoclinic LaNbO4 by energy minimization.” Acta materialia 45.10 (1997): 4271-4281.</a></p>
+
+:ET

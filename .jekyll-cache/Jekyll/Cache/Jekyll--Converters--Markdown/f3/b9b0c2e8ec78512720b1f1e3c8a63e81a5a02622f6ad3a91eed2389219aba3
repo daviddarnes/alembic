@@ -1,0 +1,20 @@
+I"h<h2 id="introduce-a-model">Introduce a model</h2>
+
+<p>Assumptions:</p>
+
+<ol>
+  <li>Improper Martensite phase transition;</li>
+  <li>in non-homogeneous system (eigenstrain);</li>
+  <li>Applied stress.</li>
+</ol>
+
+<p>Order parameter: optical displacement modes.
+External field: strain.</p>
+
+<p>Include: energy of strain, use homogeneous and non homogenous strain and the equilibrium to solve the equations; gradient energy (interfacial energy); chemical energy. It use the kinetic equation and Fourier transformation to solve the equations.</p>
+
+<p>Reference:</p>
+
+<p><a href="http://www.sciencedirect.com/science/article/pii/S1359645400000719">Artemev, A., Y. Wang, and A. G. Khachaturyan. “Three-dimensional phase field model and simulation of martensitic transformation in multilayer systems under applied stresses.” Acta Materialia 48.10 (2000): 2503-2518.</a></p>
+
+:ET

@@ -1,0 +1,14 @@
+I"<h2 id="hysteresis-loop">Hysteresis loop</h2>
+
+<ol>
+  <li>$\lambda_2$ approaches to 1, the hysteresis will drop sharply.</li>
+  <li>If $\lambda_2$ is not equals to 1, Martensite will shear to accommodate a habit plane with Austenite;</li>
+  <li>If $\lambda_2$ is equal to 1, no lattice invariant shear is required for an undistorted plane to exist;</li>
+  <li>As $\lambda_2$ approaches to 1, microstructure evolves from a lamellar morphology of twin to a twin-less plates.</li>
+</ol>
+
+<p>Reference:</p>
+
+<p><a href="http://www.sciencedirect.com/science/article/pii/S1359646208007550">Delville, Rémi, et al. “Transmission electron microscopy investigation of microstructures in low-hysteresis alloys with special lattice parameters.” Scripta Materialia 60.5 (2009): 293-296.</a></p>
+
+:ET

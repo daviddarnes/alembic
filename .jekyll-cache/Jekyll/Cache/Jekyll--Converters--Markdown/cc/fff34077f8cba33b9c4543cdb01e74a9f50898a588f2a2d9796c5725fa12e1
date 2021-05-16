@@ -1,0 +1,42 @@
+I"�<h2 id="an-introduction-to-shape-memory-alloys">An introduction to shape memory alloys</h2>
+
+<p>The concepts of shape memory alloy and phase transition will be introduced.</p>
+
+<p>SMAs are materials that can remember their shapes under a thermo-mechanical loading. SMAs have two outstanding effects:</p>
+
+<p>(1) Shape memory effect: it means that one can heat up the materials to recover the residual strain after a very huge plastic-like mechanical’s loading;
+(2) Pseudoelasticity effect: it means that materials can go back to its original shape under a mechanical loading and unloading. Because these two outstanding mechanisms, SMAs have been widely used in industry and daily life, such as bio-simulation robot, stents and actuator.</p>
+
+<p><img src="https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/SMA1.png" alt="" />
+<img src="https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/SMA2.png" alt="" />
+<img src="https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/SMA3.png" alt="" />
+<img src="https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/SMA4.png" alt="" /></p>
+
+<p>The mechanism of the pseudoelasticity effect and shape memory effect is the thermo-elastic martensite phase transition. Usually, people call the high temperature phase austenite, whose symmetry is higher and energy potential is lower.For the low temperature phase, it is martensite, whose symmetry is lower and energy potential is higher. If the materials go through the phase transition from austenite to martensite, the entropy will decrease and material will release heat to the environment, inversely it is the same.</p>
+
+<p>Then, I will introduce the difference between two conditions: with external mechanical loading and without external mechanical loading.</p>
+
+<p>(1) Without external mechanical loading: when heating up the materials from $M_f$ to $A_s$, the phase transition will initiate. Keep the temperature going up and reach $A_f$ the material totally becomes austenite. Inversely, when cooling down the austenitic alloy, when the temperature reach $M_s$, the alloy will begin transform and when the temperature below $M_f$, the alloy will become martensite again. In general, these four special temperature points obey the relation: $M_f &lt; M_s &lt; A_s &lt; A_f$. This kind of effect relates to the shape memory effect but it is not the whole story of shape memory effect. I will explain later.</p>
+
+<p><img src="https://raw.githubusercontent.com/joephy/joephy.github.io/master/_posts/img/SMA5.png" alt="" /></p>
+
+<p>(2) With external mechanical loading: Imagine that in the beginning, the SMAs is in martensite phase and the temperature is below $M_f$. Applying sufficient high stress will detwin the martensite and the shape of the alloy will change. After that, if we unload the material and make the external stress equaling to 0, it will still be detwinned martensite with no shape change. Then using some devices to heat up the material, let the temperature across the $A_f$ and it will go back to its original shape. If we cool it down below $M_f$ again, the alloy will not change its shape but the atoms inside will be arranged again and become twined martensite as the beginning. This process is the shape memory effect.</p>
+
+<p>The shape memory effect concludes the thermal loading and the external mechanical loading. Bur for the pseudoelasticity effect, the process is clear. It will just happen under a constant temperature. Now let’s suppose the original situation of a SMAs is austenite and the temperature is fixed above $A_f$. Applying the external stress on the material until $\sigma_f$, the material will go through the process as the thermal loading process and become detwinned martensite accompany with huge shape change if the $\sigma_f$ is very high. If will recover back if we release it and the shape will go back to its original shape. This is the pseudoelasticity effect.</p>
+
+<p>The reversible martensite phase transition is the reason for the shape memory effect and pseudoelasticity effect. But in real life, not all of the SMAs are highly reversible because dislocation, inclusions, defects in the material and geometric compatibility conditions will affect the reversibility of the materials. It means that maybe thousands times of phase transition in one material will break it into trash. So many researchers are working on it to improve the mechanical performances of the SMAs to spread the function of it.</p>
+
+<p>Reference:</p>
+
+<ol>
+  <li><a href="http://www.sciencedirect.com/science/article/pii/S0261306913011345">J. M. Jani, M. Leary, A. Subic, and M. A. Gibson, “A review of shape memory alloy research, applications and opportunities,” Materials &amp; Design, vol. 56, pp. 1078-1113, 2014.</a></li>
+  <li><a href="https://link.springer.com/content/pdf/10.1007/978-3-642-23232-9.pdf">R. G. L. Alboul, C. M. M. Witkowski, and T. J. P. J. Penders, “Towards Autonomous Robotic Systems,” 2013.</a></li>
+  <li><a href="http://www.sciencedirect.com/science/article/pii/S0921509303015132">N. Morgan, “Medical shape memory alloy applications—the market and its products,” Materials Science and Engineering: A, vol. 378, no. 1, pp. 16-23, 2004.</a></li>
+  <li><a href="http://mechanicaldesign.asmedigitalcollection.asme.org/article.aspx?articleid=1450417">F. T. Calkins and J. H. Mabe, “Shape memory alloy based morphing aerostructures,” Journal of Mechanical Design, vol. 132, no. 11, p. 111012, 2010.</a></li>
+  <li><a href="http://www.sciencedirect.com/science/article/pii/S0924424710003651">M. M. Ali and K. Takahata, “Frequency-controlled wireless shape-memory-alloy microactuators integrated using an electroplating bonding process,” Sensors and Actuators A: Physical, vol. 163, no. 1, pp. 363-372, 2010.</a></li>
+  <li><a href="http://www.sciencedirect.com/science/article/pii/S0020740301000509">M. Dolce and D. Cardone, “Mechanical behaviour of shape memory alloys for seismic applications 2. Austenite NiTi wires subjected to tension,” International Journal of Mechanical Sciences, vol. 43, no. 11, pp. 2657-2677, 2001.</a></li>
+  <li><a href="https://books.google.com.hk/books?hl=en&amp;lr=&amp;id=gas0P67KijcC&amp;oi=fnd&amp;pg=PA1&amp;dq=K.+Bhattacharya,+Microstructure+of+martensite:+why+it+forms+and+how+it+gives+rise+to+the+shape-memory+effect.+Oxford+University+Press,+2003.&amp;ots=n3ly8AE1ue&amp;sig=wEyolXuAojGhsXgT_mZm7bgbAgU&amp;redir_esc=y#v=onepage&amp;q=K.%20Bhattacharya%2C%20Microstructure%20of%20martensite%3A%20why%20it%20forms%20and%20how%20it%20gives%20rise%20to%20the%20shape-memory%20effect.%20Oxford%20University%20Press%2C%202003.&amp;f=false">K. Bhattacharya, Microstructure of martensite: why it forms and how it gives rise to the shape-memory effect. Oxford University Press, 2003.</a></li>
+  <li><a href="https://www.nature.com/articles/nature12532">Y. Song, X. Chen, V. Dabade, T. W. Shield, and R. D. James, “Enhanced reversibility and unusual microstructure of a phase-transforming material,” Nature, vol. 502, no. 7469, pp. 85-88, 2013.</a></li>
+</ol>
+
+:ET

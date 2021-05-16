@@ -1,0 +1,19 @@
+I"¤<h2 id="determine-the-transformation-stretch">Determine the transformation stretch</h2>
+
+<p>Problems:</p>
+
+<ol>
+  <li>Hard to know the path way of transformation stretch tensor, it is very hard to measure;</li>
+  <li>Bain strain maybe is not the most suitable transformation stretch tensor;</li>
+  <li>Initial and final crystal structure do not have group/sub-group relation.</li>
+</ol>
+
+<p>This Algorithm solve:</p>
+
+<ol>
+  <li>Find the most suitable unit cell(maybe is no unit cell) to construte the transformation tensor;</li>
+  <li>Can calculate the tensor even though with no group/sub-group relation;</li>
+  <li>Predict not reversible transformation tensor.</li>
+</ol>
+
+:ET

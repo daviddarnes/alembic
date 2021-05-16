@@ -1,0 +1,21 @@
+I"�<h2 id="introduce-a-model">Introduce a model</h2>
+
+<p>Assumptions:</p>
+
+<ol>
+  <li>Stress-strain equilibrium;</li>
+  <li>substract;</li>
+  <li>combine the ferroelectric and stress.</li>
+</ol>
+
+<p>Order parameter: polarization and stress(function of P).</p>
+
+<p>Include: gradient of polarization; energy of polarization; elastic energy.</p>
+
+<p>Crucial point is to solve stress equilibrium and then use L-G to solve. It also describes the substrate deformation domain conditions of the experiment.</p>
+
+<p>Reference:</p>
+
+<p><a href="https://www.nature.com/articles/srep07728">Liu, Man, and Jie Wang. “Giant electrocaloric effect in ferroelectric nanotubes near room temperature.” Scientific reports 5 (2015): 7728.</a></p>
+
+:ET

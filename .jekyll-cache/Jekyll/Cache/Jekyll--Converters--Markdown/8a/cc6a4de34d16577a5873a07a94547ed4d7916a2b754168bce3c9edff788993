@@ -1,0 +1,26 @@
+I";<h2 id="open-a-new-world">Open a new world</h2>
+<p>This is one of the most important papers for the Martensite phase transformation. It use the energy well and the energy minimization to approach the microstructure of the first order phase transformation.</p>
+
+<ol>
+  <li>This article says that, it just approach the fine mixture, the twins, not equal to minimizer;</li>
+  <li>If in material, there are there deformation gradients for three special temperature, which are 1, $F^+$ and $F^-$, they are incompatible with each other. But it is possible to construct a continuous piecewise affine deformation for certain choices of $F^+$ and $F^-$ and make the layer compatible with 1;</li>
+  <li>For the energy function, the material’s rotation does not change the energy. It means that the rotation in the transformation strain does not affect the energy;</li>
+  <li>It discuss the interface in Austenite/Austenite, Martensite/Martensite and Martensite/Austenite, also, give a solution of the interface of Martensite/Martensite, it is the twin. And for the twin, there are 4 solutions of it, type I, type II and compound, the compound twin can be represented as both type I and type II twins;</li>
+  <li>For the interface of Austenite/Martensite, the eigenvalue of a matrix must equals to 1, but it is very hard to make such a material so this paper ignore this kind of situation and suppose there is no interface between single variant Martensite and Austenite;</li>
+  <li>The interface between Austenite and Martensite twin is possible, but deformation are essentially piecewise affine and a small correction is necessary close to the interface so as to render the deformation gradients compatible;</li>
+  <li>The deformation gradient of the twin, is the average deformation gradient of two kinds of Martensite, the gradient depends on the fraction of the Martensite variants<br />
+\(Dy(x) = \lambda A + (1-\lambda)B\)<br />
+A and B is the deformation gradient of two kinds of martensite, $\lambda$ is the fraction and $Dy(x)$ is the deformation gradient of a particular point. Here is the point to use the twin’s deformation to approach the compatible deformation gradient;</li>
+  <li>The paper also prove that the Austenite/finely twinned martensite interface is flat;</li>
+  <li>$\lambda_2 = 1$ is the necessary condition for the solution of compatibility equation. And use the compatibility equation, we can figure out the $b$ and $m$;</li>
+  <li>In this paper, it points out that if the $\lambda_2 = 1$, it will be a very interesting material because the great variety of austenite/martensite interfaces possible, and the author had not found such a material yet;</li>
+  <li>This paper have a term to show the competition between interfacial energy and the transformation layer energy. If the twin is finer and finer, the layer energy will decrease, but the interfacial energy will increase because more interfaces appear during the increasing of the twin;</li>
+</ol>
+
+<p>This paper is just like a milestone of the martensite transformation. It use the math to figure out the solution of the phase transformation interface and point out the necessary and sufficient conditions for the solution. And we can use it to predict the kind of the twin and what will happen with a martensite material. Also it points out the question too. It points out that, there is a competition between the interfacial energy and phase transition interface energy, so that is why this theory cannot perfectly predict why the material cannot be finer and finer.</p>
+
+<p>Reference:</p>
+
+<p><a href="http://download.springer.com/static/pdf/405/art%253A10.1007%252FBF00281246.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2FBF00281246&amp;token2=exp=1493264235~acl=%2Fstatic%2Fpdf%2F405%2Fart%25253A10.1007%25252FBF00281246.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Farticle%252F10.1007%252FBF00281246*~hmac=84b6ae1dfd20dac7cc4836705297548cea4a288cbb674499530da9c637d63b6d">Ball, John M., and Richard D. James. “Fine phase mixtures as minimizers of energy.” Archive for Rational Mechanics and Analysis 100.1 (1987): 13-52.</a></p>
+
+:ET
