@@ -2,7 +2,7 @@
 title: History of the Alembic
 categories:
 - History
-- My Favourites
+- External sources
 feature_text: |
   The History of the Alembic tool
 ---
