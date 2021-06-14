@@ -26,7 +26,6 @@ exclude:
 plugins:
 - jekyll-sitemap
 - jekyll-mentions
-- jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-feed
@@ -35,8 +34,6 @@ plugins:
 - jemoji
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   username: DavidDarnes # jekyll-seo-tag > Owners twitter username
