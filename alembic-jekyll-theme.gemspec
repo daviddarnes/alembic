@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.6.0"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1.0"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7.1"
   spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
   spec.add_runtime_dependency "jekyll-commonmark", "~> 1.3.1"
