@@ -13,6 +13,14 @@ $focusColour: #fa407a !default;
 $captionColour: #a8adac !default;
 $white: #ffffff !default;
 
+// Alert colours
+$statusColour: #048 !default;
+$statusBackgroundColour: #cef !default;
+$warningColour: #860 !default;
+$warningBackgroundColour: #ffc !default;
+$errorColour: #712 !default;
+$errorBackgroundColour: #fdd !default;
+
 // Typography
 $bodytype: (
   font-family: "Georgia, serif",
