@@ -1,5 +1,5 @@
 ---
-title:TGODDESSANA_'S DEV LAB
+title:TGODDESSANA_
 feature_text: |
   ## TGoddessana_Development__
   it is!
