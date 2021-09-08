@@ -56,7 +56,7 @@ $gutterwidths: (
 // Add weight and style details too.
 // ! Set cap height to set to the baseline.
 $bodytype: (
-  font-family: 'Georgia, serif',
+  font-family: "Source Serif Pro", "Noto Serif KR", serif;
   regular: 400,
   bold: 700,
   italic: italic,
@@ -64,14 +64,14 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: 'Helvetica, sans-serif',
+  font-family: "Ubuntu", "Do Hyeon", sans-serif;
   regular: 400,
   bold: 700,
   cap-height: 0.66
 ) !default;
 
 $monospacetype: (
-  font-family: 'Menlo, monospace',
+  font-family: "Nanum Gothic Coding", "Source Code Pro", monospace;
   regular: 400,
   cap-height: 0.68
 ) !default;
