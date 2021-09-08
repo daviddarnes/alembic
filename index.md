@@ -3,7 +3,7 @@ title:TGODDESSANA_'S DEV LAB
 feature_text: |
   ## Alembic
   A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
-feature_image: "picsum.photos/1300/400?image=989"
+feature_image: "https://i.picsum.photos/id/989/1300/400.jpg?hmac=rz4Vks7qM2zzI9uQbCb1cY0S2Q5GFHu0Iz7dntL-lyg/"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
 
