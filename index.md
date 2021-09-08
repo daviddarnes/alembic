@@ -1,8 +1,8 @@
 ---
-title: About Alembic
+title: TGoddessana_'s Development
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  ## SUP!
+  welcome to this page. :D
 feature_image: "https://www.thelodgehotel.com/wp-content/uploads/2017/07/Winter-1300-x-400.jpg"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
