@@ -1,10 +1,10 @@
 ---
 title: TGoddessana_'s Development
 feature_text: |
-  ## SUP!
-  welcome to this page. :D
+  ## TGoddessana_'s Development
+  Welcome to my page!
 feature_image: "https://www.thelodgehotel.com/wp-content/uploads/2017/07/Winter-1300-x-400.jpg"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+excerpt: "My development note. welcome!"
 ---
 
 Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get rolling immediately. Install it, configure it, tweak it, push it.
