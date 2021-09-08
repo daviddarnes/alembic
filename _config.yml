@@ -158,4 +158,4 @@ fonts:
   preconnect_urls:
     -
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding&family=Noto+Serif+KR:wght@500&family=Source+Code+Pro:wght@500&family=Source+Serif+Pro&family=Ubuntu&display=swap
+    - https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding&family=Noto+Serif+KR:wght@500&family=Source+Code+Pro:wght@500&family=Source+Serif+Pro&family=Ubuntu&display=swap" rel="stylesheet
