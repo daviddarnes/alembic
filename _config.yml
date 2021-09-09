@@ -58,7 +58,7 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+timezone: "Asia/Seoul" # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
@@ -93,13 +93,13 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: ko-KR # Set the site language
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+title: "TGoddessana_" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+description: "TGoddessana_'s Development Note" # Site description and default description, also used in jekyll-seo-tag
+url: "https://tgoddessana.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
+repo: "https://github.com/TGoddessana/TGoddessana.github.io"
+email: "ingstor1092@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -135,13 +135,12 @@ navigation_header:
   url: https://github.com/daviddarnes/alembic 
 
 navigation_footer:
-- title: Created by David Darnes
-  url: https://darn.es
+- title: Created by Jaegyun JUNG
+  url: https://tgoddessana.github.io
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Twitter: https://twitter.com/DavidDarnes
   LinkedIn: https://www.linkedin.com/in/daviddarnes
-  GitHub: https://github.com/daviddarnes
+  GitHub: https://tgoddessana.github.io
   link: https://darn.es
   RSS: /feed.xml
 
