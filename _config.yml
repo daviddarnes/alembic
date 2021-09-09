@@ -60,14 +60,14 @@ permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: "Asia/Seoul" # Timezone for blog posts and alike
 
-# 5. Collections
+# 5. Collections - DevNote의 내용
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title: Coding Development # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: "Coding development Notes , 코딩 개발 이야기" # The post list page content
     feature_text: |
-      Welcome to the blog
+      ## TGoddessana_'s development Notes
     feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
@@ -125,38 +125,14 @@ navigation_header:
   url: /
 - title: Projects
   url: /projects/
-- title: Blog
+- title: DevNote
   url: /blog/
 - title: Categories
   url: /categories/
 - title: Search
   url: /search/
 - title: Fork Alembic
-  url: https://github.com/daviddarnes/alembic 
-- title: Home
-  url: /
-- title: Projects
-  url: /projects/
-- title: Blog
-  url: /blog/
-- title: Categories
-  url: /categories/
-- title: Search
-  url: /search/
-- title: Fork Alembic
-  url: https://github.com/daviddarnes/alembic 
-- title: Home
-  url: /
-- title: Projects
-  url: /projects/
-- title: Blog
-  url: /blog/
-- title: Categories
-  url: /categories/
-- title: Search
-  url: /search/
-- title: Fork Alembic
-  url: https://github.com/daviddarnes/alembic 
+  url: https://github.com/daviddarnes/alembic
 
 navigation_footer:
 - title: Created by Jaegyun JUNG
