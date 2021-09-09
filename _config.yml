@@ -132,7 +132,17 @@ navigation_header:
 - title: Search
   url: /search/
 - title: Fork Alembic
-  url: https://github.com/daviddarnes/alembic
+  url: https://github.com/daviddarnes/alembic 
+- title: Elements
+  url: /elements/
+- title: Blog
+  url: /blog/
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
+- title: Fork Alembic
+  url: https://github.com/daviddarnes/alembi55
 
 navigation_footer:
 - title: Created by David Darnes
