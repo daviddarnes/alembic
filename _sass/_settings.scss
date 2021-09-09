@@ -15,7 +15,7 @@ $white: #ffffff !default;
 
 // Typography
 $bodytype: (
-  font-family: 'Source Serif Pro, "Noto Serif KR", serif',
+  font-family: 'Barlow Condensed, "Do Hyeon", sans-serif',
   regular: 400,
   bold: 700,
   italic: italic,
@@ -23,14 +23,14 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: '"Ubuntu", "Do Hyeon", sans-serif',
+  font-family: '"Hammersmith One", "Do Hyeon", sans-serif',
   regular: 400,
   bold: 700,
   cap-height: 0.75
 ) !default;
 
 $monospacetype: (
-  font-family: '"Nanum Gothic Coding", "Source Code Pro, monospace"',
+  font-family: 'Ubuntu Mono, monospace',
   regular: 400,
   cap-height: 0.68
 ) !default;
