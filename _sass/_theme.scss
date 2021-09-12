@@ -148,7 +148,7 @@ body {
 .aside {
   @include breakpoint(break-1) {
     max-width: 34%;
-    margin-left: 10%;
+    margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
@@ -447,7 +447,7 @@ pre code {
   .nav a {
     padding-left: 0;
     padding-right: 0;
-    margin-left: .2rem;
+    margin-left: .10rem;
     margin-right: .2rem;
   }
   pre {
