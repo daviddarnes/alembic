@@ -189,7 +189,7 @@ body {
 .item {
   &--nav {
     @include breakpoint(break-1) {
-      margin-left: .40rem;
+      margin-left: .4rem;
       display: inline-block;
     }
     &:first-of-type {
