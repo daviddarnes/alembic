@@ -148,7 +148,7 @@ body {
 .aside {
   @include breakpoint(break-1) {
     max-width: 34%;
-    margin-left: 4%;
+    margin-left: 40%;
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
@@ -157,7 +157,7 @@ body {
       top: 0;
     }
     &--left {
-      margin-left: 200px;
+      margin-left: 0;
       margin-right: 4%;
       order: -1;
     }
