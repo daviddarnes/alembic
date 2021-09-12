@@ -54,7 +54,7 @@ body {
     min-height: 35vh;
     max-width: 60%;
     @include flex-direction(column);
-    @include justify-content(left);
+    @include justify-content(center);
   }
 }
 
