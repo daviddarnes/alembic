@@ -54,7 +54,7 @@ body {
     min-height: 35vh;
     max-width: 60%;
     @include flex-direction(column);
-    @include justify-content(center);
+    @include justify-content(left);
   }
 }
 
@@ -157,7 +157,7 @@ body {
       top: 0;
     }
     &--left {
-      margin-left: 20%;
+      margin-left: 0;
       margin-right: 4%;
       order: -1;
     }
