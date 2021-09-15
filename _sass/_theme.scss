@@ -387,7 +387,7 @@ label {
 
 code {
   padding: .12rem .2rem;
-  color: $headingColour;
+  color: $codeColour; //코드 색깔 변경
 }
 
 pre code {
