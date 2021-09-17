@@ -53,7 +53,11 @@ social: # jekyll-seo-tag > social overrides
   # options: ["SMART", "FOOTNOTES"]
   # extensions: ["strikethrough", "autolink", "table"]
 markdown: kramdown
-hilighter: rouge
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 # 4. Jekyll settings
 sass:
