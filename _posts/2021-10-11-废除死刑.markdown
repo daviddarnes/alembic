@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "大国大城"
+title:  "废除死刑"
 date:   2021-10-11
 author: "Joephy"
 header-img: "img/tag-bg-bookreview.jpg"
