@@ -201,7 +201,7 @@ $max-widths: map-values($maxwidths);
         $get-scale: map-get($modular-scale, scale-#{$i - 1});
         $get-size: map-get($get-scale, $fontsize);
 
-        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
+        @media screen and (min-width: math.div(nth($points, $i), 16) * 1em ) {
           font-size: #{$get-size / nth($sizes, $i)}rem;
         }
       }
