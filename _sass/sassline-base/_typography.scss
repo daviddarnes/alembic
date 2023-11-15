@@ -2,6 +2,8 @@
 // ---------------------------------------
 
 // Setting root sizes and base styles.
+@use "sass:math";
+
 html {
   @include rootsize;
 
@@ -278,8 +280,8 @@ a {
       $get-scale: map-get($modular-scale, scale-0);
       $get-size: map-get($get-scale, zeta);
       $rootsize: nth($sizes, 1);
-      $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-      $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+      $baseline-shift: #{math.div($get-size * 0.5 * (math.div(2 * $rootsize, $get-size) - map-get($bodytype, cap-height)), $rootsize) + 0.00001};
+      $baseline-push: #{3 - (math.div($get-size * (math.div(2 * $rootsize, $get-size) - map-get($bodytype, cap-height)), $rootsize) + 0.00001)};
 
       margin-bottom: #{$baseline-push}rem;
       padding-bottom: #{$baseline-shift}rem;
@@ -288,10 +290,10 @@ a {
         $get-scale: map-get($modular-scale, scale-#{$i - 1});
         $get-size: map-get($get-scale, zeta);
         $rootsize: nth($sizes, $i);
-        $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-        $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+        $baseline-shift: #{math.div($get-size * 0.5 * (math.div(2 * $rootsize, $get-size) - map-get($bodytype, cap-height)), $rootsize) + 0.00001};
+        $baseline-push: #{3 - (math.div($get-size * (math.div(2 * $rootsize, $get-size) - map-get($bodytype, cap-height)), $rootsize) + 0.00001)};
 
-        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
+        @media screen and (min-width: math.div(nth($points, $i), 16) * 1em ) {
           margin-bottom: #{$baseline-push}rem;
           padding-bottom: #{$baseline-shift}rem;
         }
