@@ -13,7 +13,9 @@ $focusColour: var(--focus, #fa407a) !default;
 $captionColour: var(--caption, #a8adac) !default;
 $white: var(--white, #ffffff) !default;
 
+// Dark colours
 @mixin dark-scheme {
+  // Background colours
   --background: #111111;
   --background-code: #333333;
   --background-feature: #343737;
