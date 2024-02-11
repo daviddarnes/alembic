@@ -1,17 +1,34 @@
 // Background colours
-$backgroundColour: #ffffff !default;
-$codeBackgroundColour: #fafafa !default;
-$featureBackgroundColour: #f9fafa !default;
-$accentColour: #05bf85 !default;
+$backgroundColour: var(--background, #ffffff) !default;
+$codeBackgroundColour: var(--background-code, #fafafa) !default;
+$featureBackgroundColour: var(--background-feature, #f9fafa) !default;
+$accentColour: var(--accent, #05bf85) !default;
 
 // Text colours
-$headingColour: #242e2b !default;
-$bodyColour: #384743 !default;
-$linkColour: #05bf85 !default;
-$hoverColour: #008000 !default;
-$focusColour: #fa407a !default;
-$captionColour: #a8adac !default;
-$white: #ffffff !default;
+$headingColour: var(--heading, #242e2b) !default;
+$bodyColour: var(--body, #384743) !default;
+$linkColour: var(--link, #05bf85) !default;
+$hoverColour: var(--hover, #008000) !default;
+$focusColour: var(--focus, #fa407a) !default;
+$captionColour: var(--caption, #a8adac) !default;
+$white: var(--white, #ffffff) !default;
+
+// Dark colours
+@mixin dark-scheme {
+  // Background colours
+  --background: #111111;
+  --background-code: #333333;
+  --background-feature: #343737;
+  --accent: #05bf85;
+
+  // Text colours
+  --heading: #ebf8f4;
+  --body: #f0fffb;
+  --link: #05bf85;
+  --hover: #008000;
+  --focus: #fa407a;
+  --caption: #6f7473;
+}
 
 // Typography
 $bodytype: (
@@ -19,20 +36,20 @@ $bodytype: (
   regular: 400,
   bold: 700,
   italic: italic,
-  cap-height: 0.75
+  cap-height: 0.75,
 ) !default;
 
 $headingtype: (
   font-family: '"Merriweather", serif',
   regular: 400,
   bold: 700,
-  cap-height: 0.75
+  cap-height: 0.75,
 ) !default;
 
 $monospacetype: (
   font-family: "Menlo, monospace",
   regular: 400,
-  cap-height: 0.68
+  cap-height: 0.68,
 ) !default;
 
 // TIP: Load custom fonts in _config.yaml
