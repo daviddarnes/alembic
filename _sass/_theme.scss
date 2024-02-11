@@ -49,11 +49,24 @@ body {
   background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
+  position: relative;
   .container {
     min-height: 35vh;
     max-width: 60%;
+    position: relative;
+    z-index: 1;
     @include flex-direction(column);
     @include justify-content(center);
+  }
+  &[style]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $featureBackgroundColour;
+    opacity: 0.3;
   }
 }
 
@@ -166,6 +179,26 @@ body {
 
 .section {
   margin: 0;
+}
+
+.color-scheme {
+  form,
+  label {
+    @include flexbox;
+    @include align-items(center);
+    margin: 0;
+    padding: 0;
+  }
+  legend,
+  input[type="radio"] {
+    margin-right: 0.15rem;
+  }
+  label {
+    margin-left: 0.4rem;
+  }
+  legend::after {
+    content: ":";
+  }
 }
 
 // Lists
@@ -307,7 +340,7 @@ button,
 .button {
   cursor: pointer;
   display: inline-block;
-  color: $backgroundColour;
+  color: $white;
   background: $accentColour;
   transition: box-shadow 0.1s;
   will-change: box-shadow;
@@ -426,12 +459,12 @@ pre code {
   button {
     background-image: none;
     text-shadow: none;
-    color: $backgroundColour;
+    color: $white;
     &:hover,
     &:active,
     &:focus {
       background-image: none;
-      color: $backgroundColour;
+      color: $white;
     }
   }
   hr {
@@ -456,7 +489,7 @@ pre code {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:has(:not([value="light"]:checked)) {
+  :root:not(:has([value="light"]:checked)) {
     @include dark-scheme();
   }
 }
