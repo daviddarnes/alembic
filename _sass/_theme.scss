@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
 }
 
-
 // Header, feature and footer
 .header,
 .footer {
@@ -44,17 +43,30 @@ body {
 }
 
 .feature {
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   margin-bottom: 1.6rem;
   text-align: center;
   background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
+  position: relative;
   .container {
     min-height: 35vh;
     max-width: 60%;
+    position: relative;
+    z-index: 1;
     @include flex-direction(column);
     @include justify-content(center);
+  }
+  &[style]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $featureBackgroundColour;
+    opacity: 0.3;
   }
 }
 
@@ -71,7 +83,7 @@ body {
 
 .nav {
   a {
-    padding: .2rem;
+    padding: 0.2rem;
   }
   &--social a {
     display: inline-block;
@@ -80,7 +92,7 @@ body {
 }
 
 .small {
-  padding-top: .8rem;
+  padding-top: 0.8rem;
   color: $captionColour;
   display: inline-block;
 }
@@ -102,7 +114,6 @@ body {
   }
 }
 
-
 // Pagination nav
 .nav--paginator {
   @include flexbox;
@@ -114,7 +125,6 @@ body {
 .pagination {
   min-width: 20%;
 }
-
 
 // Main content
 .main {
@@ -142,7 +152,7 @@ body {
 }
 
 .share .button {
-  margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 
 .aside {
@@ -151,7 +161,7 @@ body {
     margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;
-    transition: opacity .1s;
+    transition: opacity 0.1s;
     .section {
       position: sticky;
       top: 0;
@@ -171,6 +181,25 @@ body {
   margin: 0;
 }
 
+.color-scheme {
+  form,
+  label {
+    @include flexbox;
+    @include align-items(center);
+    margin: 0;
+    padding: 0;
+  }
+  legend,
+  input[type="radio"] {
+    margin-right: 0.15rem;
+  }
+  label {
+    margin-left: 0.4rem;
+  }
+  legend::after {
+    content: ":";
+  }
+}
 
 // Lists
 .list {
@@ -189,7 +218,7 @@ body {
 .item {
   &--nav {
     @include breakpoint(break-1) {
-      margin-left: .4rem;
+      margin-left: 0.4rem;
       display: inline-block;
     }
     &:first-of-type {
@@ -203,10 +232,9 @@ body {
   }
 }
 
-
 // Links, icons and images
 a .icon {
-  transition: fill .1s;
+  transition: fill 0.1s;
   &:hover {
     fill: currentColor;
   }
@@ -229,12 +257,12 @@ img {
   line-height: 0;
   &--left {
     float: left;
-    padding-right: .8rem;
+    padding-right: 0.8rem;
   }
   &--right {
     float: right;
     text-align: right;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
   }
   &--center {
     text-align: center;
@@ -264,14 +292,13 @@ img {
 .video,
 .map,
 .form {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 audio,
 video {
   width: 100%;
 }
-
 
 // Form elements and buttons
 .form {
@@ -295,16 +322,16 @@ input[type="submit"],
 input[type="color"],
 textarea,
 select {
-  padding: .6rem 1.2rem;
-  margin-bottom: .6rem;
-  transition: color .1s, background-color .1s, border .1s;
+  padding: 0.6rem 1.2rem;
+  margin-bottom: 0.6rem;
+  transition: color 0.1s, background-color 0.1s, border 0.1s;
   line-height: inherit;
   border: none;
   box-shadow: none;
   border-radius: 0;
   -webkit-appearance: none;
   .icon {
-    margin: 0 0 .35rem;
+    margin: 0 0 0.35rem;
   }
 }
 
@@ -313,17 +340,17 @@ button,
 .button {
   cursor: pointer;
   display: inline-block;
-  color: $backgroundColour;
+  color: $white;
   background: $accentColour;
-  transition: box-shadow .1s;
+  transition: box-shadow 0.1s;
   will-change: box-shadow;
   box-shadow: inset 0 0 0 2rem transparent;
   &:hover {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 2rem rgba(0, 0, 0, 0.25);
   }
   &:active,
   &:focus {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 2rem rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -351,8 +378,8 @@ textarea,
 select {
   &:focus,
   &:hover:focus {
-    outline: solid .12rem $focusColour;
-    outline-offset: -.12rem;
+    outline: solid 0.12rem $focusColour;
+    outline-offset: -0.12rem;
   }
 }
 
@@ -378,15 +405,21 @@ select {
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 label {
-  @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+  @include baseline(
+    $fontsize: zeta,
+    $font: $bodytype,
+    $lineheight: 2,
+    $below: 2,
+    $breakpoint: all
+  );
 }
 
 code {
-  padding: .12rem .2rem;
+  padding: 0.12rem 0.2rem;
   color: $headingColour;
 }
 
@@ -417,7 +450,6 @@ pre code {
   text-shadow: none;
 }
 
-
 // Sassline overrides
 .typeset {
   a > code {
@@ -427,12 +459,12 @@ pre code {
   button {
     background-image: none;
     text-shadow: none;
-    color: $backgroundColour;
+    color: $white;
     &:hover,
     &:active,
     &:focus {
       background-image: none;
-      color: $backgroundColour;
+      color: $white;
     }
   }
   hr {
@@ -447,11 +479,21 @@ pre code {
   .nav a {
     padding-left: 0;
     padding-right: 0;
-    margin-left: .2rem;
-    margin-right: .2rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
   pre {
     white-space: pre;
     overflow-x: scroll;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has([value="light"]:checked)) {
+    @include dark-scheme();
+  }
+}
+
+:root:has([value="dark"]:checked) {
+  @include dark-scheme();
 }
