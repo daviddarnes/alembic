@@ -1,6 +1,6 @@
 ---
 title: Máy tính lượng tử và AI - Hữu Đạt Blog
-feature_text: 
+feature_text: |
   ## Hữu Đạt Blog
   Máy tính lượng tử, Trí tuệ nhân tạo và Khoa học dữ liệu
 feature_image: "https://picsum.photos/1300/400?image=989"
