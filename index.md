@@ -33,7 +33,7 @@ Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather
 
 Here are a few examples of Alembic out in the wild being used in a variety of ways:
 
-- [bawejakunal.github.io](https://bawejakunal.github.io/)
+- [Blog 1](https://huudat-phenikaa.github.io/general/2016/08/29/example-post-three/)
 - [case2111.github.io](https://case2111.github.io/)
 - [karateca.org](https://www.karateca.org/)
 
