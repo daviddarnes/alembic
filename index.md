@@ -2,7 +2,7 @@
 title: Máy tính lượng tử và AI - Hữu Đạt Blog
 feature_text: 
   ## Hữu Đạt Blog
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  Máy tính lượng tử, Trí tuệ nhân tạo và Khoa học dữ liệu
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
