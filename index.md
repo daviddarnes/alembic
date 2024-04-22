@@ -1,6 +1,6 @@
 ---
-title: 
-feature_text: Blog
+title: Máy tính lượng tử và AI - Hữu Đạt Blog
+feature_text: 
   ## Hữu Đạt Blog
   A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
 feature_image: "https://picsum.photos/1300/400?image=989"
