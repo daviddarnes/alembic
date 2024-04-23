@@ -1,13 +1,11 @@
 ---
-title: Máy tính lượng tử và AI - Hữu Đạt Blog
+title: Máy tính lượng tử và AI
 feature_text: |
-  ## Hữu Đạt Blog
+  ## Huu Dat"s Blog
   Máy tính lượng tử, Trí tuệ nhân tạo và Khoa học dữ liệu
 feature_image: "/banner.png"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+excerpt: "Welcome các bạn đến với trang web của mình. Ở phạm vi blog này, mình sẽ tập trung chia sẻ về 3 mảng chính đó là [Máy tính lượng tử](Máy tính lượng tử) - [Trí tuệ nhân tạo](Trí tuệ nhân tạo) - [Khai phá dữ liệu](Khai phá dữ liệu). Chắc các bạn cũng đã biết, AI nói chung và dữ liệu nói riêng hiện nay đang len lỏi khắp nơi trong cuộc sống. Nó đóng vai trò quan trọng và hiện vẫn đang bùng nổ trong những năm tới. Ngoài ra, từ khi mô hình LLM ra đời, người ta càng quan tâm hơn đến vấn đề xử lý của máy tính. Vì thế, mình cũng sẽ chia sẻ thêm về mảng máy tính lượng tử (quantum computing), nó được cho sẽ trở thành cuộc cách mạng 5.0 tiếp theo."
 ---
-
-Chào mừng bạn đã đến với trang web của tôi. Như chúng ta đã biết. Ngày nay vai trò của AI ngày càng trở nên quan trọng đối với cuộc sống. Chúng ta có thể tìm thấy ứng dụng của AI ở khắp mọi nơi như hệ thống nhận diện khuôn mặt, bài toán dịch máy, hệ thống khuyến nghị sản phẩm. AI có thể nói đang là hot trend ở thế kỷ 21 và trong tương lai đây vẫn là một lĩnh vực tiếp tục sẽ bùng nổ. Tại Việt Nam thì xu hướng học tập và nghiên cứu về AI chỉ mới bắt đầu vào những năm 2016 và chúng ta là một cộng đồng còn khá non trẻ. Chính vì thế chúng ta rất thiếu những nguồn tài liệu tốt. Nhiều bạn sinh viên muốn học AI mà không biết nên học như thế nào? Tìm kiếm nguồn tài liệu từ đâu? Xuất phát từ nhu cầu đó, mình xây dựng website này nhằm mục đích giúp đỡ các bạn học sinh, sinh viên tìm hiểu về AI một cách đơn giản và hệ thống hơn. Tại đây các bạn có thể tìm kiếm được rất nhiều các bài viết liên quan tới đa dạng các lĩnh vực trong AI như các domain được liệt kê bên dưới:
 
 {% include button.html text="Github" icon="github" link="https://github.com/huudat-phenikaa" color="#0366d6" %} {% include button.html text="Linkedin" icon="linkedin" link="https://www.linkedin.com/in/nguyenhuudat98/" color="#873e23" %} {% include button.html text="Viblo ⚗️" link="https://viblo.asia/u/HuuDat" %} {% include button.html text="Facebook" icon="facebook" link="https://www.facebook.com/dat.nh.031198" color="#0d94e7" %} {% include button.html text="Buy me a coffee ☕️" link="" color="#f68140" %}
 
