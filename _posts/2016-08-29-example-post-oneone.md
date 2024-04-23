@@ -1,9 +1,12 @@
 ---
-title: Test
+title: "Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,..."
 categories:
-- Test
+- AI
+- Computer Vision
+- Deep Learning
+- Image Generation
 excerpt: |
-  Test1.
+  Bài toán **Image Generation** là một trong những bài toán cũng đang được quan tâm rất nhiều trong thời gian gần đây.  Có thể hiểu một cách đơn giản đó là, nhiệm vụ của **Image Generation** là tạo ra các hình ảnh mới từ một bộ dữ liệu cho trước.
 feature_text: |
   ## The Pot Still
   The modern pot still is a descendant of the alembic, an earlier distillation device
