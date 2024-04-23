@@ -21,7 +21,7 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
 ## Trí tuệ nhân tạo
-
+- ["Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,..."](./_posts/2024-04-20-chi-so-danh-gia.md)
 - Available as a **theme gem** and **GitHub Pages** theme
 - Clear and elegant design that can be used out of the box or as solid starting point
 - Tested in all major browsers, including **IE and Edge**
