@@ -7,9 +7,9 @@ categories:
 - Image Generation
 excerpt: |
   Bài toán **Image Generation** là một trong những bài toán cũng đang được quan tâm rất nhiều trong thời gian gần đây.  Có thể hiểu một cách đơn giản đó là, nhiệm vụ của **Image Generation** là tạo ra các hình ảnh mới từ một bộ dữ liệu cho trước.
-feature_text: |
-  ## The Pot Still
-  The modern pot still is a descendant of the alembic, an earlier distillation device
+# feature_text: |
+#   ## The Pot Still
+#   The modern pot still is a descendant of the alembic, an earlier distillation device
 # feature_image: "https://picsum.photos/2560/600?image=733"
 # image: "https://picsum.photos/2560/600?image=733"
 ---
