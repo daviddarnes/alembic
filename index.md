@@ -14,29 +14,11 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 
 ## Máy tính lượng tử (Quantum Computing)
 
-1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
-4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
+1. [Quantum Computing – Tập 1. Tổng quan](#)
+2. [Quantum Computing – Tập 2. Cơ sở vật lí](#)
 
 ## Trí tuệ nhân tạo
-- ["Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,..."](./_posts/2024-04-20-chi-so-danh-gia.md)
-- Available as a **theme gem** and **GitHub Pages** theme
-- Clear and elegant design that can be used out of the box or as solid starting point
-- Tested in all major browsers, including **IE and Edge**
-- Built in **Service Worker** so it can work offline and on slow connections
-- **Configurable colours** and typography in a single settings file
-- Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
-- Solid **typographic framework** from [Sassline](https://sassline.com/)
-- Configurable navigation via a single file
-- Modular Jekyll components
-- Post category support in the form of a single post index page grouped by category
-- Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
-- Designed with **[Siteleaf](https://www.siteleaf.com/)** in mind
-- Has 9 of the most popular networks as performant sharing buttons
-- Has documentation
+- [Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,...](./_posts/2024-04-20-chi-so-danh-gia.md)
 
 ## Khai phá dữ liệu
 
