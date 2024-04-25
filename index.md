@@ -22,6 +22,7 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 - [Xây dựng bài toán tự động xóa vật thể bất kì bằng Deep Learning](./_posts/2024-04-21-object-remover.md)
 - [[Paper Explain] PDVC -  Hướng tiếp cận end-to-end với giải mã song song cho bài toán Dense Video Captioning](./_posts/2024-04-22-video-captioning.md)
 - [Góc nhìn tổng quan về bài toán Blind Image Super-Resolution](./_posts/2024-04-23-SR.md)
+- [Xây dựng chatbot hỏi đáp tài liệu sử dụng mô hình ngôn ngữ lớn GPT3.5 và thư viện Langchain](./_posts/2024-04-24-chatbotllm.md)
 
 ## Khai phá dữ liệu
 
