@@ -19,6 +19,7 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 
 ## Trí tuệ nhân tạo
 - [Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,...](./_posts/2024-04-20-chi-so-danh-gia.md)
+- [Xây dựng bài toán tự động xóa vật thể bất kì bằng Deep Learning](./_posts/2024-04-21-object-remover.md)
 
 ## Khai phá dữ liệu
 
