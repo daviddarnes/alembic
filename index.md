@@ -26,8 +26,4 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 
 ## Khai phá dữ liệu
 
-Here are a few examples of Alembic out in the wild being used in a variety of ways:
-
-- [Blog 1](https://huudat-phenikaa.github.io/general/2016/08/29/example-post-three/)
-- [case2111.github.io](https://case2111.github.io/)
-- [karateca.org](https://www.karateca.org/)
+- [Big Data - Tập 1. Giới thiệu tổng quan Hadoop](./_posts/2024-04-25-bigdata1.md)
