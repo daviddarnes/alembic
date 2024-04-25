@@ -8,7 +8,7 @@ categories:
 excerpt: |
   Trong thời đại bùng nổ của kĩ thuật số, đặc biệt sự phát triển vượt bậc của các nền tảng mạng xã hội. Nhu cầu về chia sẻ hình ảnh, hay thiết kế ấn phẩm đang ngày càng được chú trọng quan tâm hơn.
 
-    Chính vì vây, các ứng dụng liên quan đến chỉnh sửa hình ảnh là rất cần thiết. Trong đó, **Xoá vật thể không mong muốn, dư thừa** là một trong những thao tác phổ biến khi chỉnh sửa ảnh. Không chỉ dành riêng với các nhà photoshop chuyên nghiệp, mà ngay đến những người dùng bình thường cũng đã có nhu cầu sử dụng cao. .
+    Chính vì vây, các ứng dụng liên quan đến chỉnh sửa hình ảnh là rất cần thiết. Trong đó, **Xoá vật thể không mong muốn, dư thừa** là một trong những thao tác phổ biến khi chỉnh sửa ảnh. Không chỉ dành riêng với các nhà photoshop chuyên nghiệp, mà ngay đến những người dùng bình thường cũng đã có nhu cầu sử dụng cao.
 # feature_text: |
 #   ## The Pot Still
 #   The modern pot still is a descendant of the alembic, an earlier distillation device

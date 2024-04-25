@@ -20,6 +20,8 @@ Hi vọng, dù bạn là người mới bắt đầu hoặc là một chuyên gi
 ## Trí tuệ nhân tạo
 - [Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,...](./_posts/2024-04-20-chi-so-danh-gia.md)
 - [Xây dựng bài toán tự động xóa vật thể bất kì bằng Deep Learning](./_posts/2024-04-21-object-remover.md)
+- [[Paper Explain][End-to-End Dense Video Captioning with Parallel Decoding] PDVC -  Hướng tiếp cận end-to-end với giải mã song song cho bài toán Dense Video Captioning](./_posts/2024-04-22-video-captioning.md)
+- [Góc nhìn tổng quan về bài toán Blind Image Super-Resolution](./_posts/2024-04-23-SR.md)
 
 ## Khai phá dữ liệu
 
