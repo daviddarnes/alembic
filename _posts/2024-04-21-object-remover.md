@@ -1,5 +1,5 @@
 ---
-title: "Các chỉ số đánh giá được sử dụng cho bài toán Image Generation: IS, FID, PSNR, SSIM,..."
+title: "Xây dựng bài toán tự động xóa vật thể bất kì bằng Deep Learning"
 categories:
 - AI
 - Computer Vision
