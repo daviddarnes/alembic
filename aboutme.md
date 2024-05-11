@@ -6,4 +6,4 @@ Mình có kinh nghiệm về Programming, AI - Machine Learning nói chung và D
 
 Trong phạm vi của Blog này, mình viết để chia sẻ kiến thức về cả 3 mảng (Máy tính lượng tử - AI - Data) tới mọi người. Các mảng đều được mình chia thành các topic dễ hiểu và dễ tiếp cận với nhiều người. Hi vọng, đây sẽ là một phần nhỏ, giúp ích cho các bạn trên con đường chinh phục kiến thức.
 
-Bên cạnh đó, mọi người muốn trao đổi về công việc cũng như lời mời hợp tác, vui lòng liên hệ mình qua mail [nguyenhuudat031198@gmail.com] hoặc [dat.nguyenhuu@phenikaa-uni.edu.vn]
+Bên cạnh đó, mọi người muốn trao đổi về công việc cũng như lời mời hợp tác, vui lòng liên hệ mình qua mail [nguyenhuudat031198@gmail.com](#nguyenhuudat031198@gmail.com) hoặc [dat.nguyenhuu@phenikaa-uni.edu.vn](#dat.nguyenhuu@phenikaa-uni.edu.vn)
