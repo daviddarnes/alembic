@@ -37,12 +37,12 @@ plugins:
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+jekyll-mentions: https://huudatscience.github.io/ # jekyll-mentions > service used when @replying
 twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
+  username: Huu Dat's Blog # jekyll-seo-tag > Owners twitter username
+author: Huu Dat's Blog # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
+  name: Huu Dat's Blog # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
     - https://viblo.asia/u/HuuDat
     - https://www.facebook.com/dat.nh.031198
@@ -65,9 +65,9 @@ collections:
   posts:
     title: Posts # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: "Máy tính lượng tử & AI" # The post list page content
     feature_text: |
-      Welcome to the blog
+      Danh sách các bài viết trên blog của mình
     feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
@@ -95,11 +95,11 @@ encoding: utf-8 # Make sure the encoding is right
 lang: vi-GB # Set the site language
 title: "Huu Dat's Blog" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+description: "Welcome các bạn đến với trang web của mình. Ở phạm vi blog này, mình sẽ tập trung chia sẻ về 3 mảng chính đó là [Máy tính lượng tử](#Máy tính lượng tử) - [Trí tuệ nhân tạo](#Trí tuệ nhân tạo) - [Khai phá dữ liệu](#Khai phá dữ liệu). Chắc các bạn cũng đã biết, AI nói chung và dữ liệu nói riêng hiện nay đang len lỏi khắp nơi trong cuộc sống. Nó đóng vai trò quan trọng và hiện vẫn đang bùng nổ trong những năm tới. Ngoài ra, từ khi mô hình LLM ra đời, người ta càng quan tâm hơn đến vấn đề xử lý của máy tính. Vì thế, mình cũng sẽ chia sẻ thêm về mảng máy tính lượng tử (quantum computing), nó được cho sẽ trở thành cuộc cách mạng 5.0 tiếp theo." # Site description and default description, also used in jekyll-seo-tag
+url: "https://huudatscience.github.io/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
+repo: "https://huudatscience.github.io/"
+email: "dat.nguyenhuu@phenikaa-uni.edu.vn"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -135,14 +135,14 @@ navigation_header:
   url: /aboutme/
 
 navigation_footer:
-- title: Created by David Darnes
-  url: https://darn.es
+- title: Created by Huu Dat
+  url: https://huudatscience.github.io/
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://viblo.asia/u/HuuDat
   LinkedIn: https://www.linkedin.com/in/nguyenhuudat98/
   GitHub: https://github.com/huudat-phenikaa
-  link: https://darn.es
+  link: https://github.com/huudat-phenikaa
   RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
