@@ -1,5 +1,5 @@
 ---
-title: Máy tính lượng tử và AI
+title: Huu Dat's Blog | Máy tính lượng tử và AI
 feature_text: |
   ## Huu Dat's Blog
   Máy tính lượng tử, Trí tuệ nhân tạo và Khoa học dữ liệu
