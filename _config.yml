@@ -150,6 +150,12 @@ sharing_links: # Appear at the bottom of single blog posts, add as desired. The 
   facebook: "#3B5998"
   Email: true
 
+feature_text: |
+  <h2 style="color: white; font-size: 24px; text-shadow: 2px 2px 4px black;">Facing climate change challenges with scientific knowledge and practical solutions</h2>
+feature_image: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sVMRr.img?w=1200&h=400&m=6"
+
+
+
 # Load custom fonts from fonts.google.com etc
 #
 # TIP: Try to keep the number of urls as low to reduce the performance cost
