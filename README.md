@@ -232,7 +232,7 @@ A Google map. _See Google [My Maps](https://www.google.com/mymaps)_
 Example usage: `{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}`
 
 Available options:
-- `id`: The map ID for the video _required_
+- `id`: The map ID for the map _required_
 
 ### `site-form.html`
 Adds a contact form to the page. This can be used with [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/docs/form-handling/) depending on your setup.
